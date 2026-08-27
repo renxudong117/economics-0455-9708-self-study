@@ -9,9 +9,9 @@
 
 ## 补充参考（用于核对组织方式，不复制正文或题目）
 
+- [ig-summer-study](https://github.com/renxudong117/ig-summer-study)：仅借鉴自学包的信息架构、六段体例、导航与 QA 形式。
 - Save My Exams: [Cambridge IGCSE Economics revision notes](https://www.savemyexams.com/igcse/economics/cie/25/revision-notes/)
 - 9708Economics: [bilingual topic map and study tools](https://9708economics.com/)
-- Cambridge published resources pages：用于确认官方认可教材与课程覆盖。
 
 ## 编写原则
 
