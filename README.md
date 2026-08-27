@@ -9,6 +9,14 @@
 - [188 题索引与使用建议](QUESTION-INDEX.md)
 - [考纲、题型与资料来源](SOURCES.md)
 
+## 阅读与打印版
+
+- [HTML 阅读导航](html/index.html)
+- [0455 学生册 PDF](pdf/0455-student-book.pdf)｜[0455 答案册 PDF](pdf/0455-answers.pdf)
+- [9708 学生册 PDF](pdf/9708-student-book.pdf)｜[9708 答案册 PDF](pdf/9708-answers.pdf)
+
+建议双面打印学生册；答案册单独装订，用于完成练习后的订正。
+
 ## 统一结构
 
 每单元均含：单元导读 → 知识点精讲 → 42 词核心词汇表 → 全英文原创仿题 → 指示性答案与解析 → 自学检查清单。
