@@ -26,6 +26,12 @@
 
 经常账户记录货物、服务、收入和转移支付。赤字代表流出大于流入，不必然坏：若进口的是资本设备，可能提升未来生产力；但长期靠短期借款融资会有风险。分析时区分“赤字的原因”和“赤字本身”。
 
+### 2.5 政策传导链的写法
+
+不要只写“降低利率促进经济”。拆开写：interest rate falls → monthly loan repayments fall / borrowing becomes cheaper → households consume more and firms invest more → AD rises → output and employment may rise. 然后评价：如果家庭担心失业，可能仍储蓄；若经济接近满产，效果更可能是通胀而不是实际产出。
+
+财政政策同理：government spending on roads → firms receive orders → workers' incomes rise → further consumption occurs. 但政府融资可能增加债务；道路项目也有长期 supply-side benefit。把短期 AD 效果与长期 LRAS 效果分开，答案会更成熟。
+
 ## 3. 核心词汇表（42 词）
 
 | English term | 中文口径 | 自测提示 |

@@ -22,6 +22,12 @@ PPC 同时用于说明稀缺、效率、失业、增长与机会成本。**Free 
 
 价格机制通过价格、利润和损失传递信息与激励。计划机制可直接追求公平或战略目标，却面临 information problem：中央计划者难以收集分散、变化的偏好和成本信息。评价时比较 allocation、equity、innovation 和 administrative cost，而非贴标签。
 
+### 2.4 用定义区分四类商品
+
+用两道问题判断：消费者能否被排除（excludability）？一个人使用会不会减少别人可用量（rivalry）？私人咖啡可排他、具竞争性；街道照明非排他、非竞争，属于 public good；教育多为 merit good，因为社会收益高于私人收益，但它不自动是 public good。
+
+考试句式：*A merit good may be under-consumed because consumers do not fully recognise its private benefits and because it generates external benefits.* 这比只写“教育很好”更经济学。
+
 ## 3. 核心词汇表（42 词）
 
 | English term | 中文口径 | 自测提示 |

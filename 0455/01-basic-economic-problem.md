@@ -35,6 +35,14 @@ PPC 显示在既定资源与技术下，一个经济体能够生产两种产品�
 
 **Market economy** 主要由价格和利润信号配置资源；**planned economy** 由政府决定主要生产什么、如何生产、为谁生产；现实多是 **mixed economy（混合经济）**。评价制度不能只列优缺点：市场激励创新但可能出现不平等、公共品不足和外部性；政府可纠正失灵但也可能信息不足、官僚低效。
 
+### 2.5 逐步判断：一个 PPC 题到底在问什么？
+
+**Step 1 - 先识别位置。** 点在曲线内：不是“没有稀缺”，而是既定资源没有充分利用；可用 unemployment、inefficient organisation 或 recession 解释。点在曲线上：在当前技术下生产有效率，但不必然符合社会偏好。点在曲线外：当前不可行，除非贸易、技术或资源改变。
+
+**Step 2 - 再识别变化类型。** “More workers receive training”提高 labour productivity，PPC outward shift；“workers move from food to computers”是 movement along PPC；“an earthquake destroys factories”是 inward shift。答题句式：*An improvement in human capital raises the productive potential of the economy, so the PPC shifts outwards.*
+
+**Step 3 - 最后说代价。** 若由 A 转向 B，机会成本是少生产的 A。请避免写“B 的机会成本是 B”；机会成本必须是放弃的另一个选项。
+
 ## 3. 核心词汇表（42 词）
 
 | English term | 中文口径 | 自测提示 |

@@ -22,6 +22,12 @@
 
 有约束力的 price ceiling 低于均衡价，导致 shortage、queue、black market；有约束力的 price floor 高于均衡价，导致 surplus。最低工资属于 price floor：它可能提高部分工人收入，也可能在劳动需求缺乏弹性时造成较少失业，不能一概而论。
 
+### 2.4 MSC/MSB 图的读图程序
+
+负外部性：先找自由市场均衡 MPC=MPB 的数量 Qm；再找社会最优 MSC=MSB 的数量 Qs。通常 Qm>Qs。两条成本曲线之间的面积代表每单位未计入的外部成本；从 Qs 到 Qm 的三角形是 net welfare loss。正外部性逻辑反过来。
+
+政策不是只写“加税”：最优税理论上应等于 marginal external cost，使私人成本反映社会成本；但真实世界很难测量 MEC，且征管成本与避税会降低效果。这就是评价段的起点。
+
 ## 3. 核心词汇表（42 词）
 
 | English term | 中文口径 | 自测提示 |

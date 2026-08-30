@@ -22,6 +22,12 @@
 
 **Consumer surplus** 是愿付价格高于实际价格的利益；**producer surplus** 是实际价格高于最低愿售价格的利益。税使交易量缩小，产生 **deadweight welfare loss**。图上用需求/供给、税楔、原均衡和新均衡标注；不要只涂一个三角形而不说明其经济含义。
 
+### 2.4 弹性题的四个常见陷阱
+
+1. PED 有负号，因为 price 与 quantity demanded 反向；比较大小时通常用绝对值。2. YED 为负并非“坏商品”，而是收入上升时需求下降的 inferior good。3. XED 正值表示 substitute，如茶和咖啡；负值表示 complement，如打印机和墨盒。4. PES 不能用“供给曲线陡/平”孤立判断，必须说明时间、库存、闲置产能或生产周期。
+
+把弹性转为决策：若政府给 PED 缺乏弹性的香烟加税，消费量下降可能有限但税收高；如果政策目标是显著减少吸烟，税以外还需 information、age restriction 或 cessation support。
+
 ## 3. 核心词汇表（42 词）
 
 | English term | 中文口径 | 自测提示 |

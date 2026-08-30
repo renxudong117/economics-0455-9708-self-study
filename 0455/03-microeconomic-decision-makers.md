@@ -26,6 +26,14 @@
 
 长期扩张时，平均成本下降叫 **economies of scale**：可以来自批量采购、专业化、管理、技术和融资。规模太大可能产生 communication problems 和 coordination problems，即 **diseconomies of scale**。市场结构从竞争强到弱大致为 perfect competition、monopolistic competition、oligopoly、monopoly；答题不要只背定义，应把进入壁垒、产品差异、定价能力和消费者选择联系起来。
 
+### 2.5 从成本表到企业决策
+
+把题中的每一列先翻译：**TC** 是总成本；**AC = TC/Q**；**TR = P×Q**；**profit = TR−TC**。若固定成本不变，产量上升时 AC 可能下降，因为固定成本被更多单位分摊；这不代表每一项成本下降。
+
+**例子：**厂房租金每月 10 000，生产 1 000 件时每件固定成本 10；生产 2 000 件时每件固定成本 5。若增加产量需要加班和更昂贵的原料，variable cost 仍可能上升。因此“规模扩大一定更便宜”错误。
+
+写工会题时分两条线：工资提高会提升会员收入；企业劳动力成本提高可能减少雇佣、提高价格或投资自动化。结论取决于 labour demand elasticity、生产率和企业利润率。
+
 ## 3. 核心词汇表（42 词）
 
 | English term | 中文口径 | 自测提示 |

@@ -26,6 +26,12 @@
 
 教育、医疗、基础设施、微型信贷、贸易开放、FDI 与援助都可能有用。例：修港口可降低出口运输成本，但若政府腐败、维护资金不足，项目效益会很低。评价要问：谁受益？资金来自哪里？短期与长期效果？环境是否可持续？
 
+### 2.5 指标题的比较框架
+
+看到“哪个国家生活水平更高”，不要只比较一个 GDP 数字。依次问：是否是 real GDP？是否 per head？汇率是否反映购买力？收入是否平均分配？教育、寿命、饮水和环境怎样？一个资源出口国的人均 GDP 高，仍可能有很大贫富差距。
+
+**HDI 的读法：**它把 income、education 与 life expectancy 组合，所以能补充 GDP；但它是国家平均值，无法显示一个城市很富而农村很穷。可直接写：*HDI is broader than GDP per head, although both figures can hide inequality within a country.*
+
 ## 3. 核心词汇表（42 词）
 
 | English term | 中文口径 | 自测提示 |
