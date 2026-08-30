@@ -10,29 +10,21 @@
 
 ## 2. 知识点精讲
 
-### 2.1 分析主线
+### 2.1 货币与银行（Money and banking）
 
-经济学从**稀缺（scarcity）**出发：有限资源面对无限欲望，迫使个人、企业和政府作出**选择（choice）**，其真实代价是放弃的次优选择，即**机会成本（opportunity cost）**。分析任何政策时，应写清“条件改变 → 行为反应 → 市场或宏观变量变化 → 利益相关者影响”。
+货币的四项功能是 **medium of exchange（交换媒介）**、**measure of value（价值尺度）**、**store of value（价值储藏）** 与 **standard of deferred payment（延期支付标准）**。商业银行（commercial bank）接受存款、提供支付服务并放贷；中央银行（central bank）通常发行货币、监管银行并影响利率。通胀削弱货币的购买力，因此“钱可以储藏价值”不等于“价值永远不变”。
 
-### 2.2 本单元核心
+### 2.2 家庭、劳动者与工会（Households, workers and trade unions）
 
-1. **money**：先给出准确含义，再说明决定因素、变化方向和可能例外。答题时不得只写相关性；应补足中间传导机制。
-2. **commercial bank**：先给出准确含义，再说明决定因素、变化方向和可能例外。答题时不得只写相关性；应补足中间传导机制。
-3. **household**：先给出准确含义，再说明决定因素、变化方向和可能例外。答题时不得只写相关性；应补足中间传导机制。
-4. **trade union**：先给出准确含义，再说明决定因素、变化方向和可能例外。答题时不得只写相关性；应补足中间传导机制。
-5. **productivity**：先给出准确含义，再说明决定因素、变化方向和可能例外。答题时不得只写相关性；应补足中间传导机制。
-6. **economies of scale**：先给出准确含义，再说明决定因素、变化方向和可能例外。答题时不得只写相关性；应补足中间传导机制。
+家庭提供 labour、land、capital，获得收入后在消费与储蓄之间选择。劳动需求是 **derived demand（派生需求）**：企业需要工人，是因为消费者需要工人生产的商品。工资、技能、资格、工作条件、歧视和工会谈判力量都会影响工资差异。工会可用集体谈判提高工资和安全，也可能在工资高于均衡时增加失业；要写“可能”，不能绝对化。
 
-### 2.3 图表、计算与评价
+### 2.3 企业的生产、成本与收益
 
-图表必须有标题、坐标、曲线标签、初始与新均衡；“沿曲线移动”与“曲线移动”不可混用。计算题写公式、代入、单位和经济含义。评价至少选择两个维度：短期/长期、大小与弹性、信息与时滞、机会成本、公平/效率、不同利益相关者。
+**Fixed costs**（租金、厂房）不随短期产量变化；**variable costs**（原料、按件工资）会变化。**Total cost = fixed cost + variable cost**。**Total revenue = price × quantity**；**profit = total revenue − total cost**。企业不只追求利润，也可能追求 sales revenue、market share、survival 或环境声誉；题目给了目标才应据此分析。
 
-### 2.4 中英口径差异
+### 2.4 规模经济与市场结构
 
-- 人教版“宏观调控”语境较强调中国制度与政策目标；Cambridge 的 **government intervention** 要求在具体市场模型中评价成本和收益。
-- “需求”在日常中文可指愿望；Cambridge **demand** 必须同时具备购买意愿与支付能力。
-- “资本”在政治经济学语境可能强调生产关系；Cambridge **capital** 通常指人造生产资料，不等同于货币。
-- **economic growth** 是实际产出增加；“高质量发展”更接近包含结构、公平、健康与环境的 **economic development**。
+长期扩张时，平均成本下降叫 **economies of scale**：可以来自批量采购、专业化、管理、技术和融资。规模太大可能产生 communication problems 和 coordination problems，即 **diseconomies of scale**。市场结构从竞争强到弱大致为 perfect competition、monopolistic competition、oligopoly、monopoly；答题不要只背定义，应把进入壁垒、产品差异、定价能力和消费者选择联系起来。
 
 ## 3. 核心词汇表（42 词）
 
