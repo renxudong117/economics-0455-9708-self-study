@@ -12,6 +12,7 @@
 ## 补充参考（用于核对组织方式，不复制正文或题目）
 
 - [ig-summer-study](https://github.com/renxudong117/ig-summer-study)：仅借鉴自学包的信息架构、六段体例、导航与 QA 形式。
+- 用户提供的《IG物理0625全册讲义》和《IG化学0620全册讲义》：仅用于分析单元层级、概念—例题—答案节奏与打印版式；0455 正文、题目与图表均重新编写。
 - Save My Exams: [Cambridge IGCSE Economics revision notes](https://www.savemyexams.com/igcse/economics/cie/25/revision-notes/)
 - 9708Economics: [bilingual topic map and study tools](https://9708economics.com/)
 
