@@ -12,7 +12,7 @@
 ## 阅读与打印版
 
 - [HTML 阅读导航](html/index.html)
-- [0455 学生教材：逐课深度双语版（60 页）](pdf/0455_学生教材_逐课深度双语版.pdf)
+- [0455 学生教材：逐课深度双语版（62 页）](pdf/0455_学生教材_逐课深度双语版.pdf)
 - [0455 学生册 PDF](pdf/0455-student-book.pdf)｜[0455 答案册 PDF](pdf/0455-answers.pdf)
 - [9708 学生册 PDF](pdf/9708-student-book.pdf)｜[9708 答案册 PDF](pdf/9708-answers.pdf)
 
