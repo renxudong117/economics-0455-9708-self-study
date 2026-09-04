@@ -36,6 +36,19 @@
 
 **快速自检：** 一定要把 D、S、P、Q 和新旧均衡写全；只说“价格上涨”不够，必须说明是 demand increase 还是 supply decrease。
 
+
+### 教学展开：从需求表到市场结果（建议 2–3 课时）
+
+**课时 1｜定义与识别。** Demand 不是“想要”，而是 willingness and ability to buy at different prices；supply 不是“仓库里有多少”，而是 firms’ willingness and ability to sell。先让学生把新闻句子分类：income rises、fashion changes、input price rises、technology improves。凡是价格本身改变，通常是沿同一条曲线移动；凡是非价格决定因素改变，才是曲线 shift。
+
+**课时 2｜逐点读图。** 画纵轴 price、横轴 quantity，标 D、S、均衡 E。需求右移会使均衡价格和数量通常都上升；供给右移通常使价格下降、数量上升。不要写“需求增加导致 demand curve moves up”；规范表达是 *the demand curve shifts right*. 若曲线同时移动，先分别判断，再比较新旧交点。
+
+**课时 3｜弹性与收入。** PED = percentage change in quantity demanded ÷ percentage change in price。用中点法可避免基数争议；结果的负号来自反向关系，比较敏感度通常用 absolute value。企业若面对 inelastic demand，降价会使总收益下降；若需求富有弹性，降价可能增加总收益。评价时补充 substitutes、时间、income share 和 brand loyalty。
+
+**课堂小实验。** 给出价格 10→12、数量 100→80，要求学生先计算百分比再算 PED。随后问“若价格继续上升，PED 会不会一定相同？”答案是不一定，因为需求曲线上不同区间斜率与基数不同。
+
+**表达模板。** *A rise in disposable income increases demand for a normal good. At the original price there is excess demand, so firms raise price and move along the supply curve until a new equilibrium is reached.* 这条链必须包含 shift、短缺/过剩、价格调整和新均衡。
+
 ## 3. 核心词汇表（42 词）
 
 | English term | 中文口径 | 自测提示 |

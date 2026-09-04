@@ -32,6 +32,19 @@
 
 财政政策同理：government spending on roads → firms receive orders → workers' incomes rise → further consumption occurs. 但政府融资可能增加债务；道路项目也有长期 supply-side benefit。把短期 AD 效果与长期 LRAS 效果分开，答案会更成熟。
 
+
+### 教学展开：从指标到政策传导（建议 3 课时）
+
+**指标先定口径。** GDP 是境内最终产品和服务的货币价值；real GDP 去除价格变化，GDP per head 考虑人口，但仍不能显示 distribution、非市场劳动和环境。CPI 是一篮子消费品的加权价格指数；inflation 是持续的总体价格上涨，不是一次性某商品涨价。
+
+**失业分类。** Frictional 来自换工作，structural 来自技能/地区错配，cyclical 来自总需求不足，seasonal 与季节有关。政策要匹配原因：培训针对 structural，扩张性财政/货币针对 cyclical；不能用一种政策解释所有失业。
+
+**AD/AS 推演。** AD = C + I + G + (X−M)。利率下降可通过消费和投资使 AD 右移；但若信心低、进口漏出大或接近满产，实际产出效果较弱而通胀压力较大。供给冲击使 SRAS 左移，会同时带来价格上涨和实际产出下降。
+
+**乘数小练习。** 若 MPC=0.75，理论 multiplier = 1/(1−0.75)=4；政府注入 50 的总收入变化上限为 200。现实会因税、储蓄、进口和闲置资源而小于理论值。
+
+**评价框架。** 每次政策评价至少写 time lag、confidence、crowding out、distribution 和 external effects 中的两项，并在结尾说明“在什么条件下最可能有效”。
+
 ## 3. 核心词汇表（42 词）
 
 | English term | 中文口径 | 自测提示 |

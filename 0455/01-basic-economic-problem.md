@@ -31,6 +31,36 @@ PPC 显示在既定资源与技术下，一个经济体能够生产两种产品�
 
 若 PPC 向原点凹，表示生产一种产品越多，转移资源的适配度越差，**opportunity cost increases（机会成本递增）**。画图题务必写坐标、两种产品、曲线与移动箭头；不要把“沿 PPC 移动”（产品组合改变）误画成“PPC 整条移动”（生产能力改变）。
 
+#### PPC 图像的读法：从坐标到结论
+
+先画两条互相垂直的轴：横轴写 **Good X（例如 computers）**，纵轴写 **Good Y（例如 food）**，并标出原点 O。曲线连接两个截距：若所有资源生产食物，位于纵轴截距；若所有资源生产电脑，位于横轴截距。曲线上的 A、B、C 是不同的可行组合，不是三个“效率等级”。从 A 沿曲线向 B 移动，表示资源从食物部门转向电脑部门；生产能力没有改变，只是组合改变。
+
+图中曲线以内的点 D 代表 **productive inefficiency（生产无效率）**：在不减少另一种产品的情况下仍可增加产出，原因可能是失业、机器闲置或管理低效。曲线以外的点 E 在当前资源和技术下不可达。若培训提高劳动生产率，整条 PPC 向外移；若地震摧毁厂房，整条 PPC 向内移。答题时用箭头标示 shift，并明确写出“productive potential changes”。
+
+#### 为什么曲线通常向原点凹？机会成本的推演
+
+假设经济体只有土地、劳动和资本，生产电脑和食物。最初从食物转出少量资源时，可以先转移最适合电脑生产的工人和设备，所以电脑增加 1 单位只牺牲 1 单位食物。继续转移时，电脑部门需要使用原本更适合种植的土地和农业工人，牺牲的食物增加到 2、3、4 单位。这就是 **increasing opportunity cost（机会成本递增）**，图上表现为越接近横轴，曲线越陡。
+
+| 组合 | Computers | Food | 从上一个组合增加电脑 | 机会成本（少生产的 Food） |
+|---|---:|---:|---:|---:|
+| A | 0 | 100 | - | - |
+| B | 10 | 96 | +10 | 4 |
+| C | 20 | 88 | +10 | 8 |
+| D | 30 | 74 | +10 | 14 |
+| E | 40 | 50 | +10 | 24 |
+
+由表可见，每增加相同的 10 台电脑，放弃的食物越来越多。若题目要求“calculate opportunity cost”，要写 **opportunity cost = output forgone / output gained**，并说明是哪个区间；不能只写“机会成本为 14”，因为不同区间的数值不同。
+
+#### 课堂例题：区分 movement 与 shift
+
+某国从组合 A（20 computers, 88 tonnes of food）变为组合 B（30 computers, 74 tonnes of food）。第一问：发生了什么？答案是沿 PPC 移动，电脑增加 10，食物减少 14；机会成本为 14 吨食物。第二问：若新工厂和自动化使每一种产品的最大产量都提高，如何作图？答案是 PPC outward shift；原曲线上的 A、B 仍是旧生产能力下的组合，新曲线应位于右上方。
+
+高分英语表达：*The economy moves from A to B along the same PPC, so resources are reallocated and the opportunity cost of 10 additional computers is 14 tonnes of food. In contrast, an outward shift would indicate an increase in productive potential caused by better resources or technology.*
+
+#### 画图与评价的评分清单
+
+1. 坐标轴有名称和方向；2. 曲线标为 PPC₁/PPC₂；3. 点标 A、B、inside、outside；4. 移动用沿曲线箭头，能力变化用整条曲线箭头；5. 解释原因，而非只写“向外”；6. 写出短期可行性和长期增长的区别。若资源只适合其中一种产品，PPC 可接近直线；若资源完全不能互换，机会成本近似不变。
+
 ### 2.4 经济制度与资源配置（Economic systems）
 
 **Market economy** 主要由价格和利润信号配置资源；**planned economy** 由政府决定主要生产什么、如何生产、为谁生产；现实多是 **mixed economy（混合经济）**。评价制度不能只列优缺点：市场激励创新但可能出现不平等、公共品不足和外部性；政府可纠正失灵但也可能信息不足、官僚低效。
@@ -42,6 +72,17 @@ PPC 显示在既定资源与技术下，一个经济体能够生产两种产品�
 **Step 2 - 再识别变化类型。** “More workers receive training”提高 labour productivity，PPC outward shift；“workers move from food to computers”是 movement along PPC；“an earthquake destroys factories”是 inward shift。答题句式：*An improvement in human capital raises the productive potential of the economy, so the PPC shifts outwards.*
 
 **Step 3 - 最后说代价。** 若由 A 转向 B，机会成本是少生产的 A。请避免写“B 的机会成本是 B”；机会成本必须是放弃的另一个选项。
+
+
+### 教学展开：PPC 图文课与建模课（建议 3 课时）
+
+**课时 1｜从现实到模型。** 设想学校只有一块操场，可用来办运动会或搭建科学实验室。场地、时间和人手有限，所以每增加一项活动，就必须放弃另一项活动；这就是 scarcity → choice → opportunity cost。让学生先用中文说出“放弃的最佳选择”，再写英文定义。
+
+**课时 2｜PPC 读图。** 横轴放 Good X（computers），纵轴放 Good Y（food），曲线表示“在既定资源和技术下的最大可行组合”。曲线上的点 productively efficient；曲线内点说明资源闲置；曲线外点短期不可达。向原点凹表示 increasing opportunity cost，因为资源从最适合的部门转移到较不适合的部门。
+
+**课时 3｜变化与评价。** 组合改变是 movement along PPC；技术、资源数量或生产率改变是 shift of PPC。把两者画在两张图上并用箭头区分。最后讨论 productive efficiency 与 allocative efficiency：曲线上不等于社会最想要的组合，偏好决定哪一点最符合 allocative efficiency。
+
+**口头检查。** 学生必须能回答：为什么内点不代表“没有稀缺”？为什么 outward shift 才表示 productive potential 增加？为什么同样增加 10 台电脑，牺牲的食物可能越来越多？
 
 ## 3. 核心词汇表（42 词）
 

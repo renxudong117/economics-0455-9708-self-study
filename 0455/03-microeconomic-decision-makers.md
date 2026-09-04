@@ -34,6 +34,19 @@
 
 写工会题时分两条线：工资提高会提升会员收入；企业劳动力成本提高可能减少雇佣、提高价格或投资自动化。结论取决于 labour demand elasticity、生产率和企业利润率。
 
+
+### 教学展开：从成本表到企业与家庭决策（建议 2–3 课时）
+
+**先建立成本语言。** Total cost = fixed cost + variable cost；average cost = total cost ÷ output；marginal cost 是多生产一单位的额外成本。用表格逐行计算 TC、AC、MC、TR 和 profit，要求学生解释“固定成本不随产量改变，但 AFC 会下降”。不要把 accounting profit 和 economic profit 混为一谈。
+
+**生产率与分工。** Labour productivity = output per worker（或 per hour）。分工能提高熟练度、减少转换时间并利用专门设备，但过度分工可能造成 boredom、低灵活性和对单一工序的依赖。用一条因果链回答：培训 → human capital 上升 → 单位产出增加 → 单位成本下降 → 竞争力提高。
+
+**市场结构读法。** 先比较 firms、product differentiation、barriers to entry 和 price control，再写 monopoly、oligopoly、perfect competition 的后果。利润最大化的增量原则是 MR = MC；价格由 AR/D 曲线读出。短期亏损不一定立即停产，若 price ≥ AVC，企业仍可覆盖部分固定成本。
+
+**劳动市场。** 工资是劳动力的价格；劳动需求是 derived demand，因为取决于产品需求和 MRP。最低工资高于均衡可能造成 surplus labour，但结果取决于 demand elasticity、执行力度和生产率。
+
+**评价句。** *The likely effect depends on the firm’s spare capacity, the time period and how easily consumers can switch to substitutes.* 每个结论都要落回题干企业或行业。
+
 ## 3. 核心词汇表（42 词）
 
 | English term | 中文口径 | 自测提示 |

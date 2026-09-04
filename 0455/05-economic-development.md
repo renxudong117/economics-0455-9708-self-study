@@ -32,6 +32,17 @@
 
 **HDI 的读法：**它把 income、education 与 life expectancy 组合，所以能补充 GDP；但它是国家平均值，无法显示一个城市很富而农村很穷。可直接写：*HDI is broader than GDP per head, although both figures can hide inequality within a country.*
 
+
+### 教学展开：增长、发展与数据证据（建议 2–3 课时）
+
+**先区分概念。** Economic growth 是 real output 的增加；economic development 是生活质量和能力的广泛改善。GDP per head 是收入指标，HDI 还加入 life expectancy 和 education，但三者都是平均值，不能自动代表每个人的生活。
+
+**贫困与不平等。** Absolute poverty 关注最低生活需要；relative poverty 关注相对社会平均水平。Lorenz curve 越远离 equality line，收入分配越不平等；Gini coefficient 越大通常表示不平等越严重。画图时标清 cumulative population 和 cumulative income。
+
+**政策链。** 教育支出 → 技能和生产率提高 → 长期 LRAS 右移；清洁水和医疗 → 缺勤减少 → 有效劳动供给增加；道路 → 运输成本下降 → 企业投资和地区贸易增加。短期效果、长期效果和机会成本要分段。
+
+**增长的代价。** 资源出口带来外汇和就业，也可能造成 Dutch disease、环境损害和收入波动。评价时写 country-specific factors：治理质量、人口结构、初始教育水平、债务条件和全球需求。
+
 ## 3. 核心词汇表（42 词）
 
 | English term | 中文口径 | 自测提示 |

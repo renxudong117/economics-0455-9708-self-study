@@ -32,6 +32,19 @@
 
 汇率题先说明报价方式。若 1 USD 从 7.0 CNY 升至 7.3 CNY，人民币对美元贬值；中国出口对美国买家更便宜，但进口原材料更贵。紧接着加一句条件：*The effect on the current account depends on price elasticities and the time needed for contracts to change.*
 
+
+### 教学展开：比较优势、汇率与全球化（建议 3 课时）
+
+**比较优势三步法。** 先列各国每小时产量；再计算生产一单位商品的 opportunity cost；最后比较机会成本而非绝对产量。贸易区间必须位于双方机会成本之间，才有互利空间。
+
+**贸易政策图解。** Tariff 提高进口价格、减少进口并为政府创造税收；quota 限制数量但配额租金归属取决于许可证。Protection 可保护 infant industry 和就业，却会提高消费者价格、降低竞争和效率。
+
+**汇率链。** Appreciation 使出口对外国买家更贵、进口更便宜；depreciation 方向相反。不要混用 appreciation/devaluation：前者通常是市场变化，后者是政府降低固定汇率。
+
+**经常账户评价。** 货币贬值是否改善 current account 取决于 PED、进口依赖、合同时间和 J-curve。短期进口账单可能先上升，长期数量反应才逐步显现。
+
+**全球化。** FDI 可带来技术、供应链和就业，也可能利润外流、挤出本地企业或增加环境压力。高分答案应同时分析企业、工人、消费者、政府和环境。
+
 ## 3. 核心词汇表（42 词）
 
 | English term | 中文口径 | 自测提示 |
