@@ -9,6 +9,7 @@
 - Cambridge International, [0455 Paper 2 specimen mark scheme for examination from 2027](https://www.cambridgeinternational.org/Images/718805-2027-specimen-paper-2-mark-scheme.pdf)（用于核对命令词、数据题、图表题、因果分析和双边评价的评分方式）
 - Cambridge International, [AS & A Level Economics (9708) qualification page](https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-international-as-and-a-level-economics-9708/)
 - Cambridge International, [9708 syllabus for 2026–2028](https://www.cambridgeinternational.org/Images/697423-2026-2028-syllabus.pdf)
+- Cambridge International, [AS & A Level Mathematics 9709 syllabus for 2028–2030](https://www.cambridgeinternational.org/Images/744634-2028-2030-syllabus.pdf)（P3 九单元六段式教材的最新范围、考试时长与分值基准；核心范围同时兼容 2026–2027 syllabus）
 
 ## 补充参考（用于核对组织方式，不复制正文或题目）
 

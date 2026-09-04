@@ -26,7 +26,7 @@
 
 - [数学套装说明与官方范围](mathematics-0580-9709-detailed/README.md)｜[HTML 阅读导航](mathematics-0580-9709-detailed/html/index.html)
 - 0580：[Core 详细学习手册](pdf/0580_Core_详细学习手册_双语版.pdf)｜[Extended 详细学习手册](pdf/0580_Extended_详细学习手册_双语版.pdf)
-- 9709 Pure：[P1](pdf/9709_P1_详细学习手册_双语版.pdf)｜[P2](pdf/9709_P2_详细学习手册_双语版.pdf)｜[P3](pdf/9709_P3_详细学习手册_双语版.pdf)
+- 9709 Pure：[P1](pdf/9709_P1_详细学习手册_双语版.pdf)｜[P2](pdf/9709_P2_详细学习手册_双语版.pdf)｜**[P3 九单元六段式双语系统教材（最新版，38 页）](pdf/9709_P3_九单元六段式双语系统教材_2028-2030.pdf)**｜[P3 HTML](mathematics-0580-9709-detailed/html/9709-p3-six-part-2028-2030.html)
 - 9709 Applied：[M1](pdf/9709_M1_详细学习手册_双语版.pdf)｜**[S1 全册六段式双语学习教材（最新版，47 页）](pdf/9709_S1_全册六段式双语学习教材.pdf)**｜[S1 HTML](mathematics-0580-9709-detailed/html/9709-s1-six-part.html)｜[S2](pdf/9709_S2_详细学习手册_双语版.pdf)
 - 9709 拓展/旧体系衔接：[M2](pdf/9709_M2_拓展学习手册_双语版.pdf)（非现行 2026–2027 独立考试组件）
 
