@@ -3,6 +3,7 @@
 ## 权威基准
 
 - Cambridge International, [IGCSE Economics (0455) qualification page](https://www.cambridgeinternational.org/programmes-and-qualifications/view/cambridge-igcse-economics-0455/)
+- Cambridge International, [0455 syllabus for examination in 2027, 2028 and 2029](https://www.cambridgeinternational.org/Images/718148-2027-2029-syllabus.pdf)（0455 最新六段式主教材的内容与 assessment 基准）
 - Cambridge International, [0455 syllabus for examination in 2026, Version 2](https://www.cambridgeinternational.org/Images/697154-2026-syllabus.pdf)
 - Cambridge International, [0455 past papers, examiner reports and specimen exams](https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-igcse-economics-0455/past-papers/)
 - Cambridge International, [0455 Paper 2 specimen mark scheme for examination from 2027](https://www.cambridgeinternational.org/Images/718805-2027-specimen-paper-2-mark-scheme.pdf)（用于核对命令词、数据题、图表题、因果分析和双边评价的评分方式）
