@@ -1,0 +1,65 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>A Level Mathematics 9709 · S2 Probability &amp; Statistics 2</title><style>
+body{font-family:-apple-system,BlinkMacSystemFont,"Noto Sans SC",Arial,sans-serif;max-width:920px;margin:auto;padding:32px;color:#20303b;line-height:1.72}h1{color:#123f5c}h2{color:#123f5c;border-bottom:2px solid #85b8b4;padding-bottom:8px}h3{color:#087a75}.lesson{margin:44px 0;break-before:page}aside{background:#edf7f6;border:1px solid #73a7a3;padding:14px 18px;border-radius:5px}.q{font-weight:600;color:#713f12}.check{background:#fff7e8}@media print{body{max-width:none;padding:0}.lesson{break-before:page}}</style></head><body><h1>A Level Mathematics 9709 · S2 Probability &amp; Statistics 2</h1><p>全套中英文详细学习手册 · 共 9 课</p><article class="lesson"><h2>第 1 课｜泊松分布｜Poisson distribution</h2>
+<h3>概念拆解｜Concept and meaning</h3><p>固定区间内独立稀有事件、平均率恒定时X~Po(λ)。</p>
+<aside><b>Detailed English explanation.</b> Begin by defining the event or random variable. Check whether trials are independent, whether probability is constant, and whether the distribution is discrete or continuous. State parameters, show the probability statement, and interpret the result in context.</aside>
+<h3>原理与方法｜Reasoning and method</h3><p>P(X=r)=e^(−λ)λ^r/r!；区间长度变化按比例改变λ。</p>
+<h3>例题一｜Worked example</h3><p class="q">每小时平均3次来电，30分钟恰有2次概率。</p><p><b>解：</b>λ=1.5，P=e^(−1.5)1.5²/2≈0.251。</p>
+<h3>Cambridge-style application</h3><p class="q">Find probability of no calls in 20 minutes.</p><p><b>Solution:</b> λ=1, so P(X=0)=e^(−1)≈0.368.</p>
+<h3>变式推演与考试书写｜Transfer and exam method</h3><p>把具体数换成字母时先建立一般关系；改变范围、方向、图形性质或随机条件时重新检查适用条件。结构题应展示模型、代入、关键变形、答案与语境解释，并在最后检查精度、单位、定义域和所有有效解。</p>
+<aside class="check"><b>Exam check.</b> Define or identify → model → calculate with visible steps → interpret → check.</aside></article><article class="lesson"><h2>第 2 课｜连续随机变量｜Continuous random variables</h2>
+<h3>概念拆解｜Concept and meaning</h3><p>密度曲线下面积是概率，单点概率为0；CDF累积左侧面积。</p>
+<aside><b>Detailed English explanation.</b> Begin by defining the event or random variable. Check whether trials are independent, whether probability is constant, and whether the distribution is discrete or continuous. State parameters, show the probability statement, and interpret the result in context.</aside>
+<h3>原理与方法｜Reasoning and method</h3><p>先用总面积1求常数，再积分求区间概率与期望。</p>
+<h3>例题一｜Worked example</h3><p class="q">f(x)=kx, 0≤x≤2，求k。</p><p><b>解：</b>∫₀²kx dx=2k=1，所以k=1/2。</p>
+<h3>Cambridge-style application</h3><p class="q">Find P(X&lt;1).</p><p><b>Solution:</b> ∫₀¹ x/2 dx=1/4.</p>
+<h3>变式推演与考试书写｜Transfer and exam method</h3><p>把具体数换成字母时先建立一般关系；改变范围、方向、图形性质或随机条件时重新检查适用条件。结构题应展示模型、代入、关键变形、答案与语境解释，并在最后检查精度、单位、定义域和所有有效解。</p>
+<aside class="check"><b>Exam check.</b> Define or identify → model → calculate with visible steps → interpret → check.</aside></article><article class="lesson"><h2>第 3 课｜线性组合｜Linear combinations</h2>
+<h3>概念拆解｜Concept and meaning</h3><p>期望具有线性；独立变量的方差相加，但系数要平方。</p>
+<aside><b>Detailed English explanation.</b> Translate between words, symbols, diagrams and numerical values. State assumptions, keep exact values during working, and test the final result against the original domain, scale and context.</aside>
+<h3>原理与方法｜Reasoning and method</h3><p>E(aX+bY)=aE(X)+bE(Y)；Var(aX+bY)=a²VarX+b²VarY（独立）。</p>
+<h3>例题一｜Worked example</h3><p class="q">E(X)=4,VarX=3；求E(2X−1),Var(2X−1)。</p><p><b>解：</b>期望7，方差12。</p>
+<h3>Cambridge-style application</h3><p class="q">If independent X,Y have variances 2,5, find Var(X−Y).</p><p><b>Solution:</b> 2+5=7; variances add even when variables are subtracted.</p>
+<h3>变式推演与考试书写｜Transfer and exam method</h3><p>把具体数换成字母时先建立一般关系；改变范围、方向、图形性质或随机条件时重新检查适用条件。结构题应展示模型、代入、关键变形、答案与语境解释，并在最后检查精度、单位、定义域和所有有效解。</p>
+<aside class="check"><b>Exam check.</b> Define or identify → model → calculate with visible steps → interpret → check.</aside></article><article class="lesson"><h2>第 4 课｜抽样与中心极限定理｜Sampling and CLT</h2>
+<h3>概念拆解｜Concept and meaning</h3><p>样本均值本身是随机变量；大样本下常近似正态。</p>
+<aside><b>Detailed English explanation.</b> Begin by defining the event or random variable. Check whether trials are independent, whether probability is constant, and whether the distribution is discrete or continuous. State parameters, show the probability statement, and interpret the result in context.</aside>
+<h3>原理与方法｜Reasoning and method</h3><p>E(X̄)=μ，Var(X̄)=σ²/n；标准误σ/√n。</p>
+<h3>例题一｜Worked example</h3><p class="q">总体μ=80,σ=12,n=36，求P(X̄&gt;84)。</p><p><b>解：</b>SE=2，z=2，概率≈0.0228。</p>
+<h3>Cambridge-style application</h3><p class="q">Why does a larger sample help?</p><p><b>Solution:</b> The standard error decreases as 1/√n, so sample means cluster more tightly around μ.</p>
+<h3>变式推演与考试书写｜Transfer and exam method</h3><p>把具体数换成字母时先建立一般关系；改变范围、方向、图形性质或随机条件时重新检查适用条件。结构题应展示模型、代入、关键变形、答案与语境解释，并在最后检查精度、单位、定义域和所有有效解。</p>
+<aside class="check"><b>Exam check.</b> Define or identify → model → calculate with visible steps → interpret → check.</aside></article><article class="lesson"><h2>第 5 课｜置信区间｜Confidence intervals</h2>
+<h3>概念拆解｜Concept and meaning</h3><p>置信区间用样本估计总体参数；95%是方法的长期覆盖率，不是参数随机概率。</p>
+<aside><b>Detailed English explanation.</b> Begin by defining the event or random variable. Check whether trials are independent, whether probability is constant, and whether the distribution is discrete or continuous. State parameters, show the probability statement, and interpret the result in context.</aside>
+<h3>原理与方法｜Reasoning and method</h3><p>均值已知σ时 x̄±z*σ/√n；未知情形按考纲方法处理。</p>
+<h3>例题一｜Worked example</h3><p class="q">x̄=52,σ=8,n=64，求95%区间。</p><p><b>解：</b>52±1.96×1，即(50.04,53.96)。</p>
+<h3>Cambridge-style application</h3><p class="q">Interpret the interval.</p><p><b>Solution:</b> We are 95% confident that the population mean lies between the calculated limits.</p>
+<h3>变式推演与考试书写｜Transfer and exam method</h3><p>把具体数换成字母时先建立一般关系；改变范围、方向、图形性质或随机条件时重新检查适用条件。结构题应展示模型、代入、关键变形、答案与语境解释，并在最后检查精度、单位、定义域和所有有效解。</p>
+<aside class="check"><b>Exam check.</b> Define or identify → model → calculate with visible steps → interpret → check.</aside></article><article class="lesson"><h2>第 6 课｜假设检验｜Hypothesis testing</h2>
+<h3>概念拆解｜Concept and meaning</h3><p>H0是基准主张，H1决定单尾或双尾；显著性水平控制第一类错误概率。</p>
+<aside><b>Detailed English explanation.</b> Begin by defining the event or random variable. Check whether trials are independent, whether probability is constant, and whether the distribution is discrete or continuous. State parameters, show the probability statement, and interpret the result in context.</aside>
+<h3>原理与方法｜Reasoning and method</h3><p>写假设、分布、拒绝域或p值、决定、情境结论。</p>
+<h3>例题一｜Worked example</h3><p class="q">硬币20次正面16次，检验p&gt;0.5，5%水平。</p><p><b>解：</b>H0:p=0.5,H1:p&gt;0.5；P(X≥16)≈0.00591&lt;0.05，拒绝H0，有证据p&gt;0.5。</p>
+<h3>Cambridge-style application</h3><p class="q">What is a Type I error?</p><p><b>Solution:</b> Rejecting H0 when H0 is actually true.</p>
+<h3>变式推演与考试书写｜Transfer and exam method</h3><p>把具体数换成字母时先建立一般关系；改变范围、方向、图形性质或随机条件时重新检查适用条件。结构题应展示模型、代入、关键变形、答案与语境解释，并在最后检查精度、单位、定义域和所有有效解。</p>
+<aside class="check"><b>Exam check.</b> Define or identify → model → calculate with visible steps → interpret → check.</aside></article><article class="lesson"><h2>第 7 课｜泊松与正态近似｜Approximations</h2>
+<h3>概念拆解｜Concept and meaning</h3><p>合适条件下二项可近似泊松或正态；离散转连续正态需连续性修正。</p>
+<aside><b>Detailed English explanation.</b> Begin by defining the event or random variable. Check whether trials are independent, whether probability is constant, and whether the distribution is discrete or continuous. State parameters, show the probability statement, and interpret the result in context.</aside>
+<h3>原理与方法｜Reasoning and method</h3><p>B(n,p)泊松近似λ=np；正态近似用μ=np,σ²=np(1−p)。</p>
+<h3>例题一｜Worked example</h3><p class="q">X~B(200,0.4)，用正态近似P(X≤70)。</p><p><b>解：</b>μ=80,σ²=48；修正为P(Y&lt;70.5)，z≈−1.371，概率≈0.085。</p>
+<h3>Cambridge-style application</h3><p class="q">Why use 70.5?</p><p><b>Solution:</b> Continuity correction makes the continuous area represent discrete values up to and including 70.</p>
+<h3>变式推演与考试书写｜Transfer and exam method</h3><p>把具体数换成字母时先建立一般关系；改变范围、方向、图形性质或随机条件时重新检查适用条件。结构题应展示模型、代入、关键变形、答案与语境解释，并在最后检查精度、单位、定义域和所有有效解。</p>
+<aside class="check"><b>Exam check.</b> Define or identify → model → calculate with visible steps → interpret → check.</aside></article><article class="lesson"><h2>第 8 课｜概率母函数｜Probability generating functions</h2>
+<h3>概念拆解｜Concept and meaning</h3><p>PGF G(t)=E(t^X)编码离散分布；导数给矩。</p>
+<aside><b>Detailed English explanation.</b> Use more than one representation. A formula gives exact relationships, a graph shows shape and intersections, and a table reveals numerical patterns. Factorised, expanded and completed-square forms each expose different information.</aside>
+<h3>原理与方法｜Reasoning and method</h3><p>G(1)=1，G′(1)=E(X)，G″(1)=E[X(X−1)]。</p>
+<h3>例题一｜Worked example</h3><p class="q">G(t)=(0.7+0.3t)^5，识别分布与均值。</p><p><b>解：</b>这是B(5,0.3)的PGF，均值1.5。</p>
+<h3>Cambridge-style application</h3><p class="q">Find the variance from the model.</p><p><b>Solution:</b> np(1−p)=5×0.3×0.7=1.05.</p>
+<h3>变式推演与考试书写｜Transfer and exam method</h3><p>把具体数换成字母时先建立一般关系；改变范围、方向、图形性质或随机条件时重新检查适用条件。结构题应展示模型、代入、关键变形、答案与语境解释，并在最后检查精度、单位、定义域和所有有效解。</p>
+<aside class="check"><b>Exam check.</b> Define or identify → model → calculate with visible steps → interpret → check.</aside></article><article class="lesson"><h2>第 9 课｜S2综合推断｜Inference synthesis</h2>
+<h3>概念拆解｜Concept and meaning</h3><p>推断题的核心不是按键，而是选择模型、陈述假设并用概率作结论。</p>
+<aside><b>Detailed English explanation.</b> Translate between words, symbols, diagrams and numerical values. State assumptions, keep exact values during working, and test the final result against the original domain, scale and context.</aside>
+<h3>原理与方法｜Reasoning and method</h3><p>精度与尾部方向从H1决定；答案必须回到原情境。</p>
+<h3>例题一｜Worked example</h3><p class="q">p值0.032在1%和5%水平分别如何决定？</p><p><b>解：</b>5%时拒绝H0；1%时不拒绝H0。</p>
+<h3>Cambridge-style application</h3><p class="q">Why is “accept H0” usually avoided?</p><p><b>Solution:</b> A non-significant result means insufficient evidence against H0, not proof that H0 is true.</p>
+<h3>变式推演与考试书写｜Transfer and exam method</h3><p>把具体数换成字母时先建立一般关系；改变范围、方向、图形性质或随机条件时重新检查适用条件。结构题应展示模型、代入、关键变形、答案与语境解释，并在最后检查精度、单位、定义域和所有有效解。</p>
+<aside class="check"><b>Exam check.</b> Define or identify → model → calculate with visible steps → interpret → check.</aside></article></body></html>

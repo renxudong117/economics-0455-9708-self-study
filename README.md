@@ -16,6 +16,14 @@
 - [0455 学生册 PDF](pdf/0455-student-book.pdf)｜[0455 答案册 PDF](pdf/0455-answers.pdf)
 - [9708 学生册 PDF](pdf/9708-student-book.pdf)｜[9708 答案册 PDF](pdf/9708-answers.pdf)
 
+## Mathematics 0580 + 9709 详细学习手册
+
+- [数学套装说明与官方范围](mathematics-0580-9709-detailed/README.md)｜[HTML 阅读导航](mathematics-0580-9709-detailed/html/index.html)
+- 0580：[Core 详细学习手册](pdf/0580_Core_详细学习手册_双语版.pdf)｜[Extended 详细学习手册](pdf/0580_Extended_详细学习手册_双语版.pdf)
+- 9709 Pure：[P1](pdf/9709_P1_详细学习手册_双语版.pdf)｜[P2](pdf/9709_P2_详细学习手册_双语版.pdf)｜[P3](pdf/9709_P3_详细学习手册_双语版.pdf)
+- 9709 Applied：[M1](pdf/9709_M1_详细学习手册_双语版.pdf)｜[S1](pdf/9709_S1_详细学习手册_双语版.pdf)｜[S2](pdf/9709_S2_详细学习手册_双语版.pdf)
+- 9709 拓展/旧体系衔接：[M2](pdf/9709_M2_拓展学习手册_双语版.pdf)（非现行 2026–2027 独立考试组件）
+
 建议双面打印学生册；答案册单独装订，用于完成练习后的订正。
 
 ### 独立打印分册（推荐）

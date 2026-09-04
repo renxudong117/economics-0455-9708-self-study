@@ -1,0 +1,811 @@
+# IGCSE Mathematics 0580 Extended
+
+全套中英文详细学习手册
+
+共 31 课；每课三页展开。
+
+## 第 1 课｜数与数轴｜Number and ordering
+
+### 概念拆解
+
+整数、负数、分数和小数表示同一个数系中的不同形式；比较大小时先统一表示或放到数轴上。
+
+### 方法推导
+
+先看符号，再比较绝对值；负数绝对值越大，数值反而越小。分数比较可通分或转成小数。
+
+### 例题一
+
+把 −3/4、0.6、−0.8、2/3 按升序排列。
+
+**解：** −0.8 = −0.800，−3/4 = −0.750，0.6 = 0.600，2/3 ≈ 0.667，所以 −0.8 < −3/4 < 0.6 < 2/3。
+
+### Cambridge-style application
+
+A temperature rises from −7°C to 4°C. Find the increase.
+
+**Solution:** 4 − (−7) = 11°C. The word “increase” asks for final minus initial.
+
+### Exam method
+
+Define or identify → model → calculate with visible steps → interpret → check.
+
+## 第 2 课｜四则运算与运算顺序｜Arithmetic and BIDMAS
+
+### 概念拆解
+
+混合运算必须遵循 brackets, indices, division/multiplication, addition/subtraction；同一级从左到右。
+
+### 方法推导
+
+先标出括号与幂，再处理乘除，最后加减。负号与平方要区分：−3² = −9，而 (−3)² = 9。
+
+### 例题一
+
+计算 18 − 3(4 − 7)² ÷ 9。
+
+**解：** 括号：4−7=−3；平方得9；3×9÷9=3；所以18−3=15。
+
+### Cambridge-style application
+
+Evaluate 24 ÷ 3 × 2 + 5.
+
+**Solution:** Division and multiplication have equal priority, so work left to right: 24÷3=8, 8×2=16, then +5 gives 21.
+
+### Exam method
+
+Define or identify → model → calculate with visible steps → interpret → check.
+
+## 第 3 课｜质因数、HCF 与 LCM｜Factors and multiples
+
+### 概念拆解
+
+质因数分解把合数写成质数幂的乘积，是寻找 HCF 与 LCM 的统一工具。
+
+### 方法推导
+
+HCF 取共同质因数的较小指数；LCM 取出现过的所有质因数及较大指数。
+
+### 例题一
+
+求 84 与 126 的 HCF 和 LCM。
+
+**解：** 84=2²×3×7，126=2×3²×7。HCF=2×3×7=42；LCM=2²×3²×7=252。
+
+### Cambridge-style application
+
+Two bells ring every 18 minutes and 24 minutes. They ring together at 09:00. When next?
+
+**Solution:** LCM(18,24)=72 minutes, so the next simultaneous ring is at 10:12.
+
+### Exam method
+
+Define or identify → model → calculate with visible steps → interpret → check.
+
+## 第 4 课｜分数、小数、百分数｜Fractions, decimals and percentages
+
+### 概念拆解
+
+三种表示法可相互转换；百分数本质是“每一百份中的份数”。
+
+### 方法推导
+
+分数转小数用分子÷分母；小数转百分数乘100%；连续百分比变化必须逐次乘倍率。
+
+### 例题一
+
+一件商品先涨20%，再降20%，原价500元，求新价。
+
+**解：** 500×1.20×0.80=480。不是回到500，因为第二次20%以600为基数。
+
+### Cambridge-style application
+
+A population of 48 000 decreases by 7.5%. Find the new population.
+
+**Solution:** Multiplier = 1−0.075=0.925. New population = 48 000×0.925=44 400.
+
+### Exam method
+
+Define or identify → model → calculate with visible steps → interpret → check.
+
+## 第 5 课｜比、比例与速度｜Ratio, proportion and rate
+
+### 概念拆解
+
+比比较同类量，比例描述共同倍数，rate 比较不同单位的量，如 km/h 与 $/kg。
+
+### 方法推导
+
+先统一单位，再把比化简；按比例分配时先求总份数；直接比例可用单位法。
+
+### 例题一
+
+把840按3:4:5分配。
+
+**解：** 总份数12；每份840÷12=70；三份分别为210、280、350。
+
+### Cambridge-style application
+
+A car travels 156 km in 2 h 24 min. Find its average speed.
+
+**Solution:** 2 h 24 min = 2.4 h. Average speed = 156÷2.4=65 km/h.
+
+### Exam method
+
+Define or identify → model → calculate with visible steps → interpret → check.
+
+## 第 6 课｜标准形式与估算｜Standard form and estimation
+
+### 概念拆解
+
+标准形式写成 a×10ⁿ，其中 1≤a<10；估算通过合理取整检查答案量级。
+
+### 方法推导
+
+乘法把a相乘、指数相加；除法指数相减；最后重新规范a。
+
+### 例题一
+
+计算 (6×10⁵)(3×10⁻²)，写成标准形式。
+
+**解：** 18×10³ = 1.8×10⁴。
+
+### Cambridge-style application
+
+Estimate 19.8×0.503÷4.92.
+
+**Solution:** Use 20×0.5÷5=2. An exact calculator answer should be close to 2.
+
+### Exam method
+
+Define or identify → model → calculate with visible steps → interpret → check.
+
+## 第 7 课｜代数式与代入｜Algebraic expressions
+
+### 概念拆解
+
+字母代表可变化或未知的数；同类项必须具有完全相同的字母部分和指数。
+
+### 方法推导
+
+去括号时每一项都乘；代入负数时加括号；先化简再代入通常更稳。
+
+### 例题一
+
+化简 3(2x−5)−2(x+4)。
+
+**解：** 6x−15−2x−8=4x−23。
+
+### Cambridge-style application
+
+Find 2a²−3b when a=−4 and b=5.
+
+**Solution:** 2(−4)²−3(5)=32−15=17. Brackets preserve the negative value before squaring.
+
+### Exam method
+
+Define or identify → model → calculate with visible steps → interpret → check.
+
+## 第 8 课｜一次方程与公式变形｜Equations and formulae
+
+### 概念拆解
+
+解方程是在等号两边做相同运算，保持等式平衡；公式变形则把目标字母单独留下。
+
+### 方法推导
+
+先清括号与分母，合并同类项，再把未知项放一侧、常数放另一侧。
+
+### 例题一
+
+解 5(2x−1)=3x+16。
+
+**解：** 10x−5=3x+16；7x=21；x=3。代回两边均为25。
+
+### Cambridge-style application
+
+Make r the subject of A=πr².
+
+**Solution:** Divide by π: r²=A/π. Take the positive square root for a radius: r=√(A/π).
+
+### Exam method
+
+Define or identify → model → calculate with visible steps → interpret → check.
+
+## 第 9 课｜数列与函数机器｜Sequences and functions
+
+### 概念拆解
+
+数列规律可由相邻差、二阶差或倍数识别；线性数列通项是 an+b。
+
+### 方法推导
+
+公差d就是n的系数；用第一项求常数：a+d=首项。
+
+### 例题一
+
+求 7, 11, 15, 19,… 的第n项与第50项。
+
+**解：** 公差4，所以通项4n+3；第50项=203。
+
+### Cambridge-style application
+
+A machine multiplies by 3 then subtracts 5. The output is 16. Find the input.
+
+**Solution:** Let input be x: 3x−5=16, so x=7. Reverse operations also gives (16+5)÷3=7.
+
+### Exam method
+
+Define or identify → model → calculate with visible steps → interpret → check.
+
+## 第 10 课｜坐标、直线与梯度｜Coordinates and straight lines
+
+### 概念拆解
+
+梯度表示纵向变化÷横向变化；直线 y=mx+c 中 m 是梯度，c 是纵轴截距。
+
+### 方法推导
+
+从两点求m=(y₂−y₁)/(x₂−x₁)，再代一点求c；平行线梯度相同。
+
+### 例题一
+
+求过(2,5)和(6,13)的直线方程。
+
+**解：** m=(13−5)/(6−2)=2；5=2×2+c，所以c=1，方程y=2x+1。
+
+### Cambridge-style application
+
+Find the gradient of a line perpendicular to y=−0.5x+4.
+
+**Solution:** Perpendicular gradients multiply to −1, so the gradient is 2.
+
+### Exam method
+
+Define or identify → model → calculate with visible steps → interpret → check.
+
+## 第 11 课｜角、平行线与多边形｜Angles and polygons
+
+### 概念拆解
+
+点周角360°、直线角180°；平行线产生对应角、内错角相等，同旁内角和180°。
+
+### 方法推导
+
+多边形内角和=(n−2)×180°；正多边形每个外角=360°/n。
+
+### 例题一
+
+正十五边形每个内角是多少？
+
+**解：** 外角=360÷15=24°；内角=180−24=156°。
+
+### Cambridge-style application
+
+A regular polygon has exterior angle 30°. Find its number of sides.
+
+**Solution:** n=360÷30=12.
+
+### Exam method
+
+Define or identify → model → calculate with visible steps → interpret → check.
+
+## 第 12 课｜全等、相似与比例尺｜Congruence and similarity
+
+### 概念拆解
+
+全等图形形状大小相同；相似图形角相等、对应边成比例。
+
+### 方法推导
+
+长度按比例因子k变化，面积按k²，体积按k³。先找对应边。
+
+### 例题一
+
+两个相似三角形边长比2:5，小三角形面积32，求大三角形面积。
+
+**解：** 面积比4:25，大面积=32×25/4=200。
+
+### Cambridge-style application
+
+A map scale is 1:50 000. Two points are 7.2 cm apart. Find the real distance.
+
+**Solution:** 7.2×50 000=360 000 cm=3.6 km.
+
+### Exam method
+
+Define or identify → model → calculate with visible steps → interpret → check.
+
+## 第 13 课｜周长、面积与圆｜Mensuration and circles
+
+### 概念拆解
+
+复合图形应拆成基本图形；圆周长2πr，面积πr²，弧长和扇形面积按圆心角占360°的比例。
+
+### 方法推导
+
+画草图、标单位，区分半径和直径；最终按题意取舍小数位。
+
+### 例题一
+
+半径6 cm、圆心角120°的扇形面积。
+
+**解：** (120/360)×π×6²=12π≈37.7 cm²。
+
+### Cambridge-style application
+
+A semicircle has diameter 10 cm. Find its perimeter.
+
+**Solution:** Half circumference + diameter = 5π+10 ≈25.7 cm. Do not omit the straight edge.
+
+### Exam method
+
+Define or identify → model → calculate with visible steps → interpret → check.
+
+## 第 14 课｜体积、表面积与单位换算｜Volume and surface area
+
+### 概念拆解
+
+体积衡量三维空间，单位立方；表面积是所有外表面的面积，单位平方。
+
+### 方法推导
+
+棱柱体积=截面积×长度；圆柱体积=πr²h。换单位时平方或立方倍率。
+
+### 例题一
+
+圆柱半径3 cm、高10 cm，求体积。
+
+**解：** V=π×3²×10=90π≈283 cm³。
+
+### Cambridge-style application
+
+Convert 2.4 m³ to cm³.
+
+**Solution:** 1 m=100 cm, so 1 m³=100³=1 000 000 cm³. Therefore 2.4 m³=2 400 000 cm³.
+
+### Exam method
+
+Define or identify → model → calculate with visible steps → interpret → check.
+
+## 第 15 课｜勾股与直角三角形三角比｜Pythagoras and trigonometry
+
+### 概念拆解
+
+勾股只适用于直角三角形；SOHCAHTOA 用已知边和目标边选择比值。
+
+### 方法推导
+
+先标 hypotenuse、opposite、adjacent，再决定 sin/cos/tan；角度模式必须为degree。
+
+### 例题一
+
+直角三角形两直角边7和24，求斜边。
+
+**解：** c=√(7²+24²)=√625=25。
+
+### Cambridge-style application
+
+From a point 30 m from a tower, the angle of elevation is 38°. Find the height.
+
+**Solution:** tan38°=h/30, so h=30tan38°≈23.4 m.
+
+### Exam method
+
+Define or identify → model → calculate with visible steps → interpret → check.
+
+## 第 16 课｜变换｜Transformations
+
+### 概念拆解
+
+平移用列向量，旋转要给中心、角度和方向，反射要给镜面，放大要给中心与比例因子。
+
+### 方法推导
+
+逐点作图再连接；描述变换时缺少任一关键参数都会失分。
+
+### 例题一
+
+点A(2,−1)按列向量(−3,4)平移后坐标。
+
+**解：** A′=(2−3,−1+4)=(−1,3)。
+
+### Cambridge-style application
+
+Describe a rotation mapping (2,0) to (0,2) about the origin.
+
+**Solution:** A rotation of 90° anticlockwise about (0,0).
+
+### Exam method
+
+Define or identify → model → calculate with visible steps → interpret → check.
+
+## 第 17 课｜向量｜Vectors
+
+### 概念拆解
+
+向量表示有大小和方向的位移；位置向量从原点指向点，路径相加遵循首尾法。
+
+### 方法推导
+
+AB=b−a；平行向量是标量倍数；用同一组基向量表达后比较系数。
+
+### 例题一
+
+a=(3,−2)，b=(−1,5)，求2a−b。
+
+**解：** 2a−b=(6,−4)−(−1,5)=(7,−9)。
+
+### Cambridge-style application
+
+A has position vector a and B has b. M is the midpoint of AB. Find OM.
+
+**Solution:** OM=(a+b)/2 because the midpoint averages corresponding coordinates.
+
+### Exam method
+
+Define or identify → model → calculate with visible steps → interpret → check.
+
+## 第 18 课｜概率基础｜Probability
+
+### 概念拆解
+
+概率介于0和1；互斥事件不能同时发生，独立事件互不影响。
+
+### 方法推导
+
+所有结果概率和为1；OR 对互斥事件相加；AND 对独立事件相乘。
+
+### 例题一
+
+袋中5红3蓝，不放回抽两球，求两球均红。
+
+**解：** 5/8×4/7=5/14。不放回使第二次分母与红球数改变。
+
+### Cambridge-style application
+
+P(A)=0.35, P(B)=0.4 and A,B are mutually exclusive. Find P(A or B).
+
+**Solution:** 0.35+0.40=0.75.
+
+### Exam method
+
+Define or identify → model → calculate with visible steps → interpret → check.
+
+## 第 19 课｜统计图表与平均数｜Statistics and averages
+
+### 概念拆解
+
+mean 使用全部数据，median 看中间位置，mode 看最高频；range 衡量极差。
+
+### 方法推导
+
+频数表均值=Σfx/Σf；分组数据用组中值估计，必须写 estimated mean。
+
+### 例题一
+
+数据2,4,4,7,8的均值、中位数和众数。
+
+**解：** mean=25/5=5；median=4；mode=4。
+
+### Cambridge-style application
+
+For values 1,2,3 with frequencies 2,5,3, find the mean.
+
+**Solution:** Σfx=2+10+9=21, Σf=10, so mean=2.1.
+
+### Exam method
+
+Define or identify → model → calculate with visible steps → interpret → check.
+
+## 第 20 课｜累计频数与散点图｜Cumulative frequency and correlation
+
+### 概念拆解
+
+累计频数曲线用于估计中位数、四分位数和百分位；散点图描述相关而非因果。
+
+### 方法推导
+
+中位数位置N/2，Q1为N/4，Q3为3N/4；IQR=Q3−Q1。
+
+### 例题一
+
+80个数据中，从曲线读得Q1=24、Q3=41，求IQR。
+
+**解：** IQR=41−24=17。
+
+### Cambridge-style application
+
+A scatter graph shows negative correlation. What does this mean?
+
+**Solution:** As one variable tends to increase, the other tends to decrease. It does not prove causation.
+
+### Exam method
+
+Define or identify → model → calculate with visible steps → interpret → check.
+
+## 第 21 课｜集合与维恩图｜Sets and Venn diagrams
+
+### 概念拆解
+
+集合用元素描述对象；交集A∩B表示同时属于，合集A∪B表示至少属于一个，补集A′表示不属于A。
+
+### 方法推导
+
+先把交集放入重叠区，再填仅A、仅B，最后填全集中两者之外。
+
+### 例题一
+
+全集50人，|A|=28，|B|=21，|A∩B|=9，求两者都不参加的人数。
+
+**解：** |A∪B|=28+21−9=40；都不参加=50−40=10。
+
+### Cambridge-style application
+
+Given n(U)=80, n(A)=45, n(B)=38, n(A∪B)=67, find n(A∩B).
+
+**Solution:** 45+38−67=16.
+
+### Exam method
+
+Define or identify → model → calculate with visible steps → interpret → check.
+
+## 第 22 课｜指数、根式与分数指数｜Indices and surds
+
+### 概念拆解
+
+指数律来自重复乘法；分数指数连接幂与根式，a^(m/n)=ⁿ√(a^m)。
+
+### 方法推导
+
+同底相乘指数相加，相除指数相减，幂的幂指数相乘；根式只合并同类根式。
+
+### 例题一
+
+化简 √48−√12+2√3。
+
+**解：** √48=4√3，√12=2√3，所以4√3−2√3+2√3=4√3。
+
+### Cambridge-style application
+
+Simplify (27x⁶)^(1/3).
+
+**Solution:** Cube root each factor: 3x².
+
+### Exam method
+
+Define or identify → model → calculate with visible steps → interpret → check.
+
+## 第 23 课｜二次方程与图像｜Quadratics
+
+### 概念拆解
+
+二次函数图像是抛物线；根是与x轴交点，顶点给最大或最小值。
+
+### 方法推导
+
+优先因式分解；否则用公式 x=[−b±√(b²−4ac)]/(2a)；判别式判断实根个数。
+
+### 例题一
+
+解 2x²−7x+3=0。
+
+**解：** (2x−1)(x−3)=0，所以x=1/2或3。
+
+### Cambridge-style application
+
+For y=x²−6x+5, find the turning point.
+
+**Solution:** Complete the square: y=(x−3)²−4, so the turning point is (3,−4).
+
+### Exam method
+
+Define or identify → model → calculate with visible steps → interpret → check.
+
+## 第 24 课｜不等式与区域｜Inequalities and regions
+
+### 概念拆解
+
+不等式表示范围；乘除负数时符号反向。二维不等式用边界线和阴影区域表示。
+
+### 方法推导
+
+实线表示≤或≥，虚线表示<或>；用测试点判断阴影侧。
+
+### 例题一
+
+解 −3(2x−1)>9。
+
+**解：** −6x+3>9；−6x>6；除以−6后反向，x<−1。
+
+### Cambridge-style application
+
+Shade y≤2x+1 and x>0.
+
+**Solution:** Draw y=2x+1 as a solid line, x=0 as a dashed line; shade below the first and right of the second.
+
+### Exam method
+
+Define or identify → model → calculate with visible steps → interpret → check.
+
+## 第 25 课｜函数、反函数与复合函数｜Functions
+
+### 概念拆解
+
+函数把每个允许输入映射到唯一输出；反函数撤销原函数，复合函数按从右到左作用。
+
+### 方法推导
+
+求反函数：写y=f(x)，交换x,y，再解y；同时考虑定义域。
+
+### 例题一
+
+f(x)=3x−5，求f⁻¹(x)和f⁻¹(10)。
+
+**解：** y=3x−5；交换得x=3y−5；y=(x+5)/3。因此f⁻¹(10)=5。
+
+### Cambridge-style application
+
+If f(x)=x² and g(x)=x+1, find fg(3).
+
+**Solution:** fg(3)=f(g(3))=f(4)=16.
+
+### Exam method
+
+Define or identify → model → calculate with visible steps → interpret → check.
+
+## 第 26 课｜比例、变化率与增长衰减｜Variation and growth
+
+### 概念拆解
+
+直接变化y∝x，反比例y∝1/x；复合变化必须先写含常数k的方程。
+
+### 方法推导
+
+用一组数据求k，再代新数据；增长衰减用反复乘同一倍率。
+
+### 例题一
+
+y与x²成正比，x=3时y=18，求x=5时y。
+
+**解：** y=kx²；18=9k，k=2；y=2×25=50。
+
+### Cambridge-style application
+
+A value depreciates 12% yearly from 25 000. Find it after 4 years.
+
+**Solution:** 25 000(0.88)⁴≈14 993.
+
+### Exam method
+
+Define or identify → model → calculate with visible steps → interpret → check.
+
+## 第 27 课｜圆定理｜Circle theorems
+
+### 概念拆解
+
+圆周角、圆心角、切线与弦之间有固定关系；答题必须说明所用定理。
+
+### 方法推导
+
+同弧圆心角是圆周角两倍；半圆圆周角90°；同弦同弓形角相等；切线垂直半径。
+
+### 例题一
+
+弧AB的圆心角AOB=124°，求同弧圆周角ACB。
+
+**解：** 圆周角=124°÷2=62°。
+
+### Cambridge-style application
+
+A tangent touches a circle at T and OT is a radius. Find angle between OT and tangent.
+
+**Solution:** 90°, because a tangent is perpendicular to the radius at the point of contact.
+
+### Exam method
+
+Define or identify → model → calculate with visible steps → interpret → check.
+
+## 第 28 课｜正弦、余弦定理与三维问题｜Advanced trigonometry
+
+### 概念拆解
+
+非直角三角形用 sine rule、cosine rule 和面积公式½ab sinC；三维题先找到含目标的平面三角形。
+
+### 方法推导
+
+已知边角对应关系时用正弦定理；三边或夹角用余弦定理。
+
+### 例题一
+
+两边7、10夹角48°，求第三边。
+
+**解：** c²=7²+10²−2×7×10cos48°，c≈7.45。
+
+### Cambridge-style application
+
+Find area when a=8, b=11 and included angle is 35°.
+
+**Solution:** Area=½×8×11×sin35°≈25.2 square units.
+
+### Exam method
+
+Define or identify → model → calculate with visible steps → interpret → check.
+
+## 第 29 课｜矩阵与变换｜Matrices
+
+### 概念拆解
+
+2×2矩阵可表示平面线性变换；列向量输入左乘矩阵得到像。
+
+### 方法推导
+
+用基向量(1,0),(0,1)的像构造矩阵两列；矩阵乘法注意行乘列。
+
+### 例题一
+
+矩阵[[0,−1],[1,0]]作用于(3,2)。
+
+**解：** 得到(−2,3)，表示绕原点逆时针旋转90°。
+
+### Cambridge-style application
+
+Find determinant of [[4,1],[2,3]].
+
+**Solution:** det=4×3−1×2=10.
+
+### Exam method
+
+Define or identify → model → calculate with visible steps → interpret → check.
+
+## 第 30 课｜概率树、条件概率｜Tree diagrams and conditional probability
+
+### 概念拆解
+
+条件概率改变样本空间；不放回抽取会改变第二层分支概率。
+
+### 方法推导
+
+沿路径相乘，互斥路径相加；P(A|B)=P(A∩B)/P(B)。
+
+### 例题一
+
+盒中4白2黑，不放回抽2个，求恰好1白。
+
+**解：** 4/6×2/5 + 2/6×4/5 = 8/15。
+
+### Cambridge-style application
+
+Given P(A∩B)=0.18 and P(B)=0.3, find P(A|B).
+
+**Solution:** 0.18÷0.3=0.6.
+
+### Exam method
+
+Define or identify → model → calculate with visible steps → interpret → check.
+
+## 第 31 课｜直方图与统计比较｜Histograms and comparison
+
+### 概念拆解
+
+组距不等时柱高是frequency density，不是frequency；面积代表频数。
+
+### 方法推导
+
+frequency density=frequency/class width。比较分布要同时比较中心和离散。
+
+### 例题一
+
+组20≤x<30频数24，求频数密度。
+
+**解：** 组距10，密度=24/10=2.4。
+
+### Cambridge-style application
+
+Class A has lower median and smaller IQR than B. Interpret.
+
+**Solution:** A has a lower typical value and is more consistent because its middle 50% is less spread out.
+
+### Exam method
+
+Define or identify → model → calculate with visible steps → interpret → check.
