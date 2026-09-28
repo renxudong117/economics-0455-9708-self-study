@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>与 DHH 炉边谈话｜主持人提纲 v1</title>
+  <style>
+    :root{--ink:#171717;--red:#b90000;--wine:#780000;--paper:#fbfaf8;--line:#dfd9d2;--soft:#f1efec;--gold:#b88a36;--muted:#666}
+    *{box-sizing:border-box} body{margin:0;background:var(--paper);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;line-height:1.75}
+    main{max-width:960px;margin:auto;padding:42px 28px 80px}.eyebrow{letter-spacing:.15em;text-transform:uppercase;font:700 12px/1.2 ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--red);margin-bottom:18px}.kicker{font-size:15px;color:var(--muted);border-left:3px solid var(--gold);padding-left:12px;margin:16px 0 32px}h1{font-size:clamp(34px,5.3vw,58px);line-height:1.12;letter-spacing:-.045em;margin:0 0 15px;max-width:790px}h1 em{font-style:normal;color:var(--red)}.subtitle{font-size:20px;color:#444;max-width:770px;margin:0 0 28px}.rule{height:1px;background:var(--ink);margin:35px 0}.lead{font-size:19px;max-width:800px}.callout{border:1px solid var(--line);border-left:5px solid var(--red);background:#fff;padding:18px 20px;margin:28px 0}.callout strong{color:var(--red)}
+    figure{margin:35px 0 44px;padding:18px;background:#fff;border:1px solid var(--line)}svg{display:block;width:100%;height:auto}figcaption{font-size:13px;color:#666;margin:13px 4px 2px}h2{font-size:28px;line-height:1.25;margin:52px 0 15px;letter-spacing:-.025em}h3{font-size:18px;line-height:1.35;margin:0 0 7px}.section-note{color:#666;font-size:15px;margin-top:-7px}.schedule{display:grid;grid-template-columns:110px 1fr;gap:0;border-top:1px solid var(--line);margin:20px 0 30px}.schedule div{padding:13px 14px;border-bottom:1px solid var(--line)}.schedule div:nth-child(odd){font:800 13px/1.55 ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--red);background:#fff}.schedule div:nth-child(even){background:#fff}.questions{display:grid;gap:15px}.question{padding:20px 21px;background:#fff;border:1px solid var(--line);position:relative}.num{font:800 14px/1 ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--red);letter-spacing:.08em}.question p{margin:9px 0 0}.en{font-family:Georgia,"Times New Roman",serif;color:#5b534a;font-size:16px}.why{font-size:14px;color:#666;border-top:1px solid #eee6df;padding-top:10px;margin-top:12px}.follow{margin-top:10px;padding:10px 13px;background:var(--soft);font-size:14px}.follow b{color:var(--wine)}.chip{display:inline-block;border:1px solid #d2b7af;border-radius:999px;padding:2px 9px;font-size:12px;color:var(--wine);margin-right:5px}.two{display:grid;grid-template-columns:1fr 1fr;gap:17px}.card{padding:18px;background:#fff;border-top:3px solid var(--red);border-bottom:1px solid var(--line)}.card p{margin:8px 0 0}.small{font-size:14px;color:#555}.prompt{margin:10px 0;padding:13px 15px;background:#191919;color:#fff;font-size:15px}.prompt b{color:#ffd8d3}.sources{font-size:14px;color:#555;padding:20px;background:#f2efeb}.sources li{margin:7px 0}.sources a{color:var(--wine)}.footer{font-size:13px;color:#777;margin-top:35px;border-top:1px solid var(--line);padding-top:15px}@media(max-width:700px){main{padding:27px 18px 55px}.two{grid-template-columns:1fr}.schedule{grid-template-columns:84px 1fr}h2{font-size:25px}}
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="eyebrow">Moderator brief · 60–90 minutes · v1</div>
+    <h1>从 <em>“Pencils Down”</em> 到<br>“可塑的机器”</h1>
+    <p class="subtitle">与 DHH 的炉边谈话：不把他问成“AI 观点代言人”，而是追问一位长期做软件的人，如何在 Agent 时代重新理解创造、架构、所有权与共同体。</p>
+    <p class="kicker">主持人工作稿｜问题以中文写出，并配可直接使用的英文问法；可按现场回应自由删减与重排。</p>
+  </header>
+
+  <p class="lead">这不是一场“AI 会不会取代程序员”的辩论。更有意思的主线是：DHH 在很短时间内从谨慎地谈受监督协作，走到把手写代码称作例外；与此同时，他仍然反复强调架构、品味、运行速度、用户对机器的控制权，以及维护者的最终判断。谈话应让听众看见这条变化背后的<strong>工作方法</strong>，而不是把几句锋利口号剪成结论。</p>
+
+  <figure>
+    <svg viewBox="0 0 900 410" role="img" aria-labelledby="map-title map-desc">
+      <title id="map-title">炉边谈话的叙事路线</title><desc id="map-desc">从变化、工程、框架、计算机、共同体到未来的六段路线。</desc>
+      <rect width="900" height="410" fill="#fbfaf8"/>
+      <text x="30" y="46" font-size="18" font-weight="800" fill="#171717">一场好的对谈，不是六个话题；它是一条不断扩大“人该负责什么”的路线。</text>
+      <path d="M100 245 C210 95,300 95,395 205 S570 350,680 184 S785 105,835 150" fill="none" stroke="#b90000" stroke-width="6"/>
+      <g font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif">
+        <g><circle cx="100" cy="245" r="28" fill="#b90000"/><text x="100" y="251" text-anchor="middle" fill="#fff" font-size="14" font-weight="800">变化</text><text x="100" y="296" text-anchor="middle" fill="#171717" font-size="14" font-weight="800">为什么改变？</text></g>
+        <g><circle cx="257" cy="132" r="28" fill="#b90000"/><text x="257" y="138" text-anchor="middle" fill="#fff" font-size="14" font-weight="800">工程</text><text x="257" y="183" text-anchor="middle" fill="#171717" font-size="14" font-weight="800">谁来判断？</text></g>
+        <g><circle cx="430" cy="232" r="28" fill="#b90000"/><text x="430" y="238" text-anchor="middle" fill="#fff" font-size="14" font-weight="800">框架</text><text x="430" y="283" text-anchor="middle" fill="#171717" font-size="14" font-weight="800">约定为何重要？</text></g>
+        <g><circle cx="585" cy="286" r="28" fill="#b90000"/><text x="585" y="292" text-anchor="middle" fill="#fff" font-size="14" font-weight="800">机器</text><text x="585" y="337" text-anchor="middle" fill="#171717" font-size="14" font-weight="800">谁拥有它？</text></g>
+        <g><circle cx="720" cy="155" r="28" fill="#b90000"/><text x="720" y="161" text-anchor="middle" fill="#fff" font-size="14" font-weight="800">社区</text><text x="720" y="106" text-anchor="middle" fill="#171717" font-size="14" font-weight="800">怎样共创？</text></g>
+        <g><circle cx="835" cy="150" r="28" fill="#b88a36"/><text x="835" y="156" text-anchor="middle" fill="#fff" font-size="14" font-weight="800">未来</text><text x="835" y="202" text-anchor="middle" fill="#171717" font-size="14" font-weight="800">下一件作品？</text></g>
+      </g>
+      <text x="30" y="385" font-size="13" fill="#666">主持人提示：每段都让他讲一个具体时刻、一个失败或取舍，再自然转向下一段。</text>
+    </svg>
+    <figcaption>图 1｜由“变化”进入，由“未来”收束；技术、产品、开源与人的问题在同一条线上，而非彼此割裂。</figcaption>
+  </figure>
+
+  <div class="callout"><strong>建议的主命题：</strong>当 Agent 可以实现更多，软件的稀缺资源并没有消失，而是从“写出实现”转向“提出值得做的事、维持系统的内在一致、建立可信的反馈，以及让人仍能拥有并塑造自己的计算环境”。</div>
+
+  <h2>一、时间安排：75 分钟为主，90 分钟可展开</h2>
+  <div class="schedule">
+    <div>0–7 min</div><div><strong>开场：</strong>“过去一年，你似乎不是换了一个工具，而是换了一种与电脑相处的方式。”用一个具体变化入场。</div>
+    <div>7–20 min</div><div><strong>从怀疑到投入：</strong>Agent 带来了什么；最初的失败如何改变了方法。</div>
+    <div>20–36 min</div><div><strong>工程的重新分工：</strong><em>Pencils Down</em>、架构、验证、品味与责任。</div>
+    <div>36–48 min</div><div><strong>Rails、Rust 与约定：</strong>不做“哪一个取代哪一个”的假二选一，谈如何重新估算架构成本。</div>
+    <div>48–60 min</div><div><strong>Omarchy 与可塑的机器：</strong>默认答案、用户所有权、Agent 可访问性。</div>
+    <div>60–72 min</div><div><strong>开源共同体：</strong>Agent 贡献如何提升，而非稀释，维护者判断如何留下。</div>
+    <div>72–82 min</div><div><strong>全球视角：</strong>面向不同语言、模型和开发者群体，什么才是有吸引力的开放协作。</div>
+    <div>82–90 min</div><div><strong>收束：</strong>留给下一代开发者的一条实践建议，以及他还想亲手看见的未来。</div>
+  </div>
+  <p class="small"><strong>60 分钟压缩版：</strong>保留第 1、3、5、7、9、11、13、15、17 题；每题只追问一次。<strong>90 分钟版：</strong>每段多保留一个追问，并让观众在“开源共同体”之后参与 8–10 分钟问答。</p>
+
+  <h2>二、核心问题卡</h2>
+  <p class="section-note">共 17 题。不是题库竞赛；现场通常只需要 11–13 题。标注 <span class="chip">必问</span> 的题构成完整 60 分钟主线。</p>
+  <div class="questions">
+    <article class="question"><span class="num">01 · 开场</span><span class="chip">必问</span><h3>过去一年，是什么让你不再只是“试用 AI”，而是开始改变自己的工作方式？</h3><p class="en">“Over the last year, what made you move from merely trying AI to changing how you actually work with computers?”</p><p class="why">用“变化”而非“立场”开场，给他机会讲真实经历，而不是重演争论。</p><div class="follow"><b>追问：</b>有没有一个原本不会开始的项目，突然变得值得做了？</div></article>
+    <article class="question"><span class="num">02 · 愉悦</span><h3>你写过“endless execution”：每个想法都仿佛更接近可执行。这个状态带给你的，除了速度，还有什么？</h3><p class="en">“You wrote about ‘endless execution’. Beyond speed, what has that state changed in the way you imagine and choose ideas?”</p><p class="why">把“效率”转回创造欲与取舍；这会让对话有温度，但不走向泛泛的哲学。</p></article>
+    <article class="question"><span class="num">03 · 失败</span><span class="chip">必问</span><h3>你谈过早期让更多人用 Agent 提交改动，结果架构反而失去一致性。后来真正改变了什么：模型、工具链、代码库规则，还是你自己的介入方式？</h3><p class="en">“You’ve described early agent-assisted contributions that made the architecture less coherent. What actually changed afterwards: the models, the harness, the repository rules, or your own role?”</p><p class="why">先让他讲失败，之后再谈 <em>Pencils Down</em> 才不显得口号化。</p></article>
+    <article class="question"><span class="num">04 · 边界</span><h3>你如何区分“vibe coding”与真正的 agentic engineering？如果一个团队自称在用 Agent，你最想先看它的哪三件事？</h3><p class="en">“How do you distinguish vibe coding from agentic engineering? If a team says it is agentic, what are the first three things you would inspect?”</p><p class="why">把抽象概念压到可观察的工程能力：任务边界、反馈/测试、审查和部署责任。</p></article>
+    <article class="question"><span class="num">05 · Pencils Down</span><span class="chip">必问</span><h3>“手写代码成为例外”最容易被误解。对你而言，它究竟是一个组织原则、一个个人习惯，还是一种用来发现工作流缺陷的报警器？</h3><p class="en">“‘Handwritten code is the exception’ is easy to misunderstand. For you, is it an organizational principle, a personal habit, or an alarm that reveals a broken workflow?”</p><p class="why">请他定义这句话，而不是主持人替他定义。避免落入“人还要不要写代码”的二元问题。</p><div class="follow"><b>追问：</b>在什么情况下，你仍然会主动亲手写，或要求人亲手写？</div></article>
+    <article class="question"><span class="num">06 · 人的工作</span><h3>当实现越来越便宜，人的瓶颈是否变成了判断、品味和沟通？这些能力如何被训练，而不只是被赞美？</h3><p class="en">“As implementation gets cheaper, do judgment, taste, and communication become the bottlenecks? How can teams train these skills, rather than merely praise them?”</p><p class="why">这会把“人留在环里”落到组织实践，而非职业焦虑。</p></article>
+    <article class="question"><span class="num">07 · Rails</span><span class="chip">必问</span><h3>你把 Rails 的 <em>Convention over Configuration</em> 重新解释为 Token 效率。请给一个非 Rails 开发者也能理解的例子：什么样的“约定”，会让人和 Agent 都少走弯路？</h3><p class="en">“You’ve reframed Convention over Configuration as token efficiency. Can you give a non-Rails example of a convention that helps both people and agents waste less context?”</p><p class="why">把 Rails 的历史哲学讲成所有工程团队都能带走的方法。</p></article>
+    <article class="question"><span class="num">08 · 架构</span><h3>HEY 的原生客户端与 Rust 后端，是一次很强烈的架构选择。我们不把它理解成“Rails 被 Rust 取代”；它真正说明了哪些成本，正在被 Agent 重新定价？</h3><p class="en">“Without turning this into ‘Rust replaces Rails’, what costs are agents repricing in an architectural decision like the new HEY stack?”</p><p class="why">用“重新定价”替代“取代”，既准确也能引出性能、部署、体验与团队成本。</p><div class="follow"><b>追问：</b>什么情况下，Web + Rails 仍然是最好的答案？</div></article>
+    <article class="question"><span class="num">09 · 速度</span><span class="chip">必问</span><h3>你一直在意启动时间、响应和小团队的速度。今天的 Agent 会不会让我们更容易造出“更多但更重”的软件？怎样让生成能力反过来帮助我们做出更轻、更快、更可维护的系统？</h3><p class="en">“Could agents make it easier to produce more—but heavier—software? How do we use generative capacity to make systems lighter, faster, and more maintainable instead?”</p><p class="why">这是对“AI 代码优先”最友善也最必要的压力测试。</p></article>
+    <article class="question"><span class="num">10 · 所有权</span><h3>你用“可塑的机器”描述 Omarchy：用户可以先获得一套完整答案，再把它改成自己的。<em>omakase</em> 的默认主见，与用户真正拥有机器之间，怎样保持张力而不冲突？</h3><p class="en">“Omarchy starts with an opinionated default, then invites people to make it their own. How do you hold that tension between a strong default and genuine ownership?”</p><p class="why">这让“拥有计算机”不止停留在开源许可证，而进入产品设计与迁移自由。</p></article>
+    <article class="question"><span class="num">11 · Agent 可访问性</span><span class="chip">必问</span><h3>Basecamp 正在变得 agent-accessible：API、CLI、Skills 都是产品的一部分。未来产品应让 Agent 更像人一样使用现有环境，还是应当为 Agent 重画接口和权限边界？</h3><p class="en">“As products become agent-accessible through APIs, CLIs, and skills, should agents adapt to human environments, or should we redesign interfaces and permission boundaries for agents?”</p><p class="why">从开发工具进入真实业务软件，也自然带出权限、审计、用户授权与可信执行。</p></article>
+    <article class="question"><span class="num">12 · 安全</span><h3>当 Agent 可以持续运行、拥有记忆并代表用户行动时，怎样让“给它更多能力”不演变为“交出无法收回的权限”？</h3><p class="en">“When agents can persist, remember, and act for users, how do we expand capability without handing over permissions we cannot take back?”</p><p class="why">这是高质量听众会关心的现实问题。问原则与产品设计，不要求他给出危险的操作细节。</p></article>
+    <article class="question"><span class="num">13 · 开源</span><span class="chip">必问</span><h3>Agent 可以筛选、测试、总结 Pull Request，但最终“该往哪里去”仍需要人决定。什么样的开源项目会因 Agent 贡献而更有生命力，而不是被低成本改动淹没？</h3><p class="en">“Agents can triage, test, and summarize pull requests, but humans still decide where a project goes. What makes an open-source project more alive with agents rather than drowned by cheap changes?”</p><p class="why">回到维护者、贡献者与治理的核心；对全球开源社区都具有共鸣。</p></article>
+    <article class="question"><span class="num">14 · 文化</span><h3>Omarchy 既谈工程，也谈美、玩心和共同体。你认为这种“喜欢电脑本身”的情感，在今天仍然是严肃技术项目的竞争力吗？</h3><p class="en">“Omarchy makes room for beauty, play, and community. Is a love of computers itself still a competitive advantage for serious technical projects?”</p><p class="why">让他谈文化而不必落入意识形态或围绕争议表述打转。</p></article>
+    <article class="question"><span class="num">15 · 全球协作</span><span class="chip">必问</span><h3>你同时使用不同国家、不同开放程度的模型与工具。对一个想真正走向全球的开源项目而言，除了英文文档与 GitHub，它还要提供什么，才能让不同地区的开发者成为共同作者？</h3><p class="en">“You work with models and tools from many places. For an open-source project that wants to become genuinely global, what must it offer beyond English documentation and a GitHub repository?”</p><p class="why">从中国及全球开发者的现实出发，但不把嘉宾推到地缘政治表态中。</p></article>
+    <article class="question"><span class="num">16 · 给团队</span><h3>如果你今天面对一支很小、资源有限、但希望把 Agent 与开源做好的一线团队，你会让他们先少做什么，又先建立什么？</h3><p class="en">“If you were advising a small, resource-constrained team trying to do agents and open source well, what would you tell them to stop doing first—and what would you have them build first?”</p><p class="why">为企业、创业者和开发者听众留下一条直接可用的建议。</p></article>
+    <article class="question"><span class="num">17 · 收束</span><span class="chip">必问</span><h3>请完成这句话：在 Agent 时代，计算机真正重新属于我们，不是当它替我们做得更多，而是当它……</h3><p class="en">“Finish this sentence: In the age of agents, a computer truly belongs to us not when it does more for us, but when it…”</p><p class="why">一句有记忆点的结尾。若他不喜欢填空，可替换为：“你希望三年后人们仍然记得什么？”</p></article>
+  </div>
+
+  <h2>三、主持人的转场句</h2>
+  <div class="two">
+    <div class="card"><h3>把口号拉回现实</h3><p class="prompt"><b>“I don’t want to turn that into a slogan. Can we make it concrete?”</b></p><p class="small">适用于 <em>Pencils Down</em>、AI 生产力、开源与“拥有计算机”等大词之后。</p></div>
+    <div class="card"><h3>不制造假对立</h3><p class="prompt"><b>“Let me put that without forcing a false choice…”</b></p><p class="small">适用于 Rails / Rust、Web / Native、用户便利 / 用户控制等话题。</p></div>
+    <div class="card"><h3>把判断问成方法</h3><p class="prompt"><b>“What would that look like on a normal Tuesday for a small team?”</b></p><p class="small">把宏观判断落回团队、代码库、产品路线和反馈机制。</p></div>
+    <div class="card"><h3>友善地压力测试</h3><p class="prompt"><b>“What is the strongest counterargument to your own excitement?”</b></p><p class="small">比“你是否太乐观”更开放，也更容易得到有分寸的回答。</p></div>
+  </div>
+
+  <h2>四、现场边界与准备清单</h2>
+  <div class="callout"><strong>不要做：</strong>把访谈变成对其政治、网络争议、竞争者或未经核验指标的追问；把 HEY 的技术选择称为“抛弃 Rails”；把他在演讲中的估算数字当作独立性能结论。若嘉宾自行延展到争议话题，可礼貌回到“这如何影响你设计产品、社区或计算机”的主线。</div>
+  <ul>
+    <li><strong>会前请他确认：</strong>是否允许谈 HEY 架构、Omarchy 路线、Basecamp agent-accessible 的后续，以及哪些仍属未公开产品计划。</li>
+    <li><strong>准备一个屏幕画面即可：</strong>展示“变化 → 工程 → 框架 → 机器 → 社区”的路线图；不要投放大段引语或技术参数。</li>
+    <li><strong>听众提问筛选：</strong>优先收集“真实工作流、开源协作、产品/系统设计”的问题，避免要求预测模型排名、商业数字或争议立场。</li>
+    <li><strong>记住对谈的节奏：</strong>每 8–12 分钟让他讲一个具体项目、一个判断或一次反转；不要连续三题都停留在理念层。</li>
+  </ul>
+
+  <h2>五、主持人的一段开场（可直接使用）</h2>
+  <blockquote class="callout">“很多人认识你，是因为 Rails、Basecamp，或你对小团队和好工具的长期坚持。但过去这一年，你似乎重新找回了一种更直接的兴奋：不是让 AI 替人宣布终局，而是让更多想法能够更快地成为可以被使用、被批评、被改造的软件。今天我们想从这条变化谈起：当 Agent 开始承担实现工作，人应该把自己放在哪里？而我们又如何保有对机器、代码与共同体的主见？”</blockquote>
+
+  <section class="sources">
+    <h2 style="margin-top:0">研究底稿与背景材料</h2>
+    <ol>
+      <li><a href="https://lexfridman.com/dhh-2-transcript">Lex Fridman Podcast #501 完整逐字稿</a>：Agent 工作流、早期失误、架构与 Token、开源 PR 审查、工具选择等。</li>
+      <li><a href="https://world.hey.com/dhh/promoting-ai-agents-3ee04945">DHH, Promoting AI agents</a>（2026-01-07）：从“受监督协作”出发的早期表述。</li>
+      <li><a href="https://world.hey.com/dhh/endless-execution-4157e065">DHH, Endless execution</a>（2026-08-09）：关于 Agent、创造欲与执行速度。</li>
+      <li><a href="https://world.hey.com/dhh/basecamp-becomes-agent-accessible-3ae6b949">DHH, Basecamp becomes agent accessible</a>（2026-03-25）：API、CLI、Skills 与 agent-accessible 产品。</li>
+      <li><a href="https://world.hey.com/dhh/the-malleable-computer-7c187a9b">DHH, The malleable computer</a>（2026-04-15）及 <a href="https://omarchy.org/doctrine/">The Omarchy Doctrine</a>：可塑机器、默认方案、用户所有权与社区。</li>
+      <li><a href="https://app.railsworld.com/talks/rails-world-2026-opening-keynote">Rails World 2026 Opening Keynote</a>（2026-09-23）：<em>Pencils Down</em>、HEY 架构与 Rails 约定的新解释。演讲相关性能与产品路线表述应归因于演讲者，不替代独立验证。</li>
+    </ol>
+  </section>
+  <footer class="footer">主持人工作稿 v1｜基于公开材料和既有 DHH 主题文章整理。用于现场准备，不将嘉宾观点、路线或演讲估算表述为独立事实结论。</footer>
+</main>
+</body>
+</html>
