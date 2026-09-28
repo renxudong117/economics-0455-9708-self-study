@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="结合Claude Code创始人Boris Cherny与Jev创始人Diogo Almeida的访谈，分析通用Agent与类型化自主自动化两条AI软件路线。">
+<title>Claude Code消失之后 AI向上成为Agent还是向下成为软件原语</title>
+<style>
+:root{--accent:#b90000;--accent2:#7d0000;--accent-bg:#fff6f5;--ink:#202020;--muted:#696969;--soft:#969696;--line:#e4e1dd;--paper:#fff;--canvas:#f6f4f1;--gold:#b88a36;--blue:#556878;--dark:#3d3d3d}
+*{box-sizing:border-box}html{scroll-behavior:smooth;background:var(--canvas)}body{margin:0;color:var(--ink);background:var(--canvas);font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",Arial,sans-serif;line-height:1.9}.top-bar{position:fixed;z-index:20;top:0;left:0;width:100%;height:4px;background:var(--accent)}.article{width:min(940px,100%);min-height:100vh;margin:0 auto;padding:0 42px 80px;background:var(--paper);box-shadow:0 0 42px rgba(0,0,0,.05)}.cover{padding:62px 0 34px;border-bottom:3px solid var(--accent)}.eyebrow{margin:0 0 12px;color:var(--accent);font-size:.78rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase}.cover h1{max-width:850px;margin:0 0 12px;color:#170202;font-size:clamp(2rem,5.6vw,3.15rem);font-weight:900;line-height:1.22;letter-spacing:-.04em}.subtitle{max-width:790px;margin:0 0 25px;color:var(--muted);font-size:1.12rem;line-height:1.7}.tagline{max-width:830px;padding:14px 20px;border-left:4px solid var(--accent);color:var(--accent2);background:var(--accent-bg);font-size:1rem;font-weight:700;line-height:1.75}.version{margin:15px 0 0;color:var(--soft);font-size:.78rem}.lead{margin-top:32px}.lead p:first-child{font-size:1.06rem}h2{margin:50px 0 20px;padding:11px 0 11px 18px;border-left:4px solid var(--accent);color:var(--accent2);background:linear-gradient(90deg,var(--accent-bg),transparent 68%);font-size:1.5rem;font-weight:900;line-height:1.45}h3{margin:30px 0 12px;padding-left:13px;border-left:3px solid var(--accent);font-size:1.12rem;line-height:1.5}p{margin:0 0 16px;font-size:1rem;line-height:2;text-align:justify}strong{font-weight:750}em{color:var(--accent2);font-style:normal;font-weight:750}a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:3px}.fn{font-size:.72em;font-weight:700;vertical-align:super}.keyline{margin:28px 0;color:var(--accent2);font-size:1.12rem;font-weight:800;text-align:center}.figure{margin:32px 0 38px;padding:20px 18px 14px;border:1px solid var(--line);background:#fcfbf9}.figure svg{display:block;width:100%;height:auto}.figure figcaption{margin-top:12px;color:var(--muted);font-size:.82rem;line-height:1.65;text-align:center}.matrix-wrap{margin:26px 0 34px;overflow-x:auto;border:1px solid var(--line)}table{width:100%;border-collapse:collapse;background:#fff;font-size:.87rem;line-height:1.65}th,td{padding:12px 13px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th:last-child,td:last-child{border-right:0}tr:last-child td{border-bottom:0}thead th{color:#fff;background:#3d3d3d;font-weight:750}tbody tr:nth-child(even){background:#faf8f6}.rowhead{white-space:nowrap;color:var(--accent2);font-weight:800}ul,ol{margin:8px 0 24px;padding-left:1.45em}li{margin:8px 0;font-size:.96rem;line-height:1.85}blockquote{margin:28px 0;padding:15px 21px;border-left:4px solid var(--accent);color:var(--accent2);background:var(--accent-bg);font-weight:750}blockquote p{margin:0;text-align:left}.mini-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:24px 0 34px}.mini{padding:18px;border-top:3px solid var(--accent);background:#f8f6f3}.mini h3{margin:0 0 7px;padding:0;border:0;font-size:1rem}.mini p{margin:0;color:#454545;font-size:.9rem;line-height:1.75;text-align:left}.fact-note{margin:24px 0;padding:18px 21px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#fcfbf9}.fact-note p{margin:0;font-size:.93rem;text-align:left}.toc{margin:26px 0 34px;padding:18px 22px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#fcfbf9}.toc strong{display:block;margin-bottom:8px;color:var(--accent2)}.toc ol{columns:2;margin:0;padding-left:1.3em}.toc li{break-inside:avoid;margin:4px 0;font-size:.88rem}.toc a{color:#4a4a4a;text-decoration:none}.toc a:hover{color:var(--accent)}.sources{margin-top:54px;padding-top:8px;border-top:1px solid var(--line)}.sources h2{margin-top:20px}.sources li{color:var(--muted);font-size:.84rem;line-height:1.7}.footer{margin-top:50px;padding:17px 0;border-top:2px solid var(--accent);color:var(--soft);font-size:.76rem;text-align:center}.chart-label{font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",Arial,sans-serif}
+@media(max-width:700px){.article{padding:0 21px 56px}.cover{padding-top:46px}.mini-grid{grid-template-columns:1fr}.toc ol{columns:1}h2{margin-top:40px;font-size:1.28rem}.figure{margin-left:-5px;margin-right:-5px;padding:12px 8px 10px}p{text-align:left}.cover h1{letter-spacing:-.02em}}
+@media print{@page{size:A4;margin:16mm 15mm}html,body{background:#fff}.top-bar{display:none}.article{width:auto;margin:0;padding:0;box-shadow:none}.cover{padding-top:0}.figure,.matrix-wrap,blockquote,.fact-note{break-inside:avoid}h2,h3{break-after:avoid}a{color:inherit;text-decoration:none}.toc{display:none}}
+</style>
+</head>
+<body>
+<div class="top-bar"></div>
+<main class="article">
+<header class="cover">
+  <p class="eyebrow">Claude Code · Jev · Autonomous Software</p>
+  <h1>Claude Code消失之后<br>AI向上成为Agent，还是向下成为软件原语？</h1>
+  <p class="subtitle">从Boris Cherny与Diogo Almeida的两场访谈，看自主智能的两条路线</p>
+  <div class="tagline">Boris希望有一天亲手删除Claude Code，让通用Agent跨越产品边界；Almeida认为Claude Code仍属于旧范式，要把智能压缩为软件可直接调用的类型化决策。两条路线并非简单替代，而是在从上层和底层同时重写软件。</div>
+  <p class="version">深度解读与比较分析｜2026年9月</p>
+</header>
+
+<section class="lead">
+  <p>Claude Code创始人Boris Cherny在计算机历史博物馆的访谈中，给出了一个看似违反商业常识的愿望：他最期待的时刻，是团队能够亲手把Claude Code从代码库里删除。并不是因为产品失败，而是因为模型能力和交互方式继续演进以后，今天以终端为中心的独立产品形态可能不再必要。<a class="fn" href="#s1">[1]</a></p>
+  <p>Jev创始人Diogo Almeida的判断更加尖锐。他认为Claude Code和ChatGPT仍属于同一个“辅助时代”：它们的核心仍是围绕一个在场的人工作。真正的下一站，应当是软件在后台独立、可靠地完成工作，而不是继续等待人类阅读、确认和兜底。<a class="fn" href="#s4">[4]</a></p>
+  <p>两个人都在预言Claude Code会被超越，却把未来指向两个方向：一个让Agent获得更宽的行动空间、更长的时间跨度和更多工具；另一个主动收窄模型输出，把智能变成类似if、switch和sort的类型化原语。</p>
+</section>
+
+<figure class="figure" aria-labelledby="twowayscap">
+<svg viewBox="0 0 880 500" role="img" aria-label="Claude Code消失的向上和向下两种路线">
+  <rect width="880" height="500" fill="#fcfbf9"/>
+  <text x="35" y="42" class="chart-label" font-size="23" font-weight="800" fill="#202020">同样预言当前形态消失，方向却相反</text>
+  <circle cx="440" cy="250" r="72" fill="#b90000"/>
+  <text x="440" y="242" class="chart-label" text-anchor="middle" font-size="17" font-weight="800" fill="#fff">Claude Code</text>
+  <text x="440" y="270" class="chart-label" text-anchor="middle" font-size="12" fill="#fff">当前产品形态</text>
+  <path d="M400 190C340 132 256 107 153 100" fill="none" stroke="#333" stroke-width="5"/>
+  <polygon points="153,100 174,91 170,112" fill="#333"/>
+  <path d="M480 310C548 370 642 397 755 409" fill="none" stroke="#b88a36" stroke-width="5"/>
+  <polygon points="755,409 735,396 733,417" fill="#b88a36"/>
+  <g class="chart-label">
+    <rect x="50" y="72" width="285" height="142" rx="8" fill="#333"/>
+    <text x="78" y="108" font-size="18" font-weight="800" fill="#fff">向上：通用Agent</text>
+    <text x="78" y="140" font-size="12" fill="#fff">更长任务 · 更多工具 · 多角色协作</text>
+    <text x="78" y="165" font-size="12" fill="#fff">从写代码扩展到研究、数据与业务</text>
+    <text x="78" y="190" font-size="11" font-weight="800" fill="#ddd">Boris路线：产品边界溶解</text>
+    <rect x="545" y="322" width="285" height="142" rx="8" fill="#b88a36"/>
+    <text x="573" y="358" font-size="18" font-weight="800" fill="#fff">向下：软件原语</text>
+    <text x="573" y="390" font-size="12" fill="#fff">有限选择 · 概率 · 类型 · 阈值</text>
+    <text x="573" y="415" font-size="12" fill="#fff">智能沉入后台，成为程序组成部分</text>
+    <text x="573" y="440" font-size="11" font-weight="800" fill="#fff">Almeida路线：界面彻底消失</text>
+  </g>
+  <text x="440" y="473" class="chart-label" text-anchor="middle" font-size="12" fill="#666">一个扩大Agent的行动空间，一个缩小模型的输出空间。</text>
+</svg>
+<figcaption id="twowayscap">图 1｜“删除Claude Code”与“下一站不是Claude Code”并非同一句话。前者要释放模型，后者要重构模型与软件的接口。</figcaption>
+</figure>
+
+<nav class="toc" aria-label="文章目录">
+  <strong>文章结构</strong>
+  <ol>
+    <li><a href="#same">两个判断为何听起来矛盾</a></li>
+    <li><a href="#boris">Boris的通用Agent路线</a></li>
+    <li><a href="#almeida">Almeida的软件原语路线</a></li>
+    <li><a href="#divide">真正分歧在哪里</a></li>
+    <li><a href="#safety">两种安全观的交锋</a></li>
+    <li><a href="#limits">两条路线各自的边界</a></li>
+    <li><a href="#architecture">可能出现的双层软件栈</a></li>
+    <li><a href="#industry">对开源和产业的启示</a></li>
+  </ol>
+</nav>
+
+<h2 id="same">一、两个判断为何听起来矛盾</h2>
+<p>Boris描述的Claude Code，已经远远超过“坐在程序员旁边补全代码”的工具。模型可以编辑文件、运行Bash、执行测试、观察错误，再决定下一步；主Agent还可以拉起多个子Agent，让不同模型并行分析日志、搜索代码和验证假设。</p>
+<p>在他的设想中，Agent会进一步离开终端，进入Slack等协作环境，像团队成员一样理解讨论，主动接下任务，在数小时之后带着代码、分析和验证结果返回。编程、产品、研究与数据工作的边界随之变得模糊。Claude Code之所以可以被“删除”，是因为它的能力已经扩散到更大的通用协作界面中。</p>
+<p>Almeida却把这种进展仍然归入“辅助”。在他看来，只要系统主要面向一个人输出文本、代码和解释，只要人仍然承担理解结果和决定后续动作的责任，它就没有跨过自主自动化的边界。Claude Code可以极大提高生产力，却不等于企业已经可以把一项业务流程交给软件后长期不再过问。</p>
+<p>看似冲突的根源，是两人对“自主”使用了不同定义：</p>
+<blockquote><p>Boris所说的自主，是Agent能够独立完成更长的行动链；Almeida所说的自主，是业务流程能够不再依赖持续的人类监督。</p></blockquote>
+
+<h2 id="boris">二、Boris的路线：让Agent向外扩张</h2>
+<p>Claude Code的技术起点并不神秘：给大模型文件读写和终端工具，让它从“提出建议”变成“操作环境”。但这一小步改变了交互闭环。模型写下代码以后可以自己运行，失败以后可以读取报错并修复，不再需要人把内容在聊天框、编辑器和终端之间反复搬运。</p>
+<p>Boris把早期困境概括为“模型悬置”：基础模型已经具备更强能力，产品界面却仍然按照旧能力设计，反而限制了模型。由此形成Claude Code的产品哲学：工具保持少而直接，给模型足够发挥空间，通过真实使用观察它怎样行动，再决定增加或删除什么。</p>
+
+<div class="mini-grid">
+  <div class="mini"><h3>能力来自行动闭环</h3><p>读取环境、修改状态、执行测试和依据反馈继续行动，比单次生成一段代码更接近真实工程。</p></div>
+  <div class="mini"><h3>自主来自时间延长</h3><p>任务从几分钟扩大到数小时，Agent能够推翻假设、拉起子Agent并整合结果。</p></div>
+  <div class="mini"><h3>边界来自环境约束</h3><p>沙箱、文件系统权限、网络出口和独立审查模型定义Agent能够触及的最大范围。</p></div>
+  <div class="mini"><h3>人的价值向上迁移</h3><p>代码实现不断自动化以后，问题选择、跨领域理解、综合判断和责任担当更加稀缺。</p></div>
+</div>
+
+<p>这条路线的终点不是更复杂的命令行，而是产品边界逐渐消失。Agent进入团队沟通、数据系统和业务工具以后，用户不再需要思考“现在是否打开Claude Code”，而是在原有工作场景中直接委托任务。</p>
+<p>因此，“删除Claude Code”并不是删除Agent，而是让Agent从一个垂直工具变成更普遍的工作层。</p>
+
+<h2 id="almeida">三、Almeida的路线：让智能向软件内部下沉</h2>
+<p>Almeida从另一个问题出发：为什么大模型已经能解决很难的数学和代码问题，企业处理退款、邮件路由、风险分类等看似简单的工作时，仍然不敢把人拿掉？</p>
+<p>他的回答是，当前大模型首先被训练成面向人的助手。模型输出开放文本，优化目标强调有用、自然和符合人类偏好。这非常适合对话和协作，却不天然等于一个可以嵌进程序、长期稳定运行的决策构件。</p>
+<p>Jev因此放弃开放式字符串生成，提供Choice、Score与Noul三类类型化决策：从预设选项中选择、按照量表评分，或给出某个命题为真的概率。程序不需要解析模型写出的JSON或自然语言，而是直接获得受Schema限制的值和置信信息。<a class="fn" href="#s5">[5]</a></p>
+
+<figure class="figure" aria-labelledby="unitscap">
+<svg viewBox="0 0 880 500" role="img" aria-label="Boris和Almeida路线所改变的自动化单位">
+  <rect width="880" height="500" fill="#fcfbf9"/>
+  <text x="35" y="42" class="chart-label" font-size="23" font-weight="800" fill="#202020">两条路线改变的“自动化单位”不同</text>
+  <g class="chart-label">
+    <rect x="45" y="92" width="355" height="320" rx="9" fill="#333"/>
+    <text x="73" y="130" font-size="18" font-weight="800" fill="#fff">Boris：自动化一次完整任务</text>
+    <text x="73" y="170" font-size="13" fill="#fff">理解目标</text><text x="73" y="201" font-size="13" fill="#fff">读取环境与规划步骤</text><text x="73" y="232" font-size="13" fill="#fff">调用工具并修改状态</text><text x="73" y="263" font-size="13" fill="#fff">运行测试、观察反馈</text><text x="73" y="294" font-size="13" fill="#fff">拉起子Agent继续探索</text><text x="73" y="325" font-size="13" fill="#fff">提交结果并解释过程</text>
+    <line x1="73" y1="353" x2="365" y2="353" stroke="#777"/>
+    <text x="73" y="383" font-size="12" font-weight="800" fill="#ddd">单位：一段长时间、开放路径的工作</text>
+    <rect x="480" y="92" width="355" height="320" rx="9" fill="#b90000"/>
+    <text x="508" y="130" font-size="18" font-weight="800" fill="#fff">Almeida：自动化一个语义判断</text>
+    <text x="508" y="170" font-size="13" fill="#fff">输入业务状态</text><text x="508" y="201" font-size="13" fill="#fff">提出一个原子问题</text><text x="508" y="232" font-size="13" fill="#fff">限定可返回的类型</text><text x="508" y="263" font-size="13" fill="#fff">并行计算选择与概率</text><text x="508" y="294" font-size="13" fill="#fff">由代码组合多个判断</text><text x="508" y="325" font-size="13" fill="#fff">按阈值执行或升级</text>
+    <line x1="508" y1="353" x2="800" y2="353" stroke="#e26b64"/>
+    <text x="508" y="383" font-size="12" font-weight="800" fill="#ffe5e2">单位：一个高频、边界明确的决定</text>
+  </g>
+  <text x="440" y="462" class="chart-label" text-anchor="middle" font-size="13" fill="#666">前者扩大行动链，后者缩小决策粒度；两者可以出现在同一条业务流程中。</text>
+</svg>
+<figcaption id="unitscap">图 2｜通用Agent自动化“工作”，Jev式模型自动化“判断”。粒度不同，决定了模型、接口和安全方式都不同。</figcaption>
+</figure>
+
+<p>这条路线的关键不在于再造一个更会聊天的小模型，而是改变软件可以使用的智能接口。Almeida把它称为“System One Model”：输入非结构化状态和类型化问题，输出程序可直接消费的概率决策。<a class="fn" href="#s6">[6]</a></p>
+<p>它追求的不是一次完成复杂开放任务，而是让海量、重复、过去只能由人理解的微小判断，以低延迟和可度量置信度进入普通软件。</p>
+
+<h2 id="divide">四、真正的分歧：通用智能能否靠工程护栏进入生产</h2>
+<p>两位创始人的共同点其实很多。他们都不满足于在旧软件旁边增加聊天框，都认为逐次人工确认无法支撑真正规模化的Agent，也都在寻找一种让AI进入生产系统而不需要人持续点击的方法。</p>
+<p>真正的分歧在更深处：<strong>通用生成模型的自由度，能否通过Harness、沙箱、分类器和权限系统得到充分治理；还是必须从训练目标和输出形态开始改变。</strong></p>
+
+<div class="matrix-wrap">
+<table aria-label="Claude Code与Jev两种路线对照">
+<thead><tr><th>比较维度</th><th>Claude Code路线</th><th>Jev路线</th></tr></thead>
+<tbody>
+<tr><td class="rowhead">核心对象</td><td>通用、长链、可使用工具的Agent</td><td>专门、快速、类型化的语义决策模型</td></tr>
+<tr><td class="rowhead">自主性的来源</td><td>更多工具、更长上下文、记忆、子Agent与环境权限</td><td>更小决策单元、预定义类型、校准概率与代码组合</td></tr>
+<tr><td class="rowhead">输出空间</td><td>开放：文本、代码、命令和行动序列</td><td>封闭：Choice、Score、Noul等预设结构</td></tr>
+<tr><td class="rowhead">主要优势</td><td>通用、灵活，能处理未知步骤和开放目标</td><td>低延迟、可组合，格式错误空间被直接消除</td></tr>
+<tr><td class="rowhead">主要风险</td><td>行动漂移、提示词注入、奖励作弊与越权操作</td><td>类型正确但判断错误、概率失准与数据漂移</td></tr>
+<tr><td class="rowhead">安全机制</td><td>沙箱、网络与文件边界、审查模型、审计和回滚</td><td>类型契约、概率阈值、人工升级和持续校准</td></tr>
+<tr><td class="rowhead">更适合</td><td>开发、研究、排障、跨工具任务和低频复杂工作</td><td>分类、路由、筛选、评分和高频稳定流程</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>Boris愿意让模型保持较大的自由度，再从外部限制它能造成的影响；Almeida选择先减少模型能够表达和执行的状态，再让普通程序掌握最终组合逻辑。一个主要治理“行动边界”，另一个主要治理“决策边界”。</p>
+
+<h2 id="safety">五、两种安全观：替代疲劳的人，还是减少不确定的模型</h2>
+<p>Boris对传统Human-in-the-loop提出了一个非常现实的批评：如果用户每天面对大量权限弹窗，确认动作会逐渐退化为条件反射。Anthropic在其公开的Auto Mode材料中报告，相关使用情境下用户批准了约93%的Claude Code权限请求；这一观察并不代表所有产品或场景，却提示批准疲劳可能让“有人确认”在形式上存在，在实质上失效。<a class="fn" href="#s2">[2]</a></p>
+<p>Claude Code Auto Mode的回答，是让独立分类器替代部分人工批准。系统先用规则放行只读工具和项目内可审查修改，再把Shell、外部网络、跨目录操作等潜在高风险行为交给独立上下文中的模型判断；同时以文件系统、网络隔离和沙箱限制最坏影响。Anthropic也明确承认，任何概率防御都存在非零漏报率，因此不能只依赖分类器。<a class="fn" href="#s2">[2]</a><a class="fn" href="#s3">[3]</a></p>
+<p>Almeida对这一方案可能提出更根本的追问：如果执行者和审查者都来自以人类偏好为中心的通用语言模型，系统是否只是在用另一个概率模型监督概率模型？他的答案是改变模型训练目标，让系统输出经过校准的概率，并把最终动作交回类型和代码。</p>
+
+<figure class="figure" aria-labelledby="safetycap">
+<svg viewBox="0 0 880 530" role="img" aria-label="Claude Code和Jev两类安全机制">
+  <rect width="880" height="530" fill="#fcfbf9"/>
+  <text x="35" y="42" class="chart-label" font-size="23" font-weight="800" fill="#202020">安全不是一道确认框，而是失败空间的系统设计</text>
+  <g class="chart-label">
+    <text x="230" y="88" text-anchor="middle" font-size="17" font-weight="800" fill="#333">通用Agent：限制爆炸半径</text>
+    <rect x="55" y="112" width="350" height="62" rx="6" fill="#333"/><text x="230" y="150" text-anchor="middle" font-size="13" fill="#fff">用户目标与授权范围</text>
+    <rect x="75" y="194" width="310" height="62" rx="6" fill="#555"/><text x="230" y="232" text-anchor="middle" font-size="13" fill="#fff">独立审查模型与行为策略</text>
+    <rect x="95" y="276" width="270" height="62" rx="6" fill="#777"/><text x="230" y="314" text-anchor="middle" font-size="13" fill="#fff">文件系统与网络沙箱</text>
+    <rect x="115" y="358" width="230" height="62" rx="6" fill="#999"/><text x="230" y="396" text-anchor="middle" font-size="13" fill="#fff">审计、版本控制、回滚</text>
+    <text x="230" y="462" text-anchor="middle" font-size="12" font-weight="800" fill="#555">假设：保留自由度，但约束能做什么</text>
+
+    <text x="650" y="88" text-anchor="middle" font-size="17" font-weight="800" fill="#7d0000">类型化决策：限制表达空间</text>
+    <rect x="475" y="112" width="350" height="62" rx="6" fill="#b90000"/><text x="650" y="150" text-anchor="middle" font-size="13" fill="#fff">原子问题与预定义选项</text>
+    <rect x="495" y="194" width="310" height="62" rx="6" fill="#a20b05"/><text x="650" y="232" text-anchor="middle" font-size="13" fill="#fff">类型保证与结构化概率</text>
+    <rect x="515" y="276" width="270" height="62" rx="6" fill="#8d140e"/><text x="650" y="314" text-anchor="middle" font-size="13" fill="#fff">阈值、规则与人工升级</text>
+    <rect x="535" y="358" width="230" height="62" rx="6" fill="#b88a36"/><text x="650" y="396" text-anchor="middle" font-size="13" fill="#fff">校准、漂移监控、复评</text>
+    <text x="650" y="462" text-anchor="middle" font-size="12" font-weight="800" fill="#7d0000">假设：先限定能说什么，再决定做什么</text>
+  </g>
+  <text x="440" y="505" class="chart-label" text-anchor="middle" font-size="12" fill="#666">两类机制都不能证明绝对安全；更稳健的系统往往需要同时约束行动环境与决策接口。</text>
+</svg>
+<figcaption id="safetycap">图 3｜Claude Code侧重Containment，Jev侧重Constraint。前者防止Agent越界，后者减少不可表示和不可解析的状态。</figcaption>
+</figure>
+
+<p>两种方法并非互斥。即便模型只输出有限选项，高风险业务仍需要权限、审计与回滚；即便通用Agent被关在沙箱里，其内部用于放行、路由和风险判断的环节，也可以使用类型化概率模型。</p>
+
+<h2 id="limits">六、两条路线各自没有解决什么</h2>
+<h3>Claude Code式Agent：长链自主会累积误差</h3>
+<p>工具越多、运行越久、子Agent越多，系统接触的不可信输入和外部状态也越多。一次微小误解可能在几十个步骤后变成真实操作。沙箱能够限制物理范围，却不能保证Agent正在解决正确的问题；独立分类器可以拦截明显危险行为，也很难判断一项看似正常的修改是否偏离了产品目标。</p>
+<p>“无需逐次确认”不等于“无需责任人”。更合理的变化，是从每一步点击批准，转向事前设定边界、运行中观察偏差、关键节点升级以及事后可追溯。</p>
+
+<h3>Jev式模型：类型安全不等于语义正确</h3>
+<p>如果接口只允许返回A、B、C，接口设计可以避免模式之外的字符串；但模型仍然可能在三个合法选项中选错。总体置信度得到校准，也不意味着每个样本都安全。一个标注为80%置信度的批次如果长期有约80%正确，仍然意味着其中约五分之一可能错误。</p>
+<p>TypeSafe公布的速度和成本优势来自公司自己的工作流评测。其官方博客同时说明，193.6倍和444.6倍属于实际收益的高端区间，评测任务、参考模型和服务位置也会影响结果。它们足以证明方向值得测试，却还不能证明所有业务都应从通用模型迁移。<a class="fn" href="#s6">[6]</a></p>
+
+<div class="fact-note"><p><strong>需要避免的两个误读：</strong>Claude Code的自主性不等于可以无限授权；Jev所说的“不会幻觉”主要指不会产生类型或Schema之外的输出，不等于永远不会作出错误判断。</p></div>
+
+<h2 id="architecture">七、可能的答案：上层Agent，下层原语，中间是治理</h2>
+<p>如果把两条路线放进同一套系统，它们并不争夺完全相同的位置。通用Agent更像动态的规划与创造层，类型化模型更像稳定的判断与执行层，控制平面则决定两者可以使用什么数据、工具和权限。</p>
+
+<figure class="figure" aria-labelledby="stackcap">
+<svg viewBox="0 0 880 570" role="img" aria-label="通用Agent类型化决策和控制平面的统一架构">
+  <rect width="880" height="570" fill="#fcfbf9"/>
+  <text x="35" y="42" class="chart-label" font-size="23" font-weight="800" fill="#202020">未来的软件栈，可能同时向上和向下生长</text>
+  <g class="chart-label">
+    <rect x="55" y="88" width="770" height="118" rx="9" fill="#333"/>
+    <text x="85" y="124" font-size="18" font-weight="800" fill="#fff">通用Agent层｜理解开放目标，组织长链工作</text>
+    <text x="85" y="157" font-size="13" fill="#fff">规划 · 研究 · 编程 · 跨工具操作 · 子Agent协同 · 结果解释</text>
+    <text x="780" y="182" text-anchor="end" font-size="11" font-weight="800" fill="#ddd">Boris路线向上扩张</text>
+
+    <rect x="55" y="238" width="770" height="118" rx="9" fill="#b90000"/>
+    <text x="85" y="274" font-size="18" font-weight="800" fill="#fff">类型化智能层｜完成高频、原子、可组合判断</text>
+    <text x="85" y="307" font-size="13" fill="#fff">Choice · Score · Noul · 分类 · 路由 · 筛选 · 风险评分</text>
+    <text x="780" y="332" text-anchor="end" font-size="11" font-weight="800" fill="#ffe5e2">Almeida路线向下沉淀</text>
+
+    <rect x="55" y="388" width="770" height="118" rx="9" fill="#556878"/>
+    <text x="85" y="424" font-size="18" font-weight="800" fill="#fff">控制与确定性系统｜约束权限、状态和现实后果</text>
+    <text x="85" y="457" font-size="13" fill="#fff">普通代码 · 事务 · 沙箱 · 网络边界 · 阈值 · 审计 · 回滚 · 人工升级</text>
+    <text x="780" y="482" text-anchor="end" font-size="11" font-weight="800" fill="#e7eef2">共同的生产底座</text>
+  </g>
+  <path d="M725 206V238" stroke="#b88a36" stroke-width="4"/><polygon points="725,238 717,222 733,222" fill="#b88a36"/>
+  <path d="M650 356V388" stroke="#b88a36" stroke-width="4"/><polygon points="650,388 642,372 658,372" fill="#b88a36"/>
+  <path d="M145 388V356" stroke="#fff" stroke-width="3"/><polygon points="145,356 137,372 153,372" fill="#fff"/>
+  <text x="440" y="548" class="chart-label" text-anchor="middle" font-size="12" fill="#666">通用Agent可以调用类型化模型；类型化判断必须由确定性代码与权限系统承接。</text>
+</svg>
+<figcaption id="stackcap">图 4｜未来未必由一种模型统治。通用Agent处理未知路径，类型化模型处理稳定判断，确定性系统管理现实后果。</figcaption>
+</figure>
+
+<p>例如，一个企业Agent可以接受“分析过去一个月客户流失并提出干预方案”的开放目标。它使用通用模型规划分析、查询数据和生成假设；在处理数百万封邮件时，调用类型化模型判断取消意图、情绪和风险；最终由确定性业务系统按照金额、客户等级和权限执行动作。高风险样本升级给人，所有步骤留下审计记录。</p>
+<p>这套架构中，Boris和Almeida的路线不是谁淘汰谁，而是分别处理不同粒度的不确定性。</p>
+
+<h2>八、真正会消失的，也许是“AI产品”这个独立类别</h2>
+<p>Boris希望删除Claude Code，因为Agent能力最终会进入所有协作界面，不再需要用户主动打开一个专门的编程工具。Almeida认为下一时代不属于Claude Code，因为智能会进入软件内部，用户甚至意识不到某次路由、排序或筛选由模型完成。</p>
+<p>两种未来都指向“界面消失”。一个消失在更大的Agent之中，另一个消失在更小的软件原语之中。前者像操作系统或团队成员，后者像数据库查询、规则引擎或一条智能if语句。</p>
+<p class="keyline">Claude Code真正的成功，可能不是永远保留这个名字，而是让“软件会自己工作”变成默认能力。</p>
+
+<h2 id="industry">九、对AgentOS、开源生态和中国产业的启示</h2>
+<h3>1. 不要把Agent路线简化成“大模型再加几个工具”</h3>
+<p>通用Agent需要Harness、记忆、子Agent、沙箱、身份、权限和可观察性；类型化自动化需要Schema、概率语义、校准、阈值和漂移监控。未来AgentOS的核心，不只是把工具接给模型，而是把多种智能接口放进统一的控制平面。</p>
+
+<h3>2. 开源竞争会同时发生在上层协议和底层原语</h3>
+<p>上层需要开放工具协议、技能格式、任务状态、Agent间通信和审计事件；下层需要开放类型化决策接口、置信度表达、评测集和跨模型校准方法。只开放模型权重，不能自动形成可靠的软件生态。</p>
+
+<h3>3. 企业应把两类ROI分开</h3>
+<p>通用Agent的价值主要体现在研发周期、探索数量、跨部门协作和复杂任务完成率；类型化模型的价值更适合用调用成本、直通率、误判损失、升级率和延迟衡量。用“替代了多少人”同时评价两者，会让创造工具被低估，也会让自动化系统被过度授权。</p>
+
+<h3>4. 国产模型、芯片与行业软件需要形成异构智能栈</h3>
+<p>中国企业的机会不只是在通用Coding Agent上追赶，还可以围绕制造、运营及其他已具备清晰数据边界和审计要求的行业流程，开发低延迟、可校准、可审计的行业决策模型。模型企业提供语义能力，芯片和推理平台优化长链推理与高频微决策两种负载，行业伙伴在依法合规、数据安全和最小必要原则下提供可验证的业务约束，开源组织推动接口、评测和治理保持可迁移。</p>
+<p>对于AI芯片，这意味着性能评估不能只有长上下文和大模型Token吞吐，还要关注并行的小问题、极低延迟、稳定概率输出以及大规模在线校准。Agent时代的智能消费，既可能是一项运行十二小时的复杂任务，也可能是每秒发生百万次、每次只返回一个选择的微小判断。</p>
+
+<h2>结语：两种自主，正在共同定义软件的下一站</h2>
+<p>Boris看到的是通用模型能力继续增长以后，产品壳层不断被突破：从终端到团队协作，从单个Agent到数字团队，从写代码到完成更完整的工作。Almeida看到的是另一种尚未释放的价值：智能不应永远以对话和长文本出现，它应当成为普通软件能够稳定依赖的基础构件。</p>
+<p>一个扩大自由度，一个约束自由度；一个让Agent承担更大的任务，一个把任务拆成更小的决定；一个相信通用模型加工程护栏可以不断走向自主，一个认为真正自动化要求新的训练目标和输出接口。</p>
+<p>这确实是一场技术路线之争，但不是只能留下一个答案的零和竞争。现实系统既需要面对未知的通用Agent，也需要处理已知的类型化智能；既需要模型大胆探索，也需要软件保守执行。</p>
+<blockquote><p>Claude Code消失之后，AI可能同时向两个方向进入软件：向上成为能够承担工作的Agent，向下成为软件可以直接依赖的原语。</p></blockquote>
+<p>最终决定哪条路线成立的，不是演讲里的口号，而是三件事：它是否真正完成了工作，失败是否被限制在可承受范围内，以及人在离开每一次操作之后，是否仍然掌握目标、规则和责任。</p>
+
+<section class="sources">
+<h2>主要资料</h2>
+<ol>
+  <li id="s1"><a href="https://computerhistory.org/events/in-conversation-with-boris-cherny-creator-of-claude-code/">Computer History Museum：In Conversation with Boris Cherny, Creator of Claude Code</a></li>
+  <li id="s2"><a href="https://www.anthropic.com/engineering/claude-code-auto-mode">Anthropic：How we built Claude Code auto mode</a></li>
+  <li id="s3"><a href="https://www.anthropic.com/engineering/claude-code-sandboxing">Anthropic：Making Claude Code more secure and autonomous with sandboxing</a></li>
+  <li id="s4"><a href="https://ai.engineer/talks/cJ0EOzey--o-jev-ceo-made-chatgpt-building-whats-next">AI Engineer World’s Fair：Diogo Almeida演讲与逐字稿</a></li>
+  <li id="s5"><a href="https://docs.typesafe.ai/introduction">TypeSafe AI官方文档：Jev与TypeSafe primitives</a></li>
+  <li id="s6"><a href="https://typesafe.ai/blog/introducing-system-one-models-and-jev">TypeSafe AI：Introducing System One Models &amp; Jev</a></li>
+</ol>
+</section>
+
+<footer class="footer">公开讨论稿 · 两种自主化路线比较 · 2026</footer>
+</main>
+</body>
+</html>

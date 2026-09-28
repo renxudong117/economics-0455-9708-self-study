@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="从DHH在Rails World 2026的Pencils Down演讲出发，分析AI代码优先、原生应用与Rust后端、Convention over Configuration，以及Agent时代的软件工程边界。">
+<title>Pencils Down之后：代码不再是默认语言</title>
+<style>
+:root{--accent:#b90000;--accent2:#7d0000;--accent-bg:#fff6f5;--ink:#202020;--muted:#696969;--soft:#969696;--line:#e4e1dd;--paper:#fff;--canvas:#f6f4f1;--gold:#b88a36;--blue:#556878;--dark:#3d3d3d}
+*{box-sizing:border-box}html{scroll-behavior:smooth;background:var(--canvas)}body{margin:0;color:var(--ink);background:var(--canvas);font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",Arial,sans-serif;line-height:1.9}.top-bar{position:fixed;z-index:20;top:0;left:0;width:100%;height:4px;background:var(--accent)}.article{width:min(940px,100%);min-height:100vh;margin:0 auto;padding:0 42px 80px;background:var(--paper);box-shadow:0 0 42px rgba(0,0,0,.05)}.cover{padding:62px 0 34px;border-bottom:3px solid var(--accent)}.eyebrow{margin:0 0 12px;color:var(--accent);font-size:.78rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase}.cover h1{max-width:850px;margin:0 0 12px;color:#170202;font-size:clamp(2rem,5.6vw,3.15rem);font-weight:900;line-height:1.22;letter-spacing:-.04em}.subtitle{max-width:790px;margin:0 0 25px;color:var(--muted);font-size:1.12rem;line-height:1.7}.tagline{max-width:830px;padding:14px 20px;border-left:4px solid var(--accent);color:var(--accent2);background:var(--accent-bg);font-size:1rem;font-weight:700;line-height:1.75}.version{margin:15px 0 0;color:var(--soft);font-size:.78rem}.lead{margin-top:32px}.lead p:first-child{font-size:1.06rem}h2{margin:50px 0 20px;padding:11px 0 11px 18px;border-left:4px solid var(--accent);color:var(--accent2);background:linear-gradient(90deg,var(--accent-bg),transparent 68%);font-size:1.5rem;font-weight:900;line-height:1.45}h3{margin:30px 0 12px;padding-left:13px;border-left:3px solid var(--accent);font-size:1.12rem;line-height:1.5}p{margin:0 0 16px;font-size:1rem;line-height:2;text-align:justify}strong{font-weight:750}em{color:var(--accent2);font-style:normal;font-weight:750}a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:3px}.fn{font-size:.72em;font-weight:700;vertical-align:super}.keyline{margin:28px 0;color:var(--accent2);font-size:1.12rem;font-weight:800;text-align:center}.figure{margin:32px 0 38px;padding:20px 18px 14px;border:1px solid var(--line);background:#fcfbf9}.figure svg{display:block;width:100%;height:auto}.figure figcaption{margin-top:12px;color:var(--muted);font-size:.82rem;line-height:1.65;text-align:center}.matrix-wrap{margin:26px 0 34px;overflow-x:auto;border:1px solid var(--line)}table{width:100%;border-collapse:collapse;background:#fff;font-size:.87rem;line-height:1.65}th,td{padding:12px 13px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th:last-child,td:last-child{border-right:0}tr:last-child td{border-bottom:0}thead th{color:#fff;background:#3d3d3d;font-weight:750}tbody tr:nth-child(even){background:#faf8f6}.rowhead{white-space:nowrap;color:var(--accent2);font-weight:800}ul,ol{margin:8px 0 24px;padding-left:1.45em}li{margin:8px 0;font-size:.96rem;line-height:1.85}blockquote{margin:28px 0;padding:15px 21px;border-left:4px solid var(--accent);color:var(--accent2);background:var(--accent-bg);font-weight:750}blockquote p{margin:0;text-align:left}.mini-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:24px 0 34px}.mini{padding:18px;border-top:3px solid var(--accent);background:#f8f6f3}.mini h3{margin:0 0 7px;padding:0;border:0;font-size:1rem}.mini p{margin:0;color:#454545;font-size:.9rem;line-height:1.75;text-align:left}.fact-note{margin:24px 0;padding:18px 21px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#fcfbf9}.fact-note p{margin:0;font-size:.93rem;text-align:left}.toc{margin:26px 0 34px;padding:18px 22px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#fcfbf9}.toc strong{display:block;margin-bottom:8px;color:var(--accent2)}.toc ol{columns:2;margin:0;padding-left:1.3em}.toc li{break-inside:avoid;margin:4px 0;font-size:.88rem}.toc a{color:#4a4a4a;text-decoration:none}.toc a:hover{color:var(--accent)}.sources{margin-top:54px;padding-top:8px;border-top:1px solid var(--line)}.sources h2{margin-top:20px}.sources li{color:var(--muted);font-size:.84rem;line-height:1.7}.footer{margin-top:50px;padding:17px 0;border-top:2px solid var(--accent);color:var(--soft);font-size:.76rem;text-align:center}.chart-label{font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",Arial,sans-serif}
+@media(max-width:700px){.article{padding:0 21px 56px}.cover{padding-top:46px}.mini-grid{grid-template-columns:1fr}.toc ol{columns:1}h2{margin-top:40px;font-size:1.28rem}.figure{margin-left:-5px;margin-right:-5px;padding:12px 8px 10px}p{text-align:left}.cover h1{letter-spacing:-.02em}}
+@media print{@page{size:A4;margin:16mm 15mm}html,body{background:#fff}.top-bar{display:none}.article{width:auto;margin:0;padding:0;box-shadow:none}.cover{padding-top:0}.figure,.matrix-wrap,blockquote,.fact-note{break-inside:avoid}h2,h3{break-after:avoid}a{color:inherit;text-decoration:none}.toc{display:none}}
+</style>
+</head>
+<body>
+<div class="top-bar"></div>
+<main class="article">
+<header class="cover">
+  <p class="eyebrow">Rails World 2026 · DHH · Agentic Engineering</p>
+  <h1>Pencils Down之后：<br>代码不再是默认语言</h1>
+  <p class="subtitle">从DHH的AI代码优先实验，看Agent如何重写架构选择、框架价值与工程责任</p>
+  <div class="tagline">“手写代码成为例外”并不等于“工程师成为例外”。它真正要求团队把默认工作单位，从一次实现，改成一套可反复验证、修正和演进的生产系统。</div>
+  <p class="version">演讲解读、架构分析与实践判断｜2026年9月</p>
+</header>
+
+<section class="lead">
+  <p>9月24日，DHH在Austin的Rails World 2026开场演讲中宣布，37signals已经对手写代码“<em>Pencils Down</em>”：在正常的软件生产过程中，亲手敲代码不再是默认状态，而是一个需要被解释的例外。<a class="fn" href="#s1">[1]</a> 这不是一句“AI辅助开发”的宣传语，而是一种比工具使用更彻底的组织判断：如果人还在反复把同类实现交给键盘，那么应当优先修复Agent工作流，而不是继续要求人把这一段写完。</p>
+  <p>演讲最容易传播的，是HEY将从Web应用转为六个原生应用、后台转向Rust，并由Agent生成代码；DHH称这一新后台可少用99%的CPU和95%的内存，十台主机主要用于冗余，峰值流量“按粗略估算”甚至可能落在一台树莓派上。<a class="fn" href="#s1">[1]</a> 但最值得讨论的不是这些数字本身，而是它们背后的一次架构反转：当实现成本被Agent大幅压低，过去为了控制团队规模而接受的体验、性能和技术折中，开始重新进入选择范围。</p>
+  <p>他还把Rails长期坚持的<em>Convention over Configuration</em>重新解释为Token效率：约定不是老式框架的保守偏好，而是一种压缩上下文、减少决策歧义、让单个开发者和Agent更快抵达可用结果的机制。<a class="fn" href="#s1">[1]</a></p>
+</section>
+
+<figure class="figure" aria-labelledby="fig1cap">
+<svg viewBox="0 0 880 470" role="img" aria-label="Pencils Down不是停止工程，而是把实现工作上移为Agent系统和验证机制">
+  <rect width="880" height="470" fill="#fcfbf9"/>
+  <text x="36" y="42" class="chart-label" font-size="23" font-weight="800" fill="#202020">Pencils Down 不是工程终点，而是工作单位的迁移</text>
+  <g class="chart-label">
+    <rect x="55" y="105" width="175" height="185" rx="10" fill="#555"/>
+    <text x="142" y="144" text-anchor="middle" font-size="17" font-weight="800" fill="#fff">旧默认</text>
+    <text x="142" y="180" text-anchor="middle" font-size="13" fill="#fff">人理解任务</text><text x="142" y="204" text-anchor="middle" font-size="13" fill="#fff">人写实现</text><text x="142" y="228" text-anchor="middle" font-size="13" fill="#fff">人运行与修复</text><text x="142" y="252" text-anchor="middle" font-size="13" fill="#fff">人重复同类工作</text>
+    <rect x="353" y="78" width="175" height="240" rx="10" fill="#b90000"/>
+    <text x="440" y="117" text-anchor="middle" font-size="17" font-weight="800" fill="#fff">Agent优先</text>
+    <text x="440" y="155" text-anchor="middle" font-size="13" fill="#fff">人定义目标与边界</text><text x="440" y="181" text-anchor="middle" font-size="13" fill="#fff">Agent实现、运行、修复</text><text x="440" y="207" text-anchor="middle" font-size="13" fill="#fff">测试与评测反馈</text><text x="440" y="233" text-anchor="middle" font-size="13" fill="#fff">人审查关键结果</text><text x="440" y="259" text-anchor="middle" font-size="13" fill="#fff">把失败写回工作流</text><text x="440" y="287" text-anchor="middle" font-size="12" font-weight="800" fill="#ffe5e2">手写 = 异常信号</text>
+    <rect x="650" y="105" width="175" height="185" rx="10" fill="#556878"/>
+    <text x="737" y="144" text-anchor="middle" font-size="17" font-weight="800" fill="#fff">新稀缺</text>
+    <text x="737" y="180" text-anchor="middle" font-size="13" fill="#fff">问题定义</text><text x="737" y="204" text-anchor="middle" font-size="13" fill="#fff">架构与接口</text><text x="737" y="228" text-anchor="middle" font-size="13" fill="#fff">评测与故障恢复</text><text x="737" y="252" text-anchor="middle" font-size="13" fill="#fff">责任与长期维护</text>
+  </g>
+  <path d="M230 198 L353 198" stroke="#b88a36" stroke-width="5"/><polygon points="353,198 336,189 336,207" fill="#b88a36"/>
+  <path d="M528 198 L650 198" stroke="#b88a36" stroke-width="5"/><polygon points="650,198 633,189 633,207" fill="#b88a36"/>
+  <text x="440" y="384" class="chart-label" text-anchor="middle" font-size="17" font-weight="800" fill="#7d0000">不是“少写代码”，而是让每次手写都能暴露工作流、工具或约束的缺口。</text>
+  <text x="440" y="416" class="chart-label" text-anchor="middle" font-size="13" fill="#666">Agent写出的代码仍需可测试、可追溯、可恢复；人仍需对目标、边界和后果负责。</text>
+</svg>
+<figcaption id="fig1cap">图1｜“手写代码成为例外”的真实含义：实现被交给Agent，工程责任转向目标、工作流、评测、架构与长期可维护性。</figcaption>
+</figure>
+
+<nav class="toc" aria-label="文章目录">
+  <strong>文章结构</strong>
+  <ol>
+    <li><a href="#what">Pencils Down到底在说什么</a></li>
+    <li><a href="#hey">HEY实验：架构成本为何被重算</a></li>
+    <li><a href="#rails">约定为何会成为Token效率</a></li>
+    <li><a href="#not">不应从演讲中得出的结论</a></li>
+    <li><a href="#practice">企业如何把AI代码优先落到工程</a></li>
+    <li><a href="#china">对Agent、开源与产业的启示</a></li>
+  </ol>
+</nav>
+
+<h2 id="what">一、Pencils Down不是“停止编程”，而是重新定义异常</h2>
+<p>DHH的原话是：37signals不再把手写代码视作“创建东西时的正常业务过程”；当它发生时，应当像Sentry里出现一个Bug那样引起注意。<a class="fn" href="#s1">[1]</a> 这句说法的锋利之处，在于它没有把问题归结为“谁会用Agent”，而是把人从重复实现中抽离出来，让团队追问：为什么这项工作还不能由一个拥有正确上下文、工具权限和反馈机制的Agent完成？</p>
+<p>它把工程中的“默认单位”从<em>一段代码</em>换成了<em>一个可完成的结果</em>。过去的基本闭环是：人读需求、人写代码、人运行、人修复。现在的闭环可以是：人定义完成条件与禁止边界，Agent读代码库、实现、执行、检查失败原因；人接手架构选择、复杂异常、验收和责任归属；这些失败再进入测试、技能、提示、项目说明与权限策略。</p>
+<p>所以，Pencils Down不是让团队放弃理解代码。恰恰相反，它要求团队把可理解性从“每个人都亲自写过每一行”升级为“系统能够说明自己为何这样改、怎样验证、失败后如何回滚”。前者依赖个人记忆；后者才是规模化的工程能力。</p>
+
+<div class="fact-note">
+  <p><strong>一个必要区分：</strong>“Agent生成了代码”只是生产环节的变化；“Agent优先”则要求目标、任务拆分、测试、权限、观测、评审和恢复机制一起变化。缺少后者，手写减少的只会是短期摩擦，积累的却可能是长期不可控性。</p>
+</div>
+
+<h2 id="hey">二、HEY实验：被重算的不是语言，而是架构成本</h2>
+<p>这场演讲里最具冲击力的案例，是HEY的改造方向：前端从一个Web应用变成六个原生应用；原本承担Web渲染的后台被重做为邮件服务的核心，使用Rust实现。DHH在现场给出的99% CPU、95%内存下降，以及“峰值可由一台树莓派承担”的说法，是该团队演讲中的性能判断；其中树莓派表述明确是粗略估算，而非公开的独立基准测试。<a class="fn" href="#s1">[1]</a></p>
+<p>因此，不能把它简单理解为“Rust总是比Rails好”或“原生应用一定应替代Web”。DHH自己也明确表示，Web仍适合不愿安装应用、访问频率不高、需要低摩擦触达的大量服务；Rails也仍适合这类场景。<a class="fn" href="#s1">[1]</a> HEY的含义在于：对于需要长期使用、对交互延迟敏感、追求设备原生体验的产品，过去维护多个原生端和更贴近底层后端的组织成本过高；当Agent能承担大量实现、测试和重构，这笔成本开始被重新定价。</p>
+
+<figure class="figure" aria-labelledby="fig2cap">
+<svg viewBox="0 0 880 485" role="img" aria-label="Agent降低实现成本后架构选择从单一成本最小化变成多目标权衡">
+  <rect width="880" height="485" fill="#fcfbf9"/>
+  <text x="36" y="42" class="chart-label" font-size="23" font-weight="800" fill="#202020">Agent改变的，是架构权衡中的成本权重</text>
+  <line x1="124" y1="390" x2="795" y2="390" stroke="#444" stroke-width="3"/>
+  <line x1="124" y1="390" x2="124" y2="90" stroke="#444" stroke-width="3"/>
+  <text x="460" y="430" class="chart-label" text-anchor="middle" font-size="14" fill="#555">产品对原生体验、性能与长期差异化的要求</text>
+  <text x="64" y="240" class="chart-label" transform="rotate(-90 64 240)" text-anchor="middle" font-size="14" fill="#555">实现与维护的综合成本</text>
+  <path d="M180 322 C340 244 485 188 720 142" fill="none" stroke="#777" stroke-width="5"/>
+  <text x="190" y="348" class="chart-label" font-size="13" fill="#666">传统条件下的可承受边界</text>
+  <path d="M180 350 C350 280 523 215 740 176" fill="none" stroke="#b90000" stroke-width="5"/>
+  <text x="470" y="262" class="chart-label" font-size="13" fill="#b90000" font-weight="800">Agent降低实现成本后，边界向右移动</text>
+  <circle cx="324" cy="292" r="11" fill="#556878"/><text x="342" y="296" class="chart-label" font-size="13" fill="#556878">Web + Rails：低安装摩擦、快速交付</text>
+  <circle cx="658" cy="198" r="11" fill="#b90000"/><text x="676" y="202" class="chart-label" font-size="13" fill="#b90000">原生端 + 高效后端：体验与效率优先</text>
+  <text x="440" y="92" class="chart-label" text-anchor="middle" font-size="16" font-weight="800" fill="#7d0000">结论不是单一技术栈胜出，而是可选架构集合扩大。</text>
+</svg>
+<figcaption id="fig2cap">图2｜实现成本下降后，过去因团队规模和维护负担而放弃的架构开始重新可选；但产品分发、业务复杂度、人才、运维和安全责任并不会自动消失。</figcaption>
+</figure>
+
+<p>这也解释了DHH对Rust态度看似矛盾的变化：他依然不喜欢人类阅读和书写Rust的体验，却愿意让Agent生成它，以换取更低资源占用、极小的可执行文件与更快启动。<a class="fn" href="#s1">[1]</a> 这不是“语言品味失效”，而是语言选择从“人是否愿意持续手写和阅读”转向“机器是否可以稳定生成、验证和维护，同时产物是否符合性能、部署和可靠性目标”。</p>
+<p>但这个转移有一条不能省略的条件：人可以不逐行写Rust，却不能没人理解系统的行为边界。对服务端而言，容量、隔离、资源限制、数据一致性、故障恢复和安全责任仍会在生产事故中显形。Agent减少的是实现时间，不是这些问题的存在。</p>
+
+<h2 id="rails">三、Convention over Configuration：约定为何会成为Token效率</h2>
+<p>Rails的“约定优于配置”长期被理解为开发效率哲学：框架替开发者预设目录、命名、数据库映射和常见工作流，从而少写配置、少做选择。DHH在这次演讲里给出了Agent时代的新翻译：<strong>约定直接导向Token效率</strong>。<a class="fn" href="#s1">[1]</a></p>
+<p>所谓Token效率，不应只理解为“少花模型钱”。更准确地说，是在同样的上下文窗口里，让Agent更少猜测、更快定位、更稳定地产出正确的下一步。一个有清晰目录、命名、测试习惯、依赖边界和部署规约的项目，不只是更方便新同事加入，也更容易被Agent读取、导航、修改和验证。</p>
+
+<figure class="figure" aria-labelledby="fig3cap">
+<svg viewBox="0 0 880 470" role="img" aria-label="框架约定把分散的项目知识压缩成Agent可以反复调用的上下文">
+  <rect width="880" height="470" fill="#fcfbf9"/>
+  <text x="36" y="42" class="chart-label" font-size="23" font-weight="800" fill="#202020">约定不是束缚，而是给Agent的上下文压缩格式</text>
+  <g class="chart-label">
+    <rect x="50" y="96" width="240" height="245" rx="9" fill="#575757"/>
+    <text x="170" y="133" text-anchor="middle" font-size="18" font-weight="800" fill="#fff">低约定项目</text>
+    <text x="170" y="176" text-anchor="middle" font-size="13" fill="#fff">每个目录各自命名</text><text x="170" y="202" text-anchor="middle" font-size="13" fill="#fff">配置与入口分散</text><text x="170" y="228" text-anchor="middle" font-size="13" fill="#fff">测试和部署规则隐含</text><text x="170" y="254" text-anchor="middle" font-size="13" fill="#fff">Agent需要反复检索与猜测</text><text x="170" y="292" text-anchor="middle" font-size="12" font-weight="800" fill="#ddd">Token花在“先弄清楚”</text>
+    <rect x="590" y="96" width="240" height="245" rx="9" fill="#b90000"/>
+    <text x="710" y="133" text-anchor="middle" font-size="18" font-weight="800" fill="#fff">高约定项目</text>
+    <text x="710" y="176" text-anchor="middle" font-size="13" fill="#fff">统一命名与目录语义</text><text x="710" y="202" text-anchor="middle" font-size="13" fill="#fff">默认路径与可见边界</text><text x="710" y="228" text-anchor="middle" font-size="13" fill="#fff">测试、构建、部署可复现</text><text x="710" y="254" text-anchor="middle" font-size="13" fill="#fff">Agent能够复用已有理解</text><text x="710" y="292" text-anchor="middle" font-size="12" font-weight="800" fill="#ffe5e2">Token花在“解决问题”</text>
+    <rect x="350" y="170" width="180" height="96" rx="9" fill="#b88a36"/>
+    <text x="440" y="207" text-anchor="middle" font-size="17" font-weight="800" fill="#fff">框架约定</text><text x="440" y="234" text-anchor="middle" font-size="12" fill="#fff">压缩重复决策与项目知识</text>
+  </g>
+  <path d="M290 218 L350 218" stroke="#b88a36" stroke-width="5"/><polygon points="350,218 333,209 333,227" fill="#b88a36"/>
+  <path d="M530 218 L590 218" stroke="#b88a36" stroke-width="5"/><polygon points="590,218 573,209 573,227" fill="#b88a36"/>
+  <text x="440" y="405" class="chart-label" text-anchor="middle" font-size="14" fill="#666">真正高效的不是“更少上下文”，而是“更少无意义的上下文”。</text>
+</svg>
+<figcaption id="fig3cap">图3｜框架约定将反复出现的项目知识编码为稳定结构。它减少Agent的探索成本，也为人类协作保留一致的沟通坐标。</figcaption>
+</figure>
+
+<p>这个判断对Rails以外的所有框架同样成立。Spring的约定、Django的项目结构、Kubernetes的声明式对象、操作系统的目录与进程模型、数据平台的血缘和元数据，都可能成为Agent的“项目语法”。未来比拼的不只是模型能否读懂自然语言，更是工具链有没有为人和Agent共同工作提供稳定、可解释、可验证的上下文。</p>
+
+<h2 id="not">四、不要从这场演讲中得出四个错误结论</h2>
+<div class="mini-grid">
+  <div class="mini"><h3>不是“所有手写都该消失”</h3><p>新算法、关键安全边界、复杂故障、陌生系统和高风险变更中，手写、逐行审查和深度理解仍可能是合适方式。Pencils Down是37signals当前的默认工作法，不是普遍适用的安全规范。</p></div>
+  <div class="mini"><h3>不是“Rust一定取代Rails”</h3><p>原生应用和高效后端适合特定产品形态；Web与Rails仍服务于低安装摩擦和广泛可达的场景。技术选择应回到体验、性能、分发、人才与运维，而非围绕语言身份。</p></div>
+  <div class="mini"><h3>不是“性能数字已经成为行业结论”</h3><p>99% CPU、95%内存和树莓派估算来自演讲案例。它们说明值得验证的方向，不替代独立基准、公开方法、生产压测和可靠性数据。</p></div>
+  <div class="mini"><h3>不是“Agent输出可以免审”</h3><p>把代码生成交给Agent，反而更需要测试、评测、权限、变更审计、回滚和故障演练。没有这些，Pencils Down会退化成“看不见的技术债”。</p></div>
+</div>
+
+<h2 id="practice">五、真正可复制的，不是口号，而是Agent工程制度</h2>
+<p>想把“AI代码优先”落到企业工程中，最不有效的做法是宣布“以后都用Agent写”。更有效的是先把高频、低风险、容易验证的环节变成可重复任务，再逐步扩大Agent的行动范围。可以用下面五个问题审视团队是否真正准备好。</p>
+
+<div class="matrix-wrap">
+<table>
+<thead><tr><th>要素</th><th>应当建立什么</th><th>没有它会发生什么</th></tr></thead>
+<tbody>
+<tr><td class="rowhead">完成定义</td><td>把“写完功能”改为可观察的验收条件、性能边界、禁止动作与回滚条件。</td><td>Agent只能追逐表面需求，难以判断是否真正完成。</td></tr>
+<tr><td class="rowhead">项目语法</td><td>稳定目录、命名、依赖边界、接口文档、运行方式与最小架构说明。</td><td>每次任务都从考古开始，Token与时间消耗在猜测上。</td></tr>
+<tr><td class="rowhead">验证闭环</td><td>单元/集成测试、可复现环境、评测集、静态检查、性能与安全门禁。</td><td>生成速度变快，错误也更快进入主干与生产。</td></tr>
+<tr><td class="rowhead">权限与观测</td><td>最小权限、沙箱、网络和数据边界、命令日志、变更溯源、告警与回滚。</td><td>Agent越有能力，越可能把一次误判放大成系统性事故。</td></tr>
+<tr><td class="rowhead">责任分配</td><td>明确谁定义目标、谁批准高风险变更、谁处理事故、谁维护评测与工具链。</td><td>“代码是AI写的”会变成责任真空，而不是生产力提升。</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>这也是对“手写成为例外”的最务实补充：只有当异常能够被自动发现、异常原因能够被定位、修复能够回写为系统能力时，人才不需要一次次重复同样的实现。否则，表面上是Agent替人写代码，实际上只是把人工劳动转成了更隐蔽的审查、救火和返工。</p>
+
+<h2 id="china">六、对Agent、开源与中国软件产业的启示</h2>
+<p>DHH的演讲对中国的Agent、开源模型、芯片和行业软件并不提供一个可以直接照搬的技术答案，却提出了一个更基本的问题：<strong>当智能实现变得廉价，什么会成为新的工程门槛？</strong></p>
+<p>第一，是把<em>工程约定</em>升级为Agent可调用的公共能力。开源项目若只提供权重、代码仓或单点Demo，很难支持真实系统演进；还需要清晰的构建方式、测试、问题定位、能力声明、迁移路径和贡献规范。它们既是开发者文档，也是Agent的上下文接口。</p>
+<p>第二，是把<em>性能与可迁移性</em>重新放回架构中心。大模型与Agent降低多端实现成本后，国产操作系统、芯片工具链、模型推理框架和机器人平台，都可能拥有更大的架构选择空间。但性能目标不能只停在“跑通”，还要回答跨硬件、跨模型、跨部署环境时的稳定性、调试性和安全边界。</p>
+<p>第三，是将<em>Agent评测与治理</em>当作产品能力，而非发布前检查。Agent能够完成多长任务、碰到哪些数据、何时升级给人、哪些动作必须可撤销、谁看得到变更历史，决定了它能否从演示进入真实业务。对于涉及个人信息、重要数据、关键基础设施或高风险实体动作的系统，依法合规、最小必要、分级授权、审计和人工监督应当进入默认架构。</p>
+<p>第四，是让开源共同体从“代码贡献”进一步走向“可复用的工程能力贡献”。未来的价值不只是谁提交了最多补丁，也包括谁提供了评测集、性能复现、行业约束、硬件适配、故障案例和可迁移的治理规则。越能被人和Agent共同理解的项目，越有可能形成事实标准。</p>
+
+<blockquote><p>Agent写代码的能力会迅速普及；决定项目能否长期做强的，是它是否把上下文、约定、验证、权限和责任组织成了一种可复用的生产能力。</p></blockquote>
+
+<h2>结语：真正该放下的，是把代码当作唯一生产单位的习惯</h2>
+<p>DHH在Rails World上“震撼开炮”，并非简单宣布Rails或手工编程过时。更准确地说，他把一个长期信奉程序员手艺、框架约定和软件主权的人推到了另一个结论：当机器开始承担实现，人的价值不必缩小，但必须从不断生成字符，迁移到决定什么值得做、如何验证、何处需要边界、怎样让系统长期可控。</p>
+<p>原生应用、Rust后端和树莓派的叙事，都是这场转变的戏剧化例子。更稳妥的判断是：Agent确实使一部分过去不经济的架构重新成为可能；但只有将验证、治理与可维护性一并前置，才会把“AI代码优先”变成工程能力，而不只是一次热烈的演讲。</p>
+<p class="keyline">Pencils Down之后，最重要的不是谁还在敲键盘，而是谁在持续改进那台能够可靠地做出软件的机器。</p>
+
+<section class="sources">
+<h2>主要资料</h2>
+<ol>
+  <li id="s1"><a href="https://www.youtube.com/watch?v=vDjW_dRyKXY">Ruby on Rails：Rails World 2026 Opening Keynote – DHH</a>（2026年9月24日，视频与演讲时间线）。</li>
+  <li id="s2"><a href="https://gist.github.com/cristoslc/d17809f90a256af4d1008a1a36f9abaa">Rails World 2026 Opening Keynote — Transcript</a>（社区整理逐字稿；用于检索和核对演讲段落，最终以官方视频为准）。</li>
+  <li id="s3"><a href="https://hraness.com/reading/rails-world-2026-opening-keynote-dhh">Summary and notes: Rails World 2026 Opening Keynote – DHH</a>（演讲要点与章节索引，辅助交叉核验）。</li>
+</ol>
+</section>
+<footer class="footer">公开讨论稿 v1｜基于公开演讲材料的解读与分析；性能数字与产品计划均按演讲中的表述呈现，不构成独立测评或投资建议。</footer>
+</main>
+</body>
+</html>

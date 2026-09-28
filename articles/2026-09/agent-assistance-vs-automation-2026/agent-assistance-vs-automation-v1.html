@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="对比DHH与TypeSafe创始人Diogo Almeida的两场访谈，分析Claude Code式人机协作与Jev式自主自动化的边界、联系和产业意义。">
+<title>Claude Code之后 协作与自动化不是同一场比赛</title>
+<style>
+:root{--accent:#b90000;--accent2:#7d0000;--accent-bg:#fff6f5;--ink:#202020;--muted:#696969;--soft:#969696;--line:#e4e1dd;--paper:#fff;--canvas:#f6f4f1;--gold:#b88a36;--blue:#556878;--dark:#3d3d3d}
+*{box-sizing:border-box}html{scroll-behavior:smooth;background:var(--canvas)}body{margin:0;color:var(--ink);background:var(--canvas);font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",Arial,sans-serif;line-height:1.9}.top-bar{position:fixed;z-index:20;top:0;left:0;width:100%;height:4px;background:var(--accent)}.article{width:min(940px,100%);min-height:100vh;margin:0 auto;padding:0 42px 80px;background:var(--paper);box-shadow:0 0 42px rgba(0,0,0,.05)}.cover{padding:62px 0 34px;border-bottom:3px solid var(--accent)}.eyebrow{margin:0 0 12px;color:var(--accent);font-size:.78rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase}.cover h1{max-width:850px;margin:0 0 12px;color:#170202;font-size:clamp(2rem,5.6vw,3.15rem);font-weight:900;line-height:1.22;letter-spacing:-.04em}.subtitle{max-width:790px;margin:0 0 25px;color:var(--muted);font-size:1.12rem;line-height:1.7}.tagline{max-width:820px;padding:14px 20px;border-left:4px solid var(--accent);color:var(--accent2);background:var(--accent-bg);font-size:1rem;font-weight:700;line-height:1.75}.version{margin:15px 0 0;color:var(--soft);font-size:.78rem}.lead{margin-top:32px}.lead p:first-child{font-size:1.06rem}h2{margin:50px 0 20px;padding:11px 0 11px 18px;border-left:4px solid var(--accent);color:var(--accent2);background:linear-gradient(90deg,var(--accent-bg),transparent 68%);font-size:1.5rem;font-weight:900;line-height:1.45}h3{margin:30px 0 12px;padding-left:13px;border-left:3px solid var(--accent);font-size:1.12rem;line-height:1.5}p{margin:0 0 16px;font-size:1rem;line-height:2;text-align:justify}strong{font-weight:750}em{color:var(--accent2);font-style:normal;font-weight:750}a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:3px}.fn{font-size:.72em;font-weight:700;vertical-align:super}.keyline{margin:28px 0;color:var(--accent2);font-size:1.12rem;font-weight:800;text-align:center}.figure{margin:32px 0 38px;padding:20px 18px 14px;border:1px solid var(--line);background:#fcfbf9}.figure svg{display:block;width:100%;height:auto}.figure figcaption{margin-top:12px;color:var(--muted);font-size:.82rem;line-height:1.65;text-align:center}.matrix-wrap{margin:26px 0 34px;overflow-x:auto;border:1px solid var(--line)}table{width:100%;border-collapse:collapse;background:#fff;font-size:.87rem;line-height:1.65}th,td{padding:12px 13px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th:last-child,td:last-child{border-right:0}tr:last-child td{border-bottom:0}thead th{color:#fff;background:#3d3d3d;font-weight:750}tbody tr:nth-child(even){background:#faf8f6}.rowhead{white-space:nowrap;color:var(--accent2);font-weight:800}ul,ol{margin:8px 0 24px;padding-left:1.45em}li{margin:8px 0;font-size:.96rem;line-height:1.85}blockquote{margin:28px 0;padding:15px 21px;border-left:4px solid var(--accent);color:var(--accent2);background:var(--accent-bg);font-weight:750}blockquote p{margin:0;text-align:left}.mini-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:24px 0 34px}.mini{padding:18px;border-top:3px solid var(--accent);background:#f8f6f3}.mini h3{margin:0 0 7px;padding:0;border:0;font-size:1rem}.mini p{margin:0;color:#454545;font-size:.9rem;line-height:1.75;text-align:left}.fact-note{margin:24px 0;padding:18px 21px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#fcfbf9}.fact-note p{margin:0;font-size:.93rem;text-align:left}.toc{margin:26px 0 34px;padding:18px 22px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#fcfbf9}.toc strong{display:block;margin-bottom:8px;color:var(--accent2)}.toc ol{columns:2;margin:0;padding-left:1.3em}.toc li{break-inside:avoid;margin:4px 0;font-size:.88rem}.toc a{color:#4a4a4a;text-decoration:none}.toc a:hover{color:var(--accent)}.sources{margin-top:54px;padding-top:8px;border-top:1px solid var(--line)}.sources h2{margin-top:20px}.sources li{color:var(--muted);font-size:.84rem;line-height:1.7}.footer{margin-top:50px;padding:17px 0;border-top:2px solid var(--accent);color:var(--soft);font-size:.76rem;text-align:center}.chart-label{font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",Arial,sans-serif}
+@media(max-width:700px){.article{padding:0 21px 56px}.cover{padding-top:46px}.mini-grid{grid-template-columns:1fr}.toc ol{columns:1}h2{margin-top:40px;font-size:1.28rem}.figure{margin-left:-5px;margin-right:-5px;padding:12px 8px 10px}p{text-align:left}.cover h1{letter-spacing:-.02em}}
+@media print{@page{size:A4;margin:16mm 15mm}html,body{background:#fff}.top-bar{display:none}.article{width:auto;margin:0;padding:0;box-shadow:none}.cover{padding-top:0}.figure,.matrix-wrap,blockquote,.fact-note{break-inside:avoid}h2,h3{break-after:avoid}a{color:inherit;text-decoration:none}.toc{display:none}}
+</style>
+</head>
+<body>
+<div class="top-bar"></div>
+<main class="article">
+<header class="cover">
+  <p class="eyebrow">Agent · Assistance · Automation</p>
+  <h1>Claude Code之后<br>协作与自动化不是同一场比赛</h1>
+  <p class="subtitle">从DHH与Jev创始人的两场访谈，看Agent软件的双重演进</p>
+  <div class="tagline">一个观点把人推向创造中心，另一个观点要把人从运行环路中移走。它们并不真正矛盾：前者回答软件如何被创造，后者回答软件如何被长期执行。</div>
+  <p class="version">深度解读与分析｜2026年9月</p>
+</header>
+
+<section class="lead">
+  <p>在Lex Fridman的访谈中，DHH兴奋地描述自己如何同时运行多个编码Agent，用自然语言编程，为一个人的需求快速做出软件。他的结论是：Agent没有终结编程，而是把程序员从大量实现工作中释放出来，让人重新回到创造、判断和审美。<a class="fn" href="#s1">[1]</a></p>
+  <p>几乎在同一时期，TypeSafe AI创始人Diogo Almeida却提出一个更尖锐的判断：Claude Code并不代表下一个时代，它与ChatGPT仍属于同一个“人机协作时代”。真正的下一站应当是无需人持续盯守、能够在后台稳定运行的自主自动化。<a class="fn" href="#s2">[2]</a></p>
+  <p>一个人说，Agent让人与机器的协作进入黄金时代；另一个人说，下一代系统恰恰要把人从环路中拿掉。两种观点看似正面冲突，却分别抓住了AI软件的两个不同问题：<strong>创造过程需要什么，生产运行又需要什么。</strong></p>
+</section>
+
+<figure class="figure" aria-labelledby="thesiscap">
+<svg viewBox="0 0 880 470" role="img" aria-label="DHH与Diogo Almeida观点的对照及统一">
+  <rect width="880" height="470" fill="#fcfbf9"/>
+  <text x="35" y="42" class="chart-label" font-size="23" font-weight="800" fill="#202020">两种主张，回答的是两个不同问题</text>
+  <g class="chart-label">
+    <rect x="45" y="92" width="330" height="230" rx="9" fill="#333"/>
+    <text x="75" y="132" font-size="19" font-weight="800" fill="#fff">DHH：扩大人的创造力</text>
+    <text x="75" y="172" font-size="13" fill="#fff">场景　探索、设计、编程、产品迭代</text>
+    <text x="75" y="205" font-size="13" fill="#fff">接口　自然语言与生成式代码</text>
+    <text x="75" y="238" font-size="13" fill="#fff">人的位置　持续参与、判断、验收</text>
+    <text x="75" y="271" font-size="13" fill="#fff">价值　更快把意图变成可用软件</text>
+    <rect x="505" y="92" width="330" height="230" rx="9" fill="#b90000"/>
+    <text x="535" y="132" font-size="19" font-weight="800" fill="#fff">Almeida：扩大软件的自动化</text>
+    <text x="535" y="172" font-size="13" fill="#fff">场景　分类、路由、筛选、业务决策</text>
+    <text x="535" y="205" font-size="13" fill="#fff">接口　强类型结果与校准概率</text>
+    <text x="535" y="238" font-size="13" fill="#fff">人的位置　设定规则，按阈值例外介入</text>
+    <text x="535" y="271" font-size="13" fill="#fff">价值　让业务流程长期无人值守运行</text>
+  </g>
+  <path d="M375 207H505" stroke="#b88a36" stroke-width="4"/><polygon points="505,207 490,199 490,215" fill="#b88a36"/>
+  <text x="440" y="188" class="chart-label" text-anchor="middle" font-size="12" font-weight="800" fill="#7d0000">不是替代关系</text>
+  <rect x="185" y="357" width="510" height="66" rx="7" fill="#fff6f5" stroke="#e5c3c0"/>
+  <text x="440" y="385" class="chart-label" text-anchor="middle" font-size="15" font-weight="800" fill="#7d0000">统一后的问题</text>
+  <text x="440" y="409" class="chart-label" text-anchor="middle" font-size="12" fill="#555">如何先让人与Agent把软件创造出来，再把成熟判断固化成可自动运行的系统？</text>
+</svg>
+<figcaption id="thesiscap">图 1｜DHH关注创造环路，Almeida关注运行环路。真正成熟的软件体系同时需要两者。</figcaption>
+</figure>
+
+<nav class="toc" aria-label="文章目录">
+  <strong>文章结构</strong>
+  <ol>
+    <li><a href="#different">看似矛盾的两个判断</a></li>
+    <li><a href="#dhh">DHH的创造环路</a></li>
+    <li><a href="#jev">Jev的自动化环路</a></li>
+    <li><a href="#divide">真正的分野在哪里</a></li>
+    <li><a href="#map">什么任务适合哪条路线</a></li>
+    <li><a href="#limits">Jev解决了什么，没解决什么</a></li>
+    <li><a href="#unify">双环路如何进入同一套系统</a></li>
+    <li><a href="#industry">对开源与产业的启示</a></li>
+  </ol>
+</nav>
+
+<h2 id="different">一、真正的矛盾，不是“人留不留下”</h2>
+<p>如果只截取最响亮的句子，两场访谈几乎互相否定。DHH说自然语言正在成为新的编程语言，Claude Code的多Agent体验让他比过去更愿意创造；Almeida则把Claude Code与ChatGPT放在同一时代，认为它们都没有跨过从辅助到自动化的边界。</p>
+<p>但Almeida并没有否认Claude Code的价值。他在演讲中明确说自己喜欢并会继续使用Claude Code。他反对的不是编程Agent，而是把“编程Agent越来越好用”直接等同于“企业流程已经可以无人值守”。<a class="fn" href="#s2">[2]</a></p>
+<p>DHH也没有声称多个Agent能够独立经营一套关键业务。他描述的工作流中，人始终在场：提出目标、分配任务、接受通知、处理冲突、审查结果并决定是否合并。Agent拥有更大的执行空间，但产品方向和最终责任仍然在人。</p>
+<p>因此，两人的差异不能用“乐观与悲观”概括。更准确的说法是：</p>
+<blockquote><p>DHH讨论的是如何降低创造软件的成本；Almeida讨论的是如何降低软件持续作出语义判断的成本。</p></blockquote>
+
+<h2 id="dhh">二、DHH的答案：让人留在创造环路中</h2>
+<p>DHH的变化来自连续数月的真实使用。他让多个Agent在不同机器上并行工作，用Claude Code的Agent视图管理线程，也会使用其他模型和工具。他提到，自己现在大量通过英语而不是传统编程语言表达意图，但仍然阅读代码、观察行为并作出决定。<a class="fn" href="#s1">[1]</a></p>
+<p>这套工作方式的核心并不是“模型替程序员完成更多代码”，而是人的注意力发生上移：</p>
+<div class="mini-grid">
+  <div class="mini"><h3>从实现转向问题</h3><p>程序员不再需要亲自完成所有机械步骤，可以把更多时间用于决定什么值得构建。</p></div>
+  <div class="mini"><h3>从串行转向并行</h3><p>分析、实现、测试和审查可以同时推进，人负责保持这些线程服务于同一个产品方向。</p></div>
+  <div class="mini"><h3>从通用产品转向个人软件</h3><p>Omawrite这样的案例表明，当第一版成本降低，只服务一个人或小团队的软件也可能成立。</p></div>
+  <div class="mini"><h3>从代码稀缺转向判断稀缺</h3><p>生成的补丁越来越多以后，边界、品味、可维护性和最终责任成为新的瓶颈。</p></div>
+</div>
+<p>在这条路线中，模型最有价值的地方恰恰是开放性。自然语言可以表达未完全形式化的愿望，生成式模型可以提出实现、解释代码、修改界面，也可以在需求变化时快速重来。它的优势来自自由度，而不是消除自由度。</p>
+<p>这也决定了人的位置。探索阶段的问题没有唯一正确答案，产品品味无法完全写成单元测试，需求甚至会在看到原型以后才变得清楚。此时把人拿出环路，不是自动化升级，而是过早冻结问题。</p>
+
+<h2 id="jev">三、Jev的答案：让人退出稳定运行的环路</h2>
+<p>Almeida从另一个痛点出发。企业软件中存在大量高频、边界相对明确、但传统规则难以理解非结构化输入的微小判断：工单该路由到哪里，一封邮件是否表达取消意图，一个事件应落在哪个风险等级，一组对象应如何排序。</p>
+<p>把这些任务交给通用大模型，常见做法是要求它生成JSON，再在外部增加解析、验证、重试和回退。模型本来输出面向人的字符串，软件却要把字符串重新翻译成可以执行的结构。Almeida认为，这种接口从根上错配了。</p>
+<p>Jev因此放弃开放式文本生成，提供三类预先定义的决策原语：Choice从有限选项中选择，Score按照量表评分，Noul估计某个陈述为真的程度。状态和类型化问题进入，结构化结果、概率与置信信息出来；多个原子问题可以并行计算，再由普通代码组合。<a class="fn" href="#s3">[3]</a></p>
+
+<figure class="figure" aria-labelledby="interfacecap">
+<svg viewBox="0 0 880 500" role="img" aria-label="生成式协作接口与类型化自动化接口对比">
+  <rect width="880" height="500" fill="#fcfbf9"/>
+  <text x="35" y="42" class="chart-label" font-size="23" font-weight="800" fill="#202020">接口不同，因为接收结果的对象不同</text>
+  <g class="chart-label">
+    <text x="220" y="90" text-anchor="middle" font-size="17" font-weight="800" fill="#333">给人使用的生成式接口</text>
+    <rect x="55" y="115" width="330" height="82" rx="8" fill="#333"/><text x="220" y="148" text-anchor="middle" font-size="14" font-weight="800" fill="#fff">自然语言意图</text><text x="220" y="174" text-anchor="middle" font-size="12" fill="#fff">开放、含混、可以在对话中变化</text>
+    <rect x="55" y="239" width="330" height="82" rx="8" fill="#556878"/><text x="220" y="272" text-anchor="middle" font-size="14" font-weight="800" fill="#fff">字符串 / 代码 / 解释</text><text x="220" y="298" text-anchor="middle" font-size="12" fill="#fff">表达能力强，也可能偏离格式与意图</text>
+    <rect x="55" y="363" width="330" height="82" rx="8" fill="#777"/><text x="220" y="396" text-anchor="middle" font-size="14" font-weight="800" fill="#fff">人检查、追问与修正</text><text x="220" y="422" text-anchor="middle" font-size="12" fill="#fff">适合探索和创造</text>
+    <path d="M220 197V239M220 321V363" stroke="#b88a36" stroke-width="4"/>
+
+    <text x="660" y="90" text-anchor="middle" font-size="17" font-weight="800" fill="#7d0000">给软件使用的类型化接口</text>
+    <rect x="495" y="115" width="330" height="82" rx="8" fill="#b90000"/><text x="660" y="148" text-anchor="middle" font-size="14" font-weight="800" fill="#fff">状态 + 原子问题 + 类型</text><text x="660" y="174" text-anchor="middle" font-size="12" fill="#fff">可选空间与结构事先定义</text>
+    <rect x="495" y="239" width="330" height="82" rx="8" fill="#7d0000"/><text x="660" y="272" text-anchor="middle" font-size="14" font-weight="800" fill="#fff">Choice / Score / Noul</text><text x="660" y="298" text-anchor="middle" font-size="12" fill="#fff">类型化结果、概率与置信信息</text>
+    <rect x="495" y="363" width="330" height="82" rx="8" fill="#b88a36"/><text x="660" y="396" text-anchor="middle" font-size="14" font-weight="800" fill="#fff">代码按阈值执行或升级</text><text x="660" y="422" text-anchor="middle" font-size="12" fill="#fff">适合重复业务判断</text>
+    <path d="M660 197V239M660 321V363" stroke="#b90000" stroke-width="4"/>
+  </g>
+</svg>
+<figcaption id="interfacecap">图 2｜Claude Code面向人提供开放表达，Jev面向程序提供受约束结果。两种接口的优劣取决于谁消费输出。</figcaption>
+</figure>
+
+<p>这条路线不追求让模型模拟一个“全能数字员工”，而是把复杂业务拆成许多小而明确的语义判断。模型给出概率，代码决定阈值：高置信度自动通过，中间区间进入规则复核，低置信度或高风险样本交给人。</p>
+<p>TypeSafe把这种训练目标称为RLCD，即面向校准决策的强化学习。它与面向人类偏好的RLHF、面向可验证答案的RLVR强调不同的优化对象。这里最重要的不是缩写本身，而是Almeida提出的工程原则：<em>自动化模型不只要给答案，还要让自己的置信度具有统计意义。</em><a class="fn" href="#s4">[4]</a></p>
+
+<h2 id="divide">四、真正的分野：对象、目标与失败方式</h2>
+<p>把两场访谈放在同一张表里，可以看到它们并不是对同一个产品作相反评价，而是在描述两种不同的软件生产关系。</p>
+<div class="matrix-wrap">
+<table aria-label="DHH与Almeida观点对照">
+<thead><tr><th>比较维度</th><th>DHH的人机协作</th><th>Almeida的自主自动化</th></tr></thead>
+<tbody>
+<tr><td class="rowhead">核心问题</td><td>一个人如何创造更多、更贴合意图的软件</td><td>软件如何长期处理真实业务而无需持续监督</td></tr>
+<tr><td class="rowhead">主要任务</td><td>探索、设计、编码、调试、个性化工具</td><td>分类、路由、筛选、评分、风险分层</td></tr>
+<tr><td class="rowhead">输出消费者</td><td>人类程序员、产品创造者</td><td>程序、工作流、后台服务</td></tr>
+<tr><td class="rowhead">理想接口</td><td>自然语言、代码、解释与可追问对话</td><td>强类型结果、概率、置信度与固定契约</td></tr>
+<tr><td class="rowhead">人的角色</td><td>持续定义、判断、审查与整合</td><td>事先设计、设阈值，异常时介入</td></tr>
+<tr><td class="rowhead">主要失败</td><td>方向错误、复杂度失控、生成过多无用代码</td><td>错误决策被规模化执行、概率失准、数据漂移</td></tr>
+<tr><td class="rowhead">成功标准</td><td>更快学习、更好作品、更高创造密度</td><td>长期可靠、成本可控、错误率和升级率可测</td></tr>
+</tbody>
+</table>
+</div>
+<p>DHH需要模型保留一定开放性，因为创造本身要穿过不确定性；Almeida需要模型放弃部分开放性，因为生产系统必须把可发生的状态限制在契约之内。一个在扩大可能空间，另一个在收缩运行空间。</p>
+<p>这也解释了为什么自然语言在一个场景中是优势，在另一个场景中却成为成本。对人而言，语言可以容纳模糊意图和新概念；对程序而言，任意字符串意味着解析、验证、重试和不可穷举的失败状态。</p>
+
+<h2 id="map">五、任务应该放在哪一条路上</h2>
+<p>判断一项工作适合人机协作还是自动化，不能只看它“难不难”。更有用的两个维度是：任务能否事先形式化，以及错误后果是否容易逆转。</p>
+
+<figure class="figure" aria-labelledby="taskcap">
+<svg viewBox="0 0 880 540" role="img" aria-label="按可形式化程度和错误可逆性划分AI任务">
+  <rect width="880" height="540" fill="#fcfbf9"/>
+  <text x="35" y="42" class="chart-label" font-size="23" font-weight="800" fill="#202020">不是“越聪明越自动”，而是任务边界决定运行方式</text>
+  <line x1="120" y1="455" x2="820" y2="455" stroke="#333" stroke-width="2"/><line x1="120" y1="455" x2="120" y2="90" stroke="#333" stroke-width="2"/>
+  <line x1="470" y1="90" x2="470" y2="455" stroke="#d5d2ce" stroke-width="2"/><line x1="120" y1="272" x2="820" y2="272" stroke="#d5d2ce" stroke-width="2"/>
+  <text x="470" y="505" class="chart-label" text-anchor="middle" font-size="13" fill="#555">任务可形式化程度 →</text>
+  <text x="45" y="275" class="chart-label" text-anchor="middle" font-size="13" fill="#555" transform="rotate(-90 45 275)">错误可逆性 →</text>
+  <g class="chart-label" text-anchor="middle">
+    <rect x="140" y="110" width="300" height="135" rx="8" fill="#f1efec"/><text x="290" y="145" font-size="16" font-weight="800" fill="#333">人机共同探索</text><text x="290" y="174" font-size="12" fill="#666">产品设计 · 研究假设 · 架构选择</text><text x="290" y="198" font-size="12" fill="#666">保留开放表达，允许反复重来</text><text x="290" y="222" font-size="11" font-weight="800" fill="#556878">DHH路线的核心区域</text>
+    <rect x="500" y="110" width="300" height="135" rx="8" fill="#fff4f2" stroke="#b90000"/><text x="650" y="145" font-size="16" font-weight="800" fill="#7d0000">可自动执行</text><text x="650" y="174" font-size="12" fill="#666">邮件分类 · 内容路由 · 线索评分</text><text x="650" y="198" font-size="12" fill="#666">类型化决策，监控偏差与漂移</text><text x="650" y="222" font-size="11" font-weight="800" fill="#b90000">Jev路线的核心区域</text>
+    <rect x="140" y="300" width="300" height="135" rx="8" fill="#ece9e6"/><text x="290" y="335" font-size="16" font-weight="800" fill="#333">必须保留负责人</text><text x="290" y="364" font-size="12" fill="#666">战略判断 · 医疗处置 · 人事裁决</text><text x="290" y="388" font-size="12" fill="#666">边界模糊且后果难以撤销</text><text x="290" y="412" font-size="11" font-weight="800" fill="#555">AI提供证据，不独立拍板</text>
+    <rect x="500" y="300" width="300" height="135" rx="8" fill="#f5f3f0"/><text x="650" y="335" font-size="16" font-weight="800" fill="#333">受控自动化</text><text x="650" y="364" font-size="12" fill="#666">退款 · 信贷 · 安全封禁 · 设备控制</text><text x="650" y="388" font-size="12" fill="#666">契约清晰仍需阈值、审计与回滚</text><text x="650" y="412" font-size="11" font-weight="800" fill="#7d0000">高风险样本必须升级</text>
+  </g>
+</svg>
+<figcaption id="taskcap">图 3｜难度不是唯一变量。可形式化程度决定能否建立类型和契约，错误可逆性决定需要多强的监督与回滚。</figcaption>
+</figure>
+
+<p>“高频、低风险、可分解”是自动化最自然的起点；“低频、高歧义、结果决定方向”更适合让Agent辅助人。即使任务边界清楚，只要错误不可逆，也不应仅凭一个置信度就完全放行，还需要权限、双重验证、速率限制和人工升级。</p>
+<p>反过来，人留在环路中也不等于逐条手工审核。成熟系统会让人负责制定政策、选择损失函数、设定阈值和处理异常，而不是永远坐在屏幕前确认每一次调用。</p>
+
+<h2 id="limits">六、Jev解决了什么，又没有解决什么</h2>
+<p>Jev提出了一个值得重视的接口创新：如果任务最终只需要有限选择、评分或真假概率，就没有必要先让模型写一段漂亮文字，再费力把文字解析回程序状态。类型化输出可以直接消除格式错误这一整类失败，也能显著降低延迟和输出成本。</p>
+<p>但“类型安全”不能被误读成“决策一定正确”。TypeSafe官方材料所说的“不会幻觉”，主要指模型不生成任意字符串、不会返回模式之外的类型；它仍然可能在允许的选项里做出错误选择。官方文档也明确要求开发者针对自己的任务评估准确率和置信度。<a class="fn" href="#s3">[3]</a></p>
+<div class="mini-grid">
+  <div class="mini"><h3>类型正确 ≠ 语义正确</h3><p>返回值一定属于A、B、C，并不意味着选中的B就是业务上的正确答案。</p></div>
+  <div class="mini"><h3>总体校准 ≠ 个体无风险</h3><p>一批80%置信度样本长期正确率接近80%，仍意味着其中约五分之一可能错误。</p></div>
+  <div class="mini"><h3>发布评测 ≠ 外部定论</h3><p>193.6倍速度和444.6倍成本优势来自公司设计的工作流评测；官方也说明这些属于现实收益的高端区间。</p></div>
+  <div class="mini"><h3>历史校准 ≠ 永久校准</h3><p>业务数据、语言和攻击方式变化后，原有阈值可能失效，需要持续监控与重新评估。</p></div>
+</div>
+<div class="fact-note"><p><strong>事实口径：</strong>TypeSafe公布的输入价格、延迟和性能优势属于其早期产品及自有评测结果。官方博客同时披露了服务位置、样本设计、参考模型和潜在偏差等限制；因此这些数据适合说明技术方向，不宜直接外推为所有生产任务的普遍结果。<a class="fn" href="#s4">[4]</a></p></div>
+<p>这并不削弱Jev的意义，反而把它放回了正确位置：它不是“不会犯错的模型”，而是一种让错误空间更容易被定义、测量和治理的模型接口。</p>
+
+<h2 id="unify">七、统一框架：创造环路、运行环路与治理环路</h2>
+<p>真正完整的Agent软件，不会在Claude Code和Jev之间二选一。更合理的架构，是让不同模型和接口进入不同平面。</p>
+
+<figure class="figure" aria-labelledby="stackcap">
+<svg viewBox="0 0 880 560" role="img" aria-label="创造平面运行平面和治理平面三层架构">
+  <rect width="880" height="560" fill="#fcfbf9"/>
+  <text x="35" y="42" class="chart-label" font-size="23" font-weight="800" fill="#202020">完整的Agent系统，需要三个相互连接的平面</text>
+  <g class="chart-label">
+    <rect x="55" y="88" width="770" height="122" rx="9" fill="#333"/>
+    <text x="85" y="125" font-size="18" font-weight="800" fill="#fff">创造平面｜Human–Agent Collaboration</text>
+    <text x="85" y="157" font-size="13" fill="#fff">人提出问题、探索方案、生成代码、设计流程、编写评测并决定方向</text>
+    <text x="85" y="184" font-size="12" fill="#ddd">自然语言 · Coding Agent · 多模型审查 · 原型与实验</text>
+    <rect x="55" y="238" width="770" height="122" rx="9" fill="#b90000"/>
+    <text x="85" y="275" font-size="18" font-weight="800" fill="#fff">运行平面｜Typed and Bounded Automation</text>
+    <text x="85" y="307" font-size="13" fill="#fff">成熟判断被分解为原子决策，以类型、概率、阈值和普通代码稳定执行</text>
+    <text x="85" y="334" font-size="12" fill="#ffe8e5">Choice · Score · Noul · 规则引擎 · 工作流 · 事务系统</text>
+    <rect x="55" y="388" width="770" height="122" rx="9" fill="#556878"/>
+    <text x="85" y="425" font-size="18" font-weight="800" fill="#fff">治理平面｜Control and Assurance</text>
+    <text x="85" y="457" font-size="13" fill="#fff">定义权限、阈值、评测、漂移监控、人工升级、审计、回滚与责任归属</text>
+    <text x="85" y="484" font-size="12" fill="#e7eef2">Evals · Policy · Observability · Audit · Fallback · Incident Response</text>
+  </g>
+  <path d="M755 210V238" stroke="#b88a36" stroke-width="4"/><polygon points="755,238 747,223 763,223" fill="#b88a36"/>
+  <path d="M700 360V388" stroke="#b88a36" stroke-width="4"/><polygon points="700,388 692,373 708,373" fill="#b88a36"/>
+  <path d="M145 388V360" stroke="#fff" stroke-width="3"/><polygon points="145,360 137,375 153,375" fill="#fff"/>
+  <text x="440" y="542" class="chart-label" text-anchor="middle" font-size="12" fill="#666">创造平面发现和修改规则；运行平面执行规则；治理平面决定何时放行、暂停、升级和重构。</text>
+</svg>
+<figcaption id="stackcap">图 4｜DHH的观点主要对应创造平面，Jev主要进入运行平面；两者都必须受治理平面约束。</figcaption>
+</figure>
+
+<p>一个退款自动化系统可以由人和编码Agent共同设计。团队先用生成式模型理解邮件、发现例外、建立评测集；当模式稳定以后，把“取消意图”“欺诈风险”“客户等级”等拆成类型化判断；工作流按照概率与金额设置阈值，低风险小额退款自动执行，高风险或置信不足的请求升级给人。</p>
+<p>此时，Claude Code并没有被Jev淘汰。它帮助人构建、测试和修改自动化系统；Jev也没有取代程序员，而是把某些已经形式化的语义判断变成可被软件直接消费的构件。</p>
+
+<h2>八、从Prompt到Program：自动化是一条成熟路径</h2>
+<p>许多团队的问题不是使用了错误模型，而是把仍处在探索阶段的提示词原型，直接推入了需要稳定契约的生产流程。协作与自动化之间需要一个逐步收敛的过程。</p>
+
+<figure class="figure" aria-labelledby="lifecap">
+<svg viewBox="0 0 880 410" role="img" aria-label="AI功能从探索到自动运行的成熟路径">
+  <rect width="880" height="410" fill="#fcfbf9"/>
+  <text x="35" y="42" class="chart-label" font-size="23" font-weight="800" fill="#202020">自动化不是一次放权，而是逐步形式化</text>
+  <g class="chart-label" text-anchor="middle">
+    <circle cx="105" cy="190" r="65" fill="#333"/><text x="105" y="181" font-size="15" font-weight="800" fill="#fff">1 探索</text><text x="105" y="207" font-size="11" fill="#fff">对话与原型</text>
+    <circle cx="275" cy="190" r="65" fill="#555"/><text x="275" y="181" font-size="15" font-weight="800" fill="#fff">2 观察</text><text x="275" y="207" font-size="11" fill="#fff">记录失败模式</text>
+    <circle cx="445" cy="190" r="65" fill="#b88a36"/><text x="445" y="181" font-size="15" font-weight="800" fill="#fff">3 分解</text><text x="445" y="207" font-size="11" fill="#fff">原子问题与类型</text>
+    <circle cx="615" cy="190" r="65" fill="#b90000"/><text x="615" y="181" font-size="15" font-weight="800" fill="#fff">4 校准</text><text x="615" y="207" font-size="11" fill="#fff">评测、阈值与回退</text>
+    <circle cx="785" cy="190" r="65" fill="#7d0000"/><text x="785" y="181" font-size="15" font-weight="800" fill="#fff">5 运行</text><text x="785" y="207" font-size="11" fill="#fff">监控与持续治理</text>
+  </g>
+  <g stroke="#d0a75c" stroke-width="4" fill="#d0a75c"><path d="M170 190H210"/><path d="M340 190H380"/><path d="M510 190H550"/><path d="M680 190H720"/></g>
+  <path d="M785 275C700 352 270 352 105 275" fill="none" stroke="#b90000" stroke-width="3" stroke-dasharray="7 5"/>
+  <polygon points="105,275 113,293 95,289" fill="#b90000"/>
+  <text x="445" y="344" class="chart-label" text-anchor="middle" font-size="13" font-weight="800" fill="#7d0000">漂移、事故和新场景会把系统重新带回探索环节</text>
+  <text x="445" y="381" class="chart-label" text-anchor="middle" font-size="12" fill="#666">Prompt不是生产契约；它是发现契约的工具。</text>
+</svg>
+<figcaption id="lifecap">图 5｜从人机协作中发现规则，再把稳定模式转成类型化自动化；运行反馈继续修正系统。</figcaption>
+</figure>
+
+<p>这条路径也为“人是否应该在环路中”提供了动态答案：在问题尚未被理解时，人必须深度参与；当任务被充分分解、错误可测、回退可靠以后，人可以退出每一次执行，只保留制度性控制；当环境变化时，人重新进入。</p>
+
+<h2 id="industry">九、对AgentOS、开源与中国产业的启示</h2>
+<h3>1. AgentOS不会只有一个万能模型</h3>
+<p>未来的AgentOS更可能是异构系统：生成模型负责理解开放意图、规划和创造；类型化决策模型承担高频判断；普通代码保证事务、权限和状态一致性；控制层根据成本、风险与置信度决定路由。真正的竞争焦点不是“支持哪个模型”，而是能否为不同任务选择正确的智能形态。</p>
+<h3>2. 开放接口需要从文本协议走向行为契约</h3>
+<p>今天的开源Agent生态重视工具调用、上下文和技能格式。下一步还需要开放概率语义、阈值策略、评测集、升级路径和审计事件。只有Schema没有校准，软件仍不知道何时可以信任结果；只有模型没有运行契约，自动化仍停留在演示。</p>
+<h3>3. 企业不应把Copilot和Automation放进同一个ROI口径</h3>
+<p>Copilot的价值可能体现为个人创造速度、员工体验和探索数量，难以只用替代工时衡量；Automation则必须计算直通率、人工升级率、误判损失、漂移和事故恢复。两者混在一起，前者会因为“不能完全无人”被低估，后者会因为“模型看起来很聪明”被过度授权。</p>
+<h3>4. 中国的模型、芯片和行业软件需要共同定义自动化原语</h3>
+<p>对中国开源大模型和Agent框架而言，机会不只是复刻一个更好用的Coding Agent，还包括面向制造、金融、医疗、政务和运营流程，建立可校准、可移植、可审计的决策原语。模型企业提供语义能力，芯片与推理平台提供低成本高并发，行业伙伴提供真实损失函数和评测，开源社区则让接口、基准与治理不被单一厂商封闭。</p>
+<p>这也给国产AI芯片工具链提出更具体的要求：优化目标不能只有大模型吞吐，还要覆盖大量低延迟、小决策、并行调用和概率校准工作负载。Agent时代的算力需求，既包括长链推理，也包括嵌入软件深处、每秒发生无数次的微小语义判断。</p>
+
+<h2>结语：成熟的AI，知道人应该在哪里</h2>
+<p>DHH代表的是一个令人兴奋的现在：自然语言正在降低软件创造门槛，一个人可以调动多个Agent，把过去不会开始的想法迅速做出来。Almeida指向的是另一个尚未完成的未来：AI不只帮助人生产更多软件，还要成为软件内部可靠、廉价、可组合的判断能力。</p>
+<p>前者让软件更容易被创造，后者让软件本身更聪明。前者需要保留模糊、试错和人的品味，后者需要压缩状态空间、暴露概率并建立契约。把其中任何一条路线宣布为唯一未来，都会漏掉另一半问题。</p>
+<blockquote><p>Agent时代真正的分界线，不是系统里有没有人，而是人以什么方式存在：是在每次执行中被迫兜底，还是在系统之外定义目标、风险和责任。</p></blockquote>
+<p>Claude Code之后，不会只有一个“更自主的Claude Code”，也不会所有任务都变成Choice、Score和Noul。更可能出现的是分层的软件新栈：人和生成式Agent共同探索，类型化模型与代码稳定执行，治理系统决定何时自动、何时升级、何时停止。</p>
+<p class="keyline">最成熟的AI系统，不是永远把人留在环路中，也不是急于拿掉人；而是知道人应该在哪里。</p>
+
+<section class="sources">
+<h2>主要资料</h2>
+<ol>
+  <li id="s1"><a href="https://lexfridman.com/dhh-2-transcript">Lex Fridman Podcast #501：DHH访谈完整逐字稿</a></li>
+  <li id="s2"><a href="https://ai.engineer/talks/cJ0EOzey--o-jev-ceo-made-chatgpt-building-whats-next">AI Engineer World’s Fair 2026：Diogo Almeida演讲与逐字稿</a></li>
+  <li id="s3"><a href="https://docs.typesafe.ai/introduction">TypeSafe AI官方文档：Jev与TypeSafe primitives</a></li>
+  <li id="s4"><a href="https://typesafe.ai/blog/introducing-system-one-models-and-jev">TypeSafe AI：Introducing System One Models &amp; Jev</a></li>
+  <li id="s5"><a href="https://arxiv.org/abs/2203.02155">Training language models to follow instructions with human feedback</a></li>
+</ol>
+</section>
+
+<footer class="footer">公开讨论稿 · 观点比较与产业分析 · 2026</footer>
+</main>
+</body>
+</html>
