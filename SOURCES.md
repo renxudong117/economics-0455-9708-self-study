@@ -6,6 +6,7 @@
 - Cambridge International, [0455 syllabus for examination in 2027, 2028 and 2029](https://www.cambridgeinternational.org/Images/718148-2027-2029-syllabus.pdf)（0455 最新六段式主教材的内容与 assessment 基准）
 - Cambridge International, [0455 syllabus for examination in 2026, Version 2](https://www.cambridgeinternational.org/Images/697154-2026-syllabus.pdf)
 - Cambridge International, [0455 past papers, examiner reports and specimen exams](https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-igcse-economics-0455/past-papers/)
+- Cambridge International, [0455 Paper 1 specimen paper for examination from 2027](https://www.cambridgeinternational.org/Images/718808-2027-specimen-paper-1.pdf)（用于核对 40 题选择题的设问方式与干扰项边界）
 - Cambridge International, [0455 Paper 2 specimen mark scheme for examination from 2027](https://www.cambridgeinternational.org/Images/718805-2027-specimen-paper-2-mark-scheme.pdf)（用于核对命令词、数据题、图表题、因果分析和双边评价的评分方式）
 - Cambridge International, [AS & A Level Economics (9708) qualification page](https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-international-as-and-a-level-economics-9708/)
 - Cambridge International, [9708 syllabus for 2026–2028](https://www.cambridgeinternational.org/Images/697423-2026-2028-syllabus.pdf)
