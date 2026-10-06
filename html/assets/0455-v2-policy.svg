@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="455" height="225" preserveAspectRatio="xMinYMin meet" viewBox="0 0 455 225" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="455" height="225"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-225)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="0" y="0" width="455" height="225" rx="8" ry="8" style="stroke: rgb(88%,90%,94%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,98%,98%); fill-rule: evenodd;"/>
+			<path d="M 55,35 L 55,198 Z" style="stroke: rgb(20%,25%,33%); stroke-linecap: butt; stroke-width: 1;"/>
+			<path d="M 55,35 L 410,35 Z" style="stroke: rgb(20%,25%,33%); stroke-linecap: butt; stroke-width: 1;"/>
+			<polyline points="85 185, 370 65" style="stroke: rgb(14%,35%,47%); stroke-linecap: butt; stroke-width: 3; fill: None; fill-rule: evenodd;"/>
+			<polyline points="75 55, 150 65, 250 115, 370 190" style="stroke: rgb(62%,7%,22%); stroke-linecap: butt; stroke-width: 3; fill: None; fill-rule: evenodd;"/>
+			<text x="374" y="62" style="font-family: Times-Roman; font-size: 8px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,124) scale(1,-1)">AD</text>
+			<text x="374" y="190" style="font-family: Times-Roman; font-size: 8px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,380) scale(1,-1)">AS</text>
+			<text x="211.444" y="12" style="font-family: Times-Roman; font-size: 8px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,24) scale(1,-1)">Real output</text>
+			<text x="15" y="110" style="font-family: Times-Roman; font-size: 8px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,220) scale(1,-1)">Price level</text>
+			<text x="170" y="205" style="font-family: Times-Roman; font-size: 8px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,410) scale(1,-1)">Policy → incentives → AD/AS → objectives</text>
+		</g>
+	</g>
+</svg>

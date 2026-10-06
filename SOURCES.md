@@ -16,12 +16,14 @@
 
 - [ig-summer-study](https://github.com/renxudong117/ig-summer-study)：仅借鉴自学包的信息架构、六段体例、导航与 QA 形式。
 - 用户提供的《IG物理0625全册讲义》和《IG化学0620全册讲义》：仅用于分析单元层级、概念—例题—答案节奏与打印版式；0455 正文、题目与图表均重新编写。
+- 用户提供的 0455 课堂页照片（市场失灵、PED/PES、总收益、市场经济体制与疫苗情境）：仅用于校准学生课堂所需的知识颗粒度、术语拆分和例题节奏；不复制图片、正文、题目或现实价格数据。涉及定义、范围、图表要求与答案的内容均以 2027–2029 syllabus 和官方 specimen mark scheme 复核。
 - Save My Exams: [Cambridge IGCSE Economics revision notes](https://www.savemyexams.com/igcse/economics/cie/25/revision-notes/)
 - 9708Economics: [bilingual topic map and study tools](https://9708economics.com/)
 
 ## 编写原则
 
 1. 内容边界以官方 syllabus 为准；第三方材料只用于交叉检查学习顺序与常见难点。
-2. 所有 Q1–Q188 以及逐课教材中的题型示例均为原创或重新设定情境，不是 past-paper 原题。
+2. 所有 Q1–Q188 以及逐课教材中的题型示例均为原创或重新设定情境，不是 past-paper 原题；最新版 0455 主教材的 122 道题同样明确标作 Cambridge-style practice，而非“历年真题”。
 3. “仿 Paper 2/4”指命令词、分值梯度、数据/图表/评价技能近似，不宣称官方押题。
 4. 人教版衔接是概念桥梁，不代表两套课程可逐项等同。
+5. 参考材料中的课堂简写、现实价格或扩展术语不会自动进入教材；只有与官方考纲一致且有助于理解考试要求的内容才会保留，并使用重新编写的例子呈现。

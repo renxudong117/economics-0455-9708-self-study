@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="455" height="225" preserveAspectRatio="xMinYMin meet" viewBox="0 0 455 225" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="455" height="225"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-225)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="0" y="0" width="455" height="225" rx="8" ry="8" style="stroke: rgb(88%,90%,94%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,98%,98%); fill-rule: evenodd;"/>
+			<path d="M 55,35 L 55,198 Z" style="stroke: rgb(20%,25%,33%); stroke-linecap: butt; stroke-width: 1;"/>
+			<path d="M 55,35 L 410,35 Z" style="stroke: rgb(20%,25%,33%); stroke-linecap: butt; stroke-width: 1;"/>
+			<polyline points="75 185, 380 55" style="stroke: rgb(14%,35%,47%); stroke-linecap: butt; stroke-width: 3; fill: None; fill-rule: evenodd;"/>
+			<polyline points="75 55, 380 185" style="stroke: rgb(62%,7%,22%); stroke-linecap: butt; stroke-width: 3; fill: None; fill-rule: evenodd;"/>
+			<circle cx="228" cy="120" r="4" style="stroke: rgb(0%,0%,0%); stroke-linecap: butt; stroke-width: 1; fill: rgb(20%,25%,33%); fill-rule: evenodd;"/>
+			<path d="M 55,120 L 228,120 Z" style="stroke: rgb(58%,63%,72%); stroke-linecap: butt; stroke-width: 1; stroke-dasharray: 3, 3;"/>
+			<text x="382" y="53" style="font-family: Times-Roman; font-size: 8px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,106) scale(1,-1)">DL</text>
+			<text x="382" y="185" style="font-family: Times-Roman; font-size: 8px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,370) scale(1,-1)">SL</text>
+			<text x="15" y="110" style="font-family: Times-Roman; font-size: 8px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,220) scale(1,-1)">Wage</text>
+			<text x="205.448" y="12" style="font-family: Times-Roman; font-size: 8px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,24) scale(1,-1)">Quantity of labour</text>
+		</g>
+	</g>
+</svg>

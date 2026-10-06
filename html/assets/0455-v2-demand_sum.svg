@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="455" height="225" preserveAspectRatio="xMinYMin meet" viewBox="0 0 455 225" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="455" height="225"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-225)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="0" y="0" width="455" height="225" rx="8" ry="8" style="stroke: rgb(88%,90%,94%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,98%,98%); fill-rule: evenodd;"/>
+			<path d="M 18,45 L 18,190 Z" style="stroke: rgb(20%,25%,33%); stroke-linecap: butt; stroke-width: 1;"/>
+			<path d="M 18,45 L 138,45 Z" style="stroke: rgb(20%,25%,33%); stroke-linecap: butt; stroke-width: 1;"/>
+			<polyline points="38 175, 123 60" style="stroke: rgb(14%,35%,47%); stroke-linecap: butt; stroke-width: 2.2; fill: None; fill-rule: evenodd;"/>
+			<path d="M 18,115 L 88,115 Z" style="stroke: rgb(58%,63%,72%); stroke-linecap: butt; stroke-width: 1; stroke-dasharray: 3, 3;"/>
+			<path d="M 88,45 L 88,115 Z" style="stroke: rgb(58%,63%,72%); stroke-linecap: butt; stroke-width: 1; stroke-dasharray: 3, 3;"/>
+			<text x="58.79899999999999" y="25" style="font-family: Times-Roman; font-size: 7.4px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,50) scale(1,-1)">Buyer A: Q=5</text>
+			<path d="M 163,45 L 163,190 Z" style="stroke: rgb(20%,25%,33%); stroke-linecap: butt; stroke-width: 1;"/>
+			<path d="M 163,45 L 283,45 Z" style="stroke: rgb(20%,25%,33%); stroke-linecap: butt; stroke-width: 1;"/>
+			<polyline points="183 175, 268 60" style="stroke: rgb(14%,35%,47%); stroke-linecap: butt; stroke-width: 2.2; fill: None; fill-rule: evenodd;"/>
+			<path d="M 163,115 L 233,115 Z" style="stroke: rgb(58%,63%,72%); stroke-linecap: butt; stroke-width: 1; stroke-dasharray: 3, 3;"/>
+			<path d="M 233,45 L 233,115 Z" style="stroke: rgb(58%,63%,72%); stroke-linecap: butt; stroke-width: 1; stroke-dasharray: 3, 3;"/>
+			<text x="204.0025" y="25" style="font-family: Times-Roman; font-size: 7.4px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,50) scale(1,-1)">Buyer B: Q=4</text>
+			<path d="M 308,45 L 308,190 Z" style="stroke: rgb(20%,25%,33%); stroke-linecap: butt; stroke-width: 1;"/>
+			<path d="M 308,45 L 428,45 Z" style="stroke: rgb(20%,25%,33%); stroke-linecap: butt; stroke-width: 1;"/>
+			<polyline points="328 175, 413 60" style="stroke: rgb(14%,35%,47%); stroke-linecap: butt; stroke-width: 2.2; fill: None; fill-rule: evenodd;"/>
+			<path d="M 308,115 L 378,115 Z" style="stroke: rgb(58%,63%,72%); stroke-linecap: butt; stroke-width: 1; stroke-dasharray: 3, 3;"/>
+			<path d="M 378,45 L 378,115 Z" style="stroke: rgb(58%,63%,72%); stroke-linecap: butt; stroke-width: 1; stroke-dasharray: 3, 3;"/>
+			<text x="350.7526" y="25" style="font-family: Times-Roman; font-size: 7.4px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,50) scale(1,-1)">Market: Q=9</text>
+		</g>
+	</g>
+</svg>

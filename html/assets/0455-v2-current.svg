@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="455" height="225" preserveAspectRatio="xMinYMin meet" viewBox="0 0 455 225" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="455" height="225"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-225)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="0" y="0" width="455" height="225" rx="8" ry="8" style="stroke: rgb(88%,90%,94%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,98%,98%); fill-rule: evenodd;"/>
+			<rect x="90" y="42" width="40" height="110" style="stroke: rgb(62%,7%,22%); stroke-linecap: butt; stroke-width: 1; fill: rgb(62%,7%,22%); fill-rule: evenodd;"/>
+			<text x="99.556" y="25" style="font-family: Times-Roman; font-size: 8px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,50) scale(1,-1)">Goods</text>
+			<text x="104.0" y="157" style="font-family: Times-Roman; font-size: 8px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,314) scale(1,-1)">110</text>
+			<rect x="180" y="42" width="40" height="70" style="stroke: rgb(14%,35%,47%); stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,35%,47%); fill-rule: evenodd;"/>
+			<text x="186.448" y="25" style="font-family: Times-Roman; font-size: 8px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,50) scale(1,-1)">Services</text>
+			<text x="196.0" y="117" style="font-family: Times-Roman; font-size: 8px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,234) scale(1,-1)">70</text>
+			<rect x="270" y="42" width="40" height="45" style="stroke: rgb(71%,47%,12%); stroke-linecap: butt; stroke-width: 1; fill: rgb(71%,47%,12%); fill-rule: evenodd;"/>
+			<text x="277.112" y="25" style="font-family: Times-Roman; font-size: 8px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,50) scale(1,-1)">Primary</text>
+			<text x="286.0" y="92" style="font-family: Times-Roman; font-size: 8px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,184) scale(1,-1)">45</text>
+			<rect x="360" y="42" width="40" height="25" style="stroke: rgb(39%,45%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(39%,45%,54%); fill-rule: evenodd;"/>
+			<text x="363.116" y="25" style="font-family: Times-Roman; font-size: 8px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,50) scale(1,-1)">Secondary</text>
+			<text x="376.0" y="72" style="font-family: Times-Roman; font-size: 8px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,144) scale(1,-1)">25</text>
+			<text x="121.22" y="205" style="font-family: Times-Roman; font-size: 8px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,410) scale(1,-1)">Current account = goods + services + primary + secondary income</text>
+		</g>
+	</g>
+</svg>
